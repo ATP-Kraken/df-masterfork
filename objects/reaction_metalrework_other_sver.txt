@@ -1,0 +1,170 @@
+reaction_metalrework_other_sver
+
+[OBJECT:REACTION]
+
+
+	Supplementary reactions for making new reworked metals.
+
+	
+===========================================================
+
+[REACTION:FILL_COKE_SACK_SVER]
+[NAME:fill a coal sack (bag) with coke]
+[BUILDING:WOOD:NONE]
+[REAGENT:coke:600:BAR:NO_SUBTYPE:COAL:COKE]
+[REAGENT:bag:1:BOX:NONE:NONE:NONE]
+	[EMPTY]
+	[BAG]
+[PRODUCT:100:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:GET_MATERIAL_FROM_REAGENT:bag:NONE]
+[SKILL:WOOD_BURNING]
+[DESCRIPTION:Make 1 sack of coal from 4 coke bars and 1 bag.]
+[DESCRIPTION:The bag will not be reusable afterwards.]
+
+===========================================================
+
+[REACTION:FILL_CHARCOAL_SACK_SVER]
+[NAME:fill a coal sack (bag) with charcoal]
+[BUILDING:WOOD:NONE]
+[REAGENT:charcoal:1800:BAR:NO_SUBTYPE:COAL:CHARCOAL]
+[REAGENT:bag:1:BOX:NONE:NONE:NONE]
+	[EMPTY]
+	[BAG]
+[PRODUCT:100:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:GET_MATERIAL_FROM_REAGENT:bag:NONE]
+[SKILL:WOOD_BURNING]
+[DESCRIPTION:Make 1 sack of coal from 12 charcoal bars and 1 bag.]
+[DESCRIPTION:The bag will not be reusable afterwards.]
+
+===========================================================
+
+[REACTION:MAKE_GREASE_FROM_TALLOW_SVER]
+[NAME:make grease from tallow]
+[BUILDING:ASHERY:NONE]
+[REAGENT:lye:150:LIQUID_MISC:NONE:LYE]
+[REAGENT:lye container:1:NONE:NONE:NONE:NONE]
+	[CONTAINS:lye]
+	[PRESERVE_REAGENT]
+	[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+[REAGENT:tallow:150:GLOB:NONE:NONE:NONE][REACTION_CLASS:TALLOW][UNROTTEN]
+	[HAS_MATERIAL_REACTION_PRODUCT:SOAP_MAT]
+[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]
+	[EMPTY]
+[PRODUCT:100:1:TOOL:ITEM_TOOL_GREASE_BUCKET_SVER:GET_MATERIAL_FROM_REAGENT:bucket:NONE]
+[SKILL:LYE_MAKING]
+[DESCRIPTION:Make 1 bucket of grease from 1 glob of tallow, 1 unit of lye and 1 empty bucket.]
+[DESCRIPTION:The bucket will not be reusable afterwards.]
+
+===========================================================
+
+[REACTION:MAKE_GREASE_FROM_OIL_SVER]
+[NAME:make grease from oil]
+[BUILDING:ASHERY:NONE]
+[REAGENT:lye:150:LIQUID_MISC:NONE:LYE]
+[REAGENT:lye container:1:NONE:NONE:NONE:NONE]
+	[CONTAINS:lye]
+	[PRESERVE_REAGENT]
+	[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+[REAGENT:oil:150:LIQUID_MISC:NONE:NONE:NONE]
+	[UNROTTEN]
+	[HAS_MATERIAL_REACTION_PRODUCT:SOAP_MAT]
+[REAGENT:oil container:1:NONE:NONE:NONE:NONE]
+	[CONTAINS:oil]
+	[PRESERVE_REAGENT]
+	[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]
+	[EMPTY]
+[PRODUCT:100:1:TOOL:ITEM_TOOL_GREASE_BUCKET_SVER:GET_MATERIAL_FROM_REAGENT:bucket:NONE]
+[SKILL:LYE_MAKING]
+[DESCRIPTION:Make 1 bucket of grease from 1 unit of oil, 1 unit of lye and 1 empty bucket.]
+[DESCRIPTION:The bucket will not be reusable afterwards.]
+
+===========================================================
+
+[REACTION:VINEGAR_MAKING_PLANT_SVER]
+[NAME:make a barrel of vinegar from plants]
+[BUILDING:STILL:NONE]
+[REAGENT:plant:8:PLANT:NONE:NONE:NONE]
+	[HAS_MATERIAL_REACTION_PRODUCT:DRINK_MAT]
+	[UNROTTEN]
+[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
+	[EMPTY]
+	[FOOD_STORAGE_CONTAINER]
+	[DOES_NOT_ABSORB]
+[PRODUCT:100:1:TOOL:ITEM_TOOL_VINEGAR_BARREL_SVER:GET_MATERIAL_FROM_REAGENT:barrel:NONE]
+[SKILL:BREWING]
+[DESCRIPTION:Make 1 barrel of vinegar from 8 brewable plants and 1 barrel/pot. Leaves no seeds.]
+[DESCRIPTION:The barrel/pot will not be reusable afterwards.]
+
+===========================================================
+
+[REACTION:VINEGAR_MAKING_FRUIT_SVER]
+[NAME:make a barrel of vinegar from fruits]
+[BUILDING:STILL:NONE]
+[REAGENT:fruit:8:PLANT_GROWTH:NONE:NONE:NONE]
+	[HAS_MATERIAL_REACTION_PRODUCT:DRINK_MAT]
+	[UNROTTEN]
+[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
+	[EMPTY]
+	[FOOD_STORAGE_CONTAINER]
+	[DOES_NOT_ABSORB]
+[PRODUCT:100:1:TOOL:ITEM_TOOL_VINEGAR_BARREL_SVER:GET_MATERIAL_FROM_REAGENT:barrel:NONE]
+[SKILL:BREWING]
+[DESCRIPTION:Make 1 barrel of vinegar from 8 brewable growths and 1 barrel/pot. Leaves no seeds.]
+[DESCRIPTION:The barrel/pot will not be reusable afterwards.]
+
+===========================================================
+
+[REACTION:VINEGAR_MAKING_HONEY_SVER]
+[NAME:make a barrel of vinegar from honey]
+[BUILDING:STILL:NONE]
+[REAGENT:honey:150:LIQUID_MISC:NONE:CREATURE_MAT:HONEY_BEE:HONEY]
+	[UNROTTEN]
+[REAGENT:honey container:1:NONE:NONE:NONE:NONE]
+	[CONTAINS:honey]
+	[PRESERVE_REAGENT]
+	[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
+	[EMPTY]
+	[FOOD_STORAGE_CONTAINER]
+	[DOES_NOT_ABSORB]
+[PRODUCT:100:1:TOOL:ITEM_TOOL_VINEGAR_BARREL_SVER:GET_MATERIAL_FROM_REAGENT:barrel:NONE]
+[SKILL:BREWING]
+[DESCRIPTION:Make 1 barrel of vinegar from 1 unit of honey and 1 barrel/pot.]
+[DESCRIPTION:The barrel/pot will not be reusable afterwards.]
+
+===========================================================
+
+[REACTION:MAKE_ROCK_MOLD_PARTS_SVER]
+[NAME:make mold parts from stone]
+[BUILDING:CRAFTSMAN:NONE]
+[REAGENT:stone:1:BOULDER:NONE:NONE:NONE]
+	[WORTHLESS_STONE_ONLY]
+[PRODUCT:95:1:TOOL:ITEM_TOOL_MOLD_PART_SVER:GET_MATERIAL_FROM_REAGENT:stone:NONE]
+[SKILL:STONECRAFT]
+[DESCRIPTION:Make 1 mold part from 1 rock boulder.]
+[DESCRIPTION:There is a tiny chance the reaction will fail without any returns.]
+
+===========================================================
+
+[REACTION:MAKE_CLAY_MOLD_PARTS_SVER]
+[NAME:make mold parts from clay]
+[BUILDING:KILN:NONE]
+[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
+	[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
+[PRODUCT:95:1:TOOL:ITEM_TOOL_MOLD_PART_SVER:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]
+[FUEL]
+[SKILL:POTTERY]
+[DESCRIPTION:Make 1 mold part from 1 boulder of clay, fire clay or kaolinite.]
+[DESCRIPTION:There is a tiny chance the reaction will fail without any returns.]
+
+===========================================================
+
+[REACTION:BAYBERRY_WAX_MAKING_SVER]
+[NAME:boil bayberries into wax]
+[BUILDING:STILL:NONE]
+[REAGENT:bayberries:8:PLANT_GROWTH:FRUIT:PLANT_MAT:BAYBERRY:FRUIT][UNROTTEN]
+[PRODUCT:100:1:GLOB:NONE:INORGANIC:BAYBERRY_WAX_SVER][PRODUCT_PRESSED]
+[FUEL]
+[SKILL:BREWING]
+[DESCRIPTION:Make 1 unit of wax from 8 bayberries, requires fuel.]
+
+===========================================================

@@ -2,6 +2,11 @@ item_tool
 
 [OBJECT:ITEM]
 
+
+Includes changes from Sver's DF Combat Reworked
+Made on game version 0.47.04
+
+
 [ITEM_TOOL:ITEM_TOOL_CAULDRON]
 [NAME:cauldron:cauldrons]
 [VALUE:50]
@@ -50,23 +55,27 @@ item_tool
 [SIZE:20]
 [MATERIAL_SIZE:1]
 
+===========================================================
+Sver: balanced weaponizable tools
+===========================================================
+
 [ITEM_TOOL:ITEM_TOOL_KNIFE_CARVING]
 [NAME:carving knife:carving knives]
 [VALUE:10]
 [METAL_WEAPON_MAT]
 [TOOL_USE:MEAT_CARVING]
 [TILE:'/']
-[SIZE:150]
+[SIZE:50]
 [SKILL:DAGGER]
-[TWO_HANDED:22500]
+[TWO_HANDED:13000]
 [MINIMUM_SIZE:4000]
 [MATERIAL_SIZE:1]
-[ATTACK:EDGE:800:600:slash:slashes:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:EDGE:4:800:stab:stabs:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:BLUNT:15:400:strike:strikes:handle:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:EDGE:2000:25:cut:cuts:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:5:4]
+[ATTACK:EDGE:5:500:stab:stabs:NO_SUB:670]
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+
+===========================================================
 
 [ITEM_TOOL:ITEM_TOOL_KNIFE_BONING]
 [NAME:boning knife:boning knives]
@@ -76,15 +85,15 @@ item_tool
 [TILE:'/']
 [SIZE:50]
 [SKILL:DAGGER]
-[TWO_HANDED:17500]
-[MINIMUM_SIZE:2000]
+[TWO_HANDED:13000]
+[MINIMUM_SIZE:4000]
 [MATERIAL_SIZE:1]
-[ATTACK:EDGE:500:300:slash:slashes:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:EDGE:2:400:stab:stabs:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:BLUNT:10:200:strike:strikes:handle:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:EDGE:3000:50:cut:cuts:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:5:4]
+[ATTACK:EDGE:5:50:stab:stabs:NO_SUB:670]
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+
+===========================================================
 
 [ITEM_TOOL:ITEM_TOOL_KNIFE_SLICING]
 [NAME:slicing knife:slicing knives]
@@ -92,17 +101,17 @@ item_tool
 [METAL_WEAPON_MAT]
 [TOOL_USE:MEAT_SLICING]
 [TILE:'/']
-[SIZE:150]
+[SIZE:75]
 [SKILL:DAGGER]
-[TWO_HANDED:22500]
+[TWO_HANDED:13000]
 [MINIMUM_SIZE:4000]
 [MATERIAL_SIZE:1]
-[ATTACK:EDGE:900:700:slash:slashes:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:EDGE:3:900:stab:stabs:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:BLUNT:15:400:strike:strikes:handle:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:EDGE:330:200:cut:cuts:NO_SUB:250]
+	[ATTACK_PREPARE_AND_RECOVER:5:4]
+[ATTACK:EDGE:1000:500:slice:slices:NO_SUB:750]
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+
+===========================================================
 
 [ITEM_TOOL:ITEM_TOOL_KNIFE_MEAT_CLEAVER]
 [NAME:meat cleaver:meat cleavers]
@@ -110,17 +119,17 @@ item_tool
 [METAL_WEAPON_MAT]
 [TOOL_USE:MEAT_CLEAVING]
 [TILE:'/']
-[SIZE:300]
+[SIZE:120]
 [SKILL:AXE]
-[TWO_HANDED:27500]
-[MINIMUM_SIZE:5000]
-[MATERIAL_SIZE:1]
-[ATTACK:EDGE:800:400:hack:hacks:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:BLUNT:800:400:slap:slaps:flat:1250]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:BLUNT:20:400:strike:strikes:handle:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[TWO_HANDED:32000]
+[MINIMUM_SIZE:2500]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:700:400:hack:hacks:NO_SUB:550]
+	[ATTACK_PREPARE_AND_RECOVER:9:4]
+[ATTACK:BLUNT:700:400:slap:slaps:flat:550]
+	[ATTACK_PREPARE_AND_RECOVER:9:4]
+
+===========================================================
 
 [ITEM_TOOL:ITEM_TOOL_FORK_CARVING]
 [NAME:carving fork:carving forks]
@@ -128,15 +137,17 @@ item_tool
 [METAL_WEAPON_MAT]
 [TOOL_USE:HOLD_MEAT_FOR_CARVING]
 [TILE:'/']
-[SIZE:150]
+[SIZE:50]
 [SKILL:DAGGER]
-[TWO_HANDED:22500]
+[TWO_HANDED:13000]
 [MINIMUM_SIZE:4000]
 [MATERIAL_SIZE:1]
-[ATTACK:EDGE:1:100:stab:stabs:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:BLUNT:15:400:strike:strikes:handle:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:EDGE:3:300:stab:stabs:NO_SUB:250]
+	[ATTACK_PREPARE_AND_RECOVER:9:6]
+[ATTACK:BLUNT:100:1000:strike:strikes:handle:2340]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+
+===========================================================
 
 [ITEM_TOOL:ITEM_TOOL_NEST_BOX]
 [NAME:nest box:nest boxes]
@@ -300,23 +311,31 @@ item_tool
 [UNIMPROVABLE]
 [NO_DEFAULT_IMPROVEMENTS]
 
+===========================================================
+Sver: balanced weaponizable tools
+===========================================================
+
 [ITEM_TOOL:ITEM_TOOL_STONE_AXE]
 [NAME:axe:axes]
 [VALUE:10]
 [STONE_MAT]
 [NO_DEFAULT_JOB]
 [TILE:'/']
-[SIZE:400]
+[SIZE:85] 70% +22%
 [SKILL:AXE]
-[TWO_HANDED:27500]
-[MINIMUM_SIZE:5000]
-[MATERIAL_SIZE:1]
-[ATTACK:EDGE:800:400:hack:hacks:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:BLUNT:800:400:slap:slaps:flat:1250]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-[ATTACK:BLUNT:20:400:strike:strikes:helve:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[TWO_HANDED:68000]
+[MINIMUM_SIZE:6500]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:100:250:hack:hacks:NO_SUB:770]
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+[ATTACK:EDGE:100:125:closely hack:closely hacks:NO_SUB:470]
+	[ATTACK_PREPARE_AND_RECOVER:6:3]
+[ATTACK:BLUNT:2200:400:bash:bashes:reverse:2700]
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+[ATTACK:BLUNT:1250:400:shove:shoves:NO_SUB:1190]
+	[ATTACK_PREPARE_AND_RECOVER:1:9]
+
+===========================================================
 
 [ITEM_TOOL:ITEM_TOOL_PEDESTAL]
 [NAME:pedestal:pedestals]

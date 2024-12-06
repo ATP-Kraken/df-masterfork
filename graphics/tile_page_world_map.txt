@@ -90,7 +90,7 @@ tile_page_world_map
 [TILE_PAGE:WORLD_MAP_ARMIES]
 	[FILE:images/world_map_armies.png]
 	[TILE_DIM:16:16]
-	[PAGE_DIM_PIXELS:64:64]
+	[PAGE_DIM_PIXELS:48:64]
 
 [TILE_PAGE:WORLD_MAP_CLOUDS]
 	[FILE:images/world_map_clouds.png]

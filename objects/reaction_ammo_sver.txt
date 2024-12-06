@@ -1,0 +1,295 @@
+reaction_ammo_sver
+
+[OBJECT:REACTION]
+
+
+	!! This file is part of the OPTIONAL metal rework - default metal rework files are located in the mod's main folder.
+		Wrought iron, hardened bronze and tempered steel have been renamed for cleaner interface.
+		Vanilla iron, steel and bronze have been renamed for distinction from modded metals.
+		Base reactions now use unworked (vanilla) metals, in the same proportions as making modded metal bars does.
+		This, however, allows to save up a bit of fuel (and sand, in case of iron and steel).
+
+
+	The reactions to make certain ammo types more easily accessible and/or cheaper for the player.
+	Optional, but recommended.
+	
+	Ammo from arrowhead kits is assembled at the Bowyer's Workshop by a Bowyer.
+	Arrowheads kits themselves are made at the Metalsmith's Forge (or cast at the Smelter) by a Weaponsmith.
+	Ammo from non-economic rock is made at the Craftsdwarf's workshop by a Stonecrafter.
+	Ammo from clay is made at the Kiln by a Potter, requires fuel.
+	Making lead/zinc bullet casting kits and casting sling bullets with them is done at the Metalsmith's Forge by a Furnace Operator, requires fuel.
+
+
+===========================================================
+arrowhead kits for more efficient ammo production (4 kits per 1 bar)
+===========================================================
+
+[REACTION:COPPER_ARROWHEADS_SVER]
+[NAME:make bronze arrowheads (use copper and tin)]
+[BUILDING:SMELTER:NONE]
+[REAGENT:tin:150:BAR:NO_SUBTYPE:METAL:TIN]
+[REAGENT:copper:600:BAR:NO_SUBTYPE:METAL:COPPER]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:mold:15:TOOL:ITEM_TOOL_MOLD_PART_SVER:NONE:NONE]
+[PRODUCT:100:20:TOOL:ITEM_TOOL_ARROWHEADS_SVER:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:ARROWHEADS_METALREWORK_CAST_SVER]
+[CATEGORY_NAME:Cast arrowheads from unworked metal]
+[CATEGORY_DESCRIPTION:Make arrowhead kits from unworked metals. Each kit can be used to make a stack of bolts or arrows at the Bowyer's Workshop.]
+[DESCRIPTION:Make 20 bronze arrowhead kits from 1 tin bar, 4 copper bars, 15 mold parts and 1 sack of coal.]
+
+===========================================================
+
+[REACTION:BRONZE_ARROWHEADS_SVER]
+[NAME:make bronze arrowheads (use soft bronze)]
+[BUILDING:SMELTER:NONE]
+[REAGENT:bronze:750:BAR:NO_SUBTYPE:METAL:BRONZE]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:mold:15:TOOL:ITEM_TOOL_MOLD_PART_SVER:NONE:NONE]
+[PRODUCT:100:20:TOOL:ITEM_TOOL_ARROWHEADS_SVER:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:ARROWHEADS_METALREWORK_CAST_SVER]
+[DESCRIPTION:Make 20 bronze arrowhead kits from 5 soft bronze bars, 15 mold parts and 1 sack of coal.]
+
+===========================================================
+
+[REACTION:BISMUTH_BRONZE_ARROWHEADS_SVER]
+[NAME:make bronze arrowheads (use bismuth bronze)]
+[BUILDING:SMELTER:NONE]
+[REAGENT:bismuth bronze:750:BAR:NO_SUBTYPE:METAL:BISMUTH_BRONZE]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:mold:15:TOOL:ITEM_TOOL_MOLD_PART_SVER:NONE:NONE]
+[PRODUCT:100:20:TOOL:ITEM_TOOL_ARROWHEADS_SVER:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:ARROWHEADS_METALREWORK_CAST_SVER]
+[DESCRIPTION:Make 20 bronze arrowhead kits from 5 bismuth bronze bars, 15 mold parts and 1 sack of coal.]
+
+===========================================================
+
+[REACTION:IRON_ARROWHEADS_SVER]
+[NAME:make iron arrowheads (use bloomery iron)]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:iron:300:BAR:NO_SUBTYPE:METAL:IRON]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:grease:4:TOOL:ITEM_TOOL_GREASE_BUCKET_SVER:NONE:NONE]
+[REAGENT:vinegar:4:TOOL:ITEM_TOOL_VINEGAR_BARREL_SVER:NONE:NONE]
+[REAGENT:sand:150:POWDER_MISC:NONE:NONE:NONE][IS_SAND_MATERIAL]
+[REAGENT:sand container:1:NONE:NONE:NONE:NONE]
+	[CONTAINS:sand]
+	[PRESERVE_REAGENT]
+	[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+[PRODUCT:100:8:TOOL:ITEM_TOOL_ARROWHEADS_SVER:METAL:IRON_WROUGHT_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:ARROWHEADS_METALREWORK_WELD_SVER]
+[CATEGORY_NAME:Weld arrowheads from unworked metal]
+[CATEGORY_DESCRIPTION:Make arrowhead kits from unworked metals. Each kit can be used to make a stack of bolts or arrows at the Bowyer's Workshop.]
+[DESCRIPTION:Make 8 iron arrowhead kits from 2 bloomery iron bars and 1 sack of coal.]
+[DESCRIPTION:Also requires 4 buckets of grease, 4 barrels of vinegar and 1 bag of sand, for future care.]
+
+===========================================================
+
+[REACTION:STEEL_ARROWHEADS_SVER]
+[NAME:make steel arrowheads (use bloomery iron)]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:iron:150:BAR:NO_SUBTYPE:METAL:IRON]
+[REAGENT:coal:2:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:grease:1:TOOL:ITEM_TOOL_GREASE_BUCKET_SVER:NONE:NONE]
+[REAGENT:wax:150:GLOB:NONE:NONE:NONE][REACTION_CLASS:WAX]
+[REAGENT:sand:150:POWDER_MISC:NONE:NONE:NONE][IS_SAND_MATERIAL]
+[REAGENT:sand container:1:NONE:NONE:NONE:NONE]
+	[CONTAINS:sand]
+	[PRESERVE_REAGENT]
+	[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+[PRODUCT:100:4:TOOL:ITEM_TOOL_ARROWHEADS_SVER:METAL:STEEL_TEMPERED_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:ARROWHEADS_METALREWORK_WELD_SVER]
+[DESCRIPTION:Make 4 steel arrowhead kits from 1 bloomery iron bar and 2 sacks of coal.]
+[DESCRIPTION:Also requires 1 bucket of grease, 1 glob of wax and 1 bag of sand, for future care.]
+
+===========================================================
+bolts/arrows from arrowheads (also requires wood)
+===========================================================
+
+[REACTION:ARROWHEAD_BOLTS_SVER]
+[NAME:assemble piercing bolts]
+[BUILDING:BOWYER:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:arrowheads:1:TOOL:ITEM_TOOL_ARROWHEADS_SVER:NONE:NONE]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_BOLTS:GET_MATERIAL_FROM_REAGENT:arrowheads:NONE]
+[SKILL:BOWYER]
+[CATEGORY:ARROWHEAD_AMMO_SVER]
+[CATEGORY_NAME:Make ammo using arrowheads]
+[CATEGORY_DESCRIPTION:Make a stack of 25 bolts or arrows using 1 arrowhead kit and 1 log.]
+
+===========================================================
+
+[REACTION:ARROWHEAD_BROAD_BOLTS_SVER]
+[NAME:assemble broadhead bolts]
+[BUILDING:BOWYER:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:arrowheads:1:TOOL:ITEM_TOOL_ARROWHEADS_SVER:NONE:NONE]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_BOLTS_BROAD_SVER:GET_MATERIAL_FROM_REAGENT:arrowheads:NONE]
+[SKILL:BOWYER]
+[CATEGORY:ARROWHEAD_AMMO_SVER]
+
+===========================================================
+
+[REACTION:ARROWHEAD_BLUNT_BOLTS_SVER]
+[NAME:assemble hammerhead bolts]
+[BUILDING:BOWYER:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:arrowheads:1:TOOL:ITEM_TOOL_ARROWHEADS_SVER:NONE:NONE]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_BOLTS_BLUNT_SVER:GET_MATERIAL_FROM_REAGENT:arrowheads:NONE]
+[SKILL:BOWYER]
+[CATEGORY:ARROWHEAD_AMMO_SVER]
+
+===========================================================
+
+[REACTION:ARROWHEAD_ARROWS_SVER]
+[NAME:assemble bodkin arrows]
+[BUILDING:BOWYER:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:arrowheads:1:TOOL:ITEM_TOOL_ARROWHEADS_SVER:NONE:NONE]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_ARROWS:GET_MATERIAL_FROM_REAGENT:arrowheads:NONE]
+[SKILL:BOWYER]
+[CATEGORY:ARROWHEAD_AMMO_SVER]
+
+===========================================================
+
+[REACTION:ARROWHEAD_BROAD_ARROWS_SVER]
+[NAME:assemble barbed arrows]
+[BUILDING:BOWYER:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:arrowheads:1:TOOL:ITEM_TOOL_ARROWHEADS_SVER:NONE:NONE]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_ARROWS_BROAD_SVER:GET_MATERIAL_FROM_REAGENT:arrowheads:NONE]
+[SKILL:BOWYER]
+[CATEGORY:ARROWHEAD_AMMO_SVER]
+
+===========================================================
+
+[REACTION:ARROWHEAD_CRESCENT_ARROWS_SVER]
+[NAME:assemble crescent arrows]
+[BUILDING:BOWYER:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:arrowheads:1:TOOL:ITEM_TOOL_ARROWHEADS_SVER:NONE:NONE]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_ARROWS_CRESCENT_SVER:GET_MATERIAL_FROM_REAGENT:arrowheads:NONE]
+[SKILL:BOWYER]
+[CATEGORY:ARROWHEAD_AMMO_SVER]
+
+==========================================================
+simple ammo from non-economic stone
+===========================================================
+
+[REACTION:STONE_BLUNT_BOLTS_SVER]
+[NAME:make rock hammerhead bolts]
+[BUILDING:CRAFTSMAN:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:stone:4:BOULDER:NONE:NONE:NONE]
+	[WORTHLESS_STONE_ONLY]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_BOLTS_BLUNT_SVER:METAL:HEAVY_ROCK_SVER]
+[SKILL:STONECRAFT]
+[CATEGORY:ROCK_AMMO_SVER]
+[CATEGORY_NAME:Make heavy rock ammo]
+[CATEGORY_DESCRIPTION:Make simple ammunition from non-economic stone.]
+[DESCRIPTION:Make a stack of 25 hammerhead bolts from 4 rock boulders and 1 log.]
+
+===========================================================
+
+[REACTION:STONE_HB_BALLS_SVER]
+[NAME:make rock ballista balls]
+[BUILDING:CRAFTSMAN:NONE]
+[REAGENT:stone:6:BOULDER:NONE:NONE:NONE]
+	[WORTHLESS_STONE_ONLY]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_HB_BALLS_SVER:METAL:HEAVY_ROCK_SVER]
+[SKILL:STONECRAFT]
+[CATEGORY:ROCK_AMMO_SVER]
+[DESCRIPTION:Make a stack of 25 ballista balls from 6 rock boulders.]
+
+===========================================================
+
+[REACTION:STONE_SLING_BOULDERS_SVER]
+[NAME:make rock sling boulders]
+[BUILDING:CRAFTSMAN:NONE]
+[REAGENT:stone:3:BOULDER:NONE:NONE:NONE]
+	[WORTHLESS_STONE_ONLY]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_SLING_BOULDERS_SVER:METAL:HEAVY_ROCK_SVER]
+[SKILL:STONECRAFT]
+[CATEGORY:ROCK_AMMO_SVER]
+[DESCRIPTION:Make a stack of 25 sling boulders from 3 rock boulders.]
+
+==========================================================
+simple ammo from clay
+===========================================================
+
+[REACTION:CLAY_HB_BALLS_SVER]
+[NAME:make ballista balls from baked clay]
+[BUILDING:KILN:NONE]
+[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
+	[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_HB_BALLS_SVER:METAL:BAKED_CLAY_SVER]
+[FUEL]
+[SKILL:POTTERY]
+[CATEGORY:CLAY_AMMO_SVER]
+[CATEGORY_NAME:Make baked clay ammo]
+[CATEGORY_DESCRIPTION::Make a stack of 25 ballista balls or sling boulders from clay, fire clay or kaolinite. Requires fuel.]
+
+===========================================================
+
+[REACTION:CLAY_SLING_BOULDERS_SVER]
+[NAME:make sling boulders from baked clay]
+[BUILDING:KILN:NONE]
+[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
+	[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_SLING_BOULDERS_SVER:METAL:BAKED_CLAY_SVER]
+[FUEL]
+[SKILL:POTTERY]
+[CATEGORY:CLAY_AMMO_SVER]
+
+===========================================================
+simple ammo from lead or zinc alloy (no anvil required)
+===========================================================
+
+[REACTION:MAKE_LEAD_BULLET_CASTING_SVER]
+[NAME:make lead bullet casting kits]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:TIN]
+[REAGENT:B:600:BAR:NO_SUBTYPE:METAL:LEAD]
+[PRODUCT:100:20:AMMO:ITEM_TOOL_BULLET_CAST_SVER:METAL:CAST_LEAD_SVER]
+[FUEL]
+[SKILL:SMELT]
+[CATEGORY:ALLOY_AMMO_SVER]
+[CATEGORY_NAME:Cast sling bullets]
+[CATEGORY_DESCRIPTION:Make sling bullets by alloying lead/zinc and tin. Requires fuel.]
+[DESCRIPTION:Make 20 lead bullet casting kits from 1 tin bar and 4 lead bars.]
+
+===========================================================
+
+[REACTION:MAKE_ZINC_BULLET_CASTING_SVER]
+[NAME:make zinc bullet casting kits]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:TIN]
+[REAGENT:B:600:BAR:NO_SUBTYPE:METAL:ZINC]
+[PRODUCT:100:20:AMMO:ITEM_TOOL_BULLET_CAST_SVER:METAL:CAST_ZINC_SVER]
+[FUEL]
+[SKILL:SMELT]
+[CATEGORY:ALLOY_AMMO_SVER]
+[DESCRIPTION:Make 20 zinc bullet casting kits from 1 tin bar and 4 zinc bars.]
+
+===========================================================
+
+[REACTION:CAST_SLING_BULLETS_SVER]
+[NAME:cast sling bullets (needs kit)]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:kit:1:TOOL:ITEM_TOOL_BULLET_CAST_SVER:NONE:NONE]
+[PRODUCT:100:25:AMMO:ITEM_AMMO_SLING_BULLETS_SVER:GET_MATERIAL_FROM_REAGENT:kit:NONE]
+[FUEL]
+[SKILL:SMELT]
+[CATEGORY:ALLOY_AMMO_SVER]
+[DESCRIPTION:Make a stack of 25 heavy sling bullets from 1 lead or zinc bullet casting kit.]
+
+===========================================================

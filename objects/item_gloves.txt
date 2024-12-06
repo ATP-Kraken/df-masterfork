@@ -2,39 +2,150 @@ item_gloves
 
 [OBJECT:ITEM]
 
-[ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS]
+
+	equivalents of the vanilla gloves (which are using their tags; e.g. not my new stuff) are highlighted by =VANILLA=
+		for those players/modders who don't want to use the new items
+
+
+==========================================================
+plate
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS]  =VANILLA=
 [NAME:gauntlet:gauntlets]
-[ARMORLEVEL:2]
+[ARMORLEVEL:3]
+[SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:100]
+[LAYER_SIZE:12]
+[LAYER_PERMIT:12]
+[MATERIAL_SIZE:6] 2 bars
+[METAL]
+[HARD]
+
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_VAMBRACES_SVER]
+[NAME:vambrace:vambraces]
+[ARMORLEVEL:3]
 [UPSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:100]
-[LAYER_SIZE:20]
-[LAYER_PERMIT:15]
-[MATERIAL_SIZE:2]
-[SCALED]
-[BARRED]
+[LAYER_SIZE:12]
+[LAYER_PERMIT:12]
+[MATERIAL_SIZE:12] 4 bars
 [METAL]
 [HARD]
 
-[ITEM_GLOVES:ITEM_GLOVES_GLOVES]
-[NAME:glove:gloves]
-[MATERIAL_SIZE:1]
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_ARM_DEFENSES_FULL_SVER]
+[NAME:full arm defense:full arm defenses]
+[ARMORLEVEL:3]
+[UPSTEP:MAX]
+[SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:100]
+[LAYER_SIZE:12]
+[LAYER_PERMIT:10]
+[MATERIAL_SIZE:24] 8 bars
+[METAL]
+[HARD]
+
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_ARM_PLATES_SVER]
+[NAME:arm plate:arm plates]
+[ARMORLEVEL:2]
+[UPSTEP:MAX]
+[LAYER:COVER]
+[COVERAGE:35] +5 partial outer
+[LAYER_SIZE:12]
+[LAYER_PERMIT:12]
+[MATERIAL_SIZE:3] 1 bar
+[METAL]
+[HARD]
+[SCALED]
+[BARRED]
+
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_ARM_DEFENSES_SVER]
+[NAME:arm defense:arm defenses]
+[ARMORLEVEL:2]
+[UPSTEP:MAX]
+[LAYER:OVER]
+[COVERAGE:80] +10 outer
+[LAYER_SIZE:12]
+[LAYER_PERMIT:10]
+[MATERIAL_SIZE:12] 4 bars
+[METAL]
+[HARD]
+[SCALED]
+[BARRED]
+
+==========================================================
+mail
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_SLEEVE_MAIL_SVER]
+[NAME:mail sleeve:mail sleeves]
+[LAYER:OVER]
+[ARMORLEVEL:2]
+[UPSTEP:MAX]
+[COVERAGE:95]
+[LAYER_SIZE:6]
+[LAYER_PERMIT:10]
+[MATERIAL_SIZE:9] 3 bars
+[METAL]
+[HARD]
+[STRUCTURAL_ELASTICITY_CHAIN_ALL]
+
+==========================================================
+leather/shell/bone
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_GLOVES_ARMING_SVER]
+[NAME:arming glove:arming gloves]
+[ARMORLEVEL:2]  so that not all invaders wear mail/plate
+[UPSTEP:1]
 [LAYER:UNDER]
 [COVERAGE:100]
-[LAYER_SIZE:10]
+[LAYER_SIZE:15]
+[LAYER_PERMIT:10]
+[MATERIAL_SIZE:12]
+[LEATHER]
+[SCALED]
+[BARRED]
+
+==========================================================
+clothing
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_GLOVES]  =VANILLA=
+[NAME:glove:gloves]
+[MATERIAL_SIZE:2]
+[LAYER:UNDER]
+[COVERAGE:100]
+[LAYER_SIZE:15]
 [LAYER_PERMIT:10]
 [SOFT]
 [LEATHER]
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
 
-[ITEM_GLOVES:ITEM_GLOVES_MITTENS]
+==========================================================
+
+[ITEM_GLOVES:ITEM_GLOVES_MITTENS]  =VANILLA=
 [NAME:mitten:mittens]
-[LAYER:COVER]
-[COVERAGE:150]
+[LAYER:UNDER]
+[UPSTEP:1]
+[COVERAGE:200]
 [LAYER_SIZE:15]
-[LAYER_PERMIT:20]
-[MATERIAL_SIZE:1]
+[LAYER_PERMIT:10]
+[MATERIAL_SIZE:8]
 [SOFT]
 [LEATHER]
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
+
+==========================================================

@@ -1,0 +1,184 @@
+reaction_metalrework_weapon_sver
+
+[OBJECT:REACTION]
+
+
+	!! This file is part of the OPTIONAL metal rework - default metal rework files are located in the mod's main folder.
+		Wrought iron, hardened bronze and tempered steel have been renamed for cleaner interface.
+
+
+	The reactions to make certain weapons more expensive for the player or to work around certain other issues.
+	Strongly recommended for better game balance.
+
+	These reactions are only needed if you use my new reworked metals.
+
+
+===========================================================
+hand ballista
+===========================================================
+
+[REACTION:WROUGHT_IRON_HAND_BALLISTA_SVER]
+[NAME:assemble wrought iron hand ballista]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:1800:BAR:NO_SUBTYPE:METAL:IRON_WROUGHT_SVER]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:part:3:BALLISTAPARTS:NONE:NONE:NONE][PRESERVE_REAGENT]
+[REAGENT:mechanism:1:TRAPPARTS:NONE:NONE:NONE][PRESERVE_REAGENT]
+[REAGENT:thread:90000:THREAD:NONE:NONE:NONE][NOT_WEB]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_HAND_BALLISTA_SVER:METAL:IRON_WROUGHT_SVER]
+[FUEL]
+[SKILL:SIEGECRAFT]
+[CATEGORY:HAND_BALLISTA_METALREWORK_WELD_SVER]
+[CATEGORY_NAME:Assemble a hand ballista from welded parts]
+[DESCRIPTION:Requires 12 iron bars, 1 sack of coal, 3 ballista parts, 1 mechanism and 6 units of thread.]
+[DESCRIPTION:Ballista parts and the mechanism will remain preserved.]
+
+===========================================================
+
+[REACTION:TEMPERED_STEEL_HAND_BALLISTA_SVER]
+[NAME:assemble tempered steel hand ballista]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:1800:BAR:NO_SUBTYPE:METAL:STEEL_TEMPERED_SVER]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:part:3:BALLISTAPARTS:NONE:NONE:NONE][PRESERVE_REAGENT]
+[REAGENT:mechanism:1:TRAPPARTS:NONE:NONE:NONE][PRESERVE_REAGENT]
+[REAGENT:thread:90000:THREAD:NONE:NONE:NONE][NOT_WEB]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_HAND_BALLISTA_SVER:METAL:STEEL_TEMPERED_SVER]
+[FUEL]
+[SKILL:SIEGECRAFT]
+[CATEGORY:HAND_BALLISTA_METALREWORK_WELD_SVER]
+[DESCRIPTION:Requires 12 steel bars, 1 sack of coal, 3 ballista parts, 1 mechanism and 6 units of thread.]
+[DESCRIPTION:Ballista parts and the mechanism will remain preserved.]
+
+===========================================================
+
+[REACTION:HARDENED_BRONZE_HAND_BALLISTA_SVER]
+[NAME:assemble hardened bronze hand ballista]
+[BUILDING:SMELTER:NONE]
+[REAGENT:metal:1500:BAR:NO_SUBTYPE:METAL:BRONZE_HARDENED_SVER]
+[REAGENT:grease:4:TOOL:ITEM_TOOL_GREASE_BUCKET_SVER:NONE:NONE]
+[REAGENT:part:3:BALLISTAPARTS:NONE:NONE:NONE][PRESERVE_REAGENT]
+[REAGENT:mechanism:1:TRAPPARTS:NONE:NONE:NONE][PRESERVE_REAGENT]
+[REAGENT:thread:90000:THREAD:NONE:NONE:NONE][NOT_WEB]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_HAND_BALLISTA_SVER:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:SIEGECRAFT]
+[CATEGORY:HAND_BALLISTA_METALREWORK_CAST_SVER]
+[CATEGORY_NAME:Assemble a hand ballista from cast parts]
+[DESCRIPTION:Requires 10 bronze bars, 4 buckets of grease, 3 ballista parts, 1 mechanism and 6 units of thread.]
+[DESCRIPTION:Ballista parts and the mechanism will remain preserved.]
+
+===========================================================
+
+[REACTION:CAST_BRASS_HAND_BALLISTA_SVER]
+[NAME:assemble cast brass hand ballista]
+[BUILDING:SMELTER:NONE]
+[REAGENT:metal:1500:BAR:NO_SUBTYPE:METAL:BRASS]
+[REAGENT:grease:4:TOOL:ITEM_TOOL_GREASE_BUCKET_SVER:NONE:NONE]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:mold:30:TOOL:ITEM_TOOL_MOLD_PART_SVER:NONE:NONE]
+[REAGENT:part:3:BALLISTAPARTS:NONE:NONE:NONE][PRESERVE_REAGENT]
+[REAGENT:mechanism:1:TRAPPARTS:NONE:NONE:NONE][PRESERVE_REAGENT]
+[REAGENT:thread:90000:THREAD:NONE:NONE:NONE][NOT_WEB]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_HAND_BALLISTA_SVER:METAL:BRASS_CAST_SVER]
+[FUEL]
+[SKILL:SIEGECRAFT]
+[CATEGORY:HAND_BALLISTA_METALREWORK_CAST_SVER]
+[DESCRIPTION:Requires 10 brass bars, 4 buckets of grease, 1 sack of coal, 30 mold parts, 3 ballista parts, 1 mechanism and 6 units of thread.]
+[DESCRIPTION:Ballista parts and the mechanism will remain preserved.]
+
+===========================================================
+large dagger
+===========================================================
+
+[REACTION:RUSTY_IRON_LARGE_DAGGER_SVER]
+[NAME:forge large rusty iron dagger]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:900:BAR:NO_SUBTYPE:METAL:IRON_RUSTY_SVER] 6 bars
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_DAGGER_LARGE:METAL:IRON_RUSTY_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:DAGGER_SVER]
+[CATEGORY_NAME:Forge a dagger]
+[CATEGORY_DESCRIPTION:Requires fuel and 2 bars of metal.]
+
+===========================================================
+
+[REACTION:WROUGHT_IRON_LARGE_DAGGER_SVER]
+[NAME:forge large iron dagger]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:900:BAR:NO_SUBTYPE:METAL:IRON_WROUGHT_SVER]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_DAGGER_LARGE:METAL:IRON_WROUGHT_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:DAGGER_SVER]
+
+===========================================================
+
+[REACTION:HARDENED_BRONZE_LARGE_DAGGER_SVER]
+[NAME:forge large bronze dagger]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:900:BAR:NO_SUBTYPE:METAL:BRONZE_HARDENED_SVER]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_DAGGER_LARGE:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:DAGGER_SVER]
+
+===========================================================
+
+[REACTION:TEMPERED_STEEL_LARGE_DAGGER_SVER]
+[NAME:forge large steel dagger]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:900:BAR:NO_SUBTYPE:METAL:STEEL_TEMPERED_SVER]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_DAGGER_LARGE:METAL:STEEL_TEMPERED_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:DAGGER_SVER]
+
+===========================================================
+parrying dagger
+===========================================================
+
+[REACTION:RUSTY_IRON_PARRYING_DAGGER_SVER]
+[NAME:forge rusty iron parrying dagger]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:900:BAR:NO_SUBTYPE:METAL:IRON_RUSTY_SVER] 2 bars
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_PARRYING_DAGGER_SVER:METAL:IRON_RUSTY_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:DAGGER_SVER]
+
+===========================================================
+
+[REACTION:WROUGHT_IRON_PARRYING_DAGGER_SVER]
+[NAME:forge iron parrying dagger]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:300:BAR:NO_SUBTYPE:METAL:IRON_WROUGHT_SVER]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_PARRYING_DAGGER_SVER:METAL:IRON_WROUGHT_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:DAGGER_SVER]
+
+===========================================================
+
+[REACTION:HARDENED_BRONZE_PARRYING_DAGGER_SVER]
+[NAME:forge bronze parrying dagger]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:300:BAR:NO_SUBTYPE:METAL:BRONZE_HARDENED_SVER]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_PARRYING_DAGGER_SVER:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:DAGGER_SVER]
+
+===========================================================
+
+[REACTION:TEMPERED_STEEL_PARRYING_DAGGER_SVER]
+[NAME:forge steel parrying dagger]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:metal:300:BAR:NO_SUBTYPE:METAL:STEEL_TEMPERED_SVER]
+[PRODUCT:100:1:WEAPON:ITEM_WEAPON_PARRYING_DAGGER_SVER:METAL:STEEL_TEMPERED_SVER]
+[FUEL]
+[SKILL:FORGE_WEAPON]
+[CATEGORY:DAGGER_SVER]
+
+===========================================================

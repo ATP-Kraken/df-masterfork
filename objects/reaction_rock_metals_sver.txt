@@ -1,0 +1,40 @@
+reaction_rock_metals_sver
+
+[OBJECT:REACTION]
+
+
+	The reactions for new "fake rock" weapon and ammo grade metals, to make subterranean tribes a bit more capable in combat.
+	Optional, but recommended, unless you are using some other mod that already fulfills the same purpose.
+
+	
+===========================================================
+
+[REACTION:FLINT_BARS_MAKING_SVER]
+[NAME:make flint bars]
+[BUILDING:CRAFTSMAN:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:chert:1:BOULDER:NO_SUBTYPE:INORGANIC:CHERT]
+[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:FLINT_WEAPON_SVER][PRODUCT_DIMENSION:150]
+[SKILL:STONECRAFT]
+
+===========================================================
+
+[REACTION:OBSIDIAN_BARS_MAKING_SVER]
+[NAME:make obsidian bars]
+[BUILDING:CRAFTSMAN:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:obsidian:1:BOULDER:NO_SUBTYPE:INORGANIC:OBSIDIAN]
+[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:OBSIDIAN_WEAPON_SVER][PRODUCT_DIMENSION:150]
+[SKILL:STONECRAFT]
+
+===========================================================
+
+[REACTION:MALACHITE_BARS_MAKING_SVER]
+[NAME:make malachite bars]
+[BUILDING:CRAFTSMAN:NONE]
+[REAGENT:log:1:WOOD:NO_SUBTYPE:NONE:NONE]
+[REAGENT:malachite:1:BOULDER:NO_SUBTYPE:INORGANIC:MALACHITE]
+[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:MALACHITE_WEAPON_SVER][PRODUCT_DIMENSION:150]
+[SKILL:STONECRAFT]
+
+===========================================================

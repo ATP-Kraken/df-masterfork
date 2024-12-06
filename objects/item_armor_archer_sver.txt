@@ -1,0 +1,99 @@
+item_armor_archer_sver
+
+[OBJECT:ITEM]
+
+
+
+	Variations of some armors, with ARMORLEVEL:1 assigned, so that ai-designed uniforms for ranged troops would include something better than just padding.
+	Advernture mode ranged guards will also wear these, as a side effect.
+	Optional, but recommended.
+	
+	To avoid redundancy, these are only given to non-playable civs by default.
+	
+
+==========================================================
+armor
+==========================================================
+
+[ITEM_ARMOR:ITEM_ARMOR_PLATE_ARCHER_SVER]
+[NAME:partial plate:partial plate]
+[PREPLURAL:suits of]
+[ARMORLEVEL:1]
+[UBSTEP:3]  arm protection
+[LBSTEP:3]  leg protection
+[SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:90]
+[LAYER_SIZE:12]
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:60] 20 bars
+[HARD]
+[METAL]
+
+==========================================================
+
+[ITEM_ARMOR:ITEM_ARMOR_HALF_ARCHER_SVER]
+[NAME:half-armor:half-armor]
+[PREPLURAL:suits of]
+[ARMORLEVEL:1]
+[UBSTEP:0]
+[LBSTEP:1]
+[SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:100]
+[LAYER_SIZE:9]
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:48] 16 bars
+[HARD]
+[METAL]
+
+==========================================================
+
+[ITEM_ARMOR:ITEM_ARMOR_MAIL_ARCHER_SVER]
+[NAME:mail armor:mail armor]
+[PREPLURAL:suits of]
+[ARMORLEVEL:1]
+[UBSTEP:3]
+[LBSTEP:3]
+[LAYER:OVER]
+[COVERAGE:95]
+[LAYER_SIZE:6]
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:42] 14 bars
+[HARD]
+[METAL]
+[STRUCTURAL_ELASTICITY_CHAIN_ALL]
+
+==========================================================
+
+[ITEM_ARMOR:ITEM_ARMOR_MAIL_VEST_ARCHER_SVER]
+[NAME:mail vest:mail vests]
+[ARMORLEVEL:1]
+[UBSTEP:0]
+[LBSTEP:0]
+[LAYER:OVER]
+[COVERAGE:95]
+[LAYER_SIZE:6]
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:15] 5 bars
+[HARD]
+[METAL]
+[STRUCTURAL_ELASTICITY_CHAIN_ALL]
+
+==========================================================
+helm
+==========================================================
+
+[ITEM_HELM:ITEM_HELM_OPEN_ARCHER_SVER]
+[NAME:open helm:open helms]
+[ARMORLEVEL:1]
+[SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:80]
+[LAYER_SIZE:15] 3 kg
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:18] 6 bars
+[HARD]
+[METAL]
+
+==========================================================

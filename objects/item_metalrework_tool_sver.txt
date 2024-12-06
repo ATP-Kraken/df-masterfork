@@ -1,0 +1,58 @@
+item_metalrework_tool_sver
+
+[OBJECT:ITEM]
+
+
+	here are special "tool" items used in production of new reworked metals
+
+===========================================================
+
+[ITEM_TOOL:ITEM_TOOL_COAL_SACK_SVER]
+[NAME:sack of coal:sacks of coal]
+[VALUE:34]
+[LEATHER_MAT]
+[NO_DEFAULT_JOB]
+[UNIMPROVABLE]
+[TILE:11] bag
+[SIZE:19400]
+[MATERIAL_SIZE:1]
+
+===========================================================
+
+[ITEM_TOOL:ITEM_TOOL_GREASE_BUCKET_SVER]
+[NAME:bucket of grease:buckets of grease]
+[VALUE:17]
+[METAL_MAT]
+[WOOD_MAT]
+[NO_DEFAULT_JOB]
+[UNIMPROVABLE]
+[TILE:150] bucket
+[SIZE:600]
+[MATERIAL_SIZE:1]
+
+===========================================================
+
+[ITEM_TOOL:ITEM_TOOL_VINEGAR_BARREL_SVER]
+[NAME:barrel of vinegar:barrels of vinegar]
+[VALUE:30]
+[HARD_MAT]
+[NO_DEFAULT_JOB]
+[UNIMPROVABLE]
+[TILE:246] barrel
+[SIZE:5750]
+[MATERIAL_SIZE:1]
+
+===========================================================
+
+[ITEM_TOOL:ITEM_TOOL_MOLD_PART_SVER]
+[NAME:mold part:mold parts]
+[VALUE:5]
+[STONE_MAT]
+[CERAMIC_MAT]
+[NO_DEFAULT_JOB]
+[UNIMPROVABLE]
+[TILE:240] bar
+[SIZE:600]
+[MATERIAL_SIZE:1]
+
+===========================================================

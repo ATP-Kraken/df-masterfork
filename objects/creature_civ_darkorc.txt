@@ -17,8 +17,8 @@ creature_civ_darkorc
 	 - A.) The creature have a biological propensity for the natural bonus such as; Goblins & Kobolds are naturally slippery, justifying the Dodging NSkill.
 	 - B.) The creatures' civilization have a long cultural and/or historic significance such as; all Dwarves have a basic familiarity of brewing, smithing, mining and stoneworking.
 
- [SELECT_CASTE:ALL]
-    [SKILL_LEARN_RATES:50:0:0:0] global -50% skill learn rate // [SKILL_RUST_RATES:100:8:16:16] default
+[SKILL_LEARN_RATES:50:0:0:0] global -50% skill learn rate // 
+[SKILL_RUST_RATES:100:8:16:16] default
 
  MINING
  WOODCUTTING

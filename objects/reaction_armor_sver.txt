@@ -1,0 +1,111 @@
+reaction_armor_sver
+
+[OBJECT:REACTION]
+
+
+	!! This file is part of the OPTIONAL metal rework - default metal rework files are located in the mod's main folder.
+		Wrought iron, hardened bronze and tempered steel have been renamed for cleaner interface.
+		Vanilla iron, steel and bronze have been renamed for distinction from modded metals.
+		Base reactions now use unworked (vanilla) metals, in the same proportions as making modded metal bars does.
+		This, however, allows to save up a bit of fuel (and sand, in case of iron and steel).
+
+
+	The reactions to make certain armors less demanding of metal by engaging more industries.
+	Recommended for better game balance.
+
+
+===========================================================
+belts (3 per 1 bar)
+===========================================================
+
+[REACTION:COPPER_BELTS_THREE_IN_ONE_SVER]
+[NAME:make bronze-reinforced leather belts (use copper and tin)]
+[BUILDING:SMELTER:NONE]
+[REAGENT:tin:150:BAR:NO_SUBTYPE:METAL:TIN]
+[REAGENT:copper:600:BAR:NO_SUBTYPE:METAL:COPPER]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:mold:15:TOOL:ITEM_TOOL_MOLD_PART_SVER:NONE:NONE]
+[REAGENT:leather:5:SKIN_TANNED:NONE:NONE:NONE][ANY_LEATHER_MATERIAL] 1 leather
+[PRODUCT:100:15:PANTS:ITEM_PANTS_BELT_SVER:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:METALCRAFT]
+[CATEGORY:BELTS_METALREWORK_CAST_SVER]
+[CATEGORY_NAME:Cast cheap belts from unworked metal]
+[DESCRIPTION:Make 15 bronze belts from 5 units of leather, 1 tin bar, 4 copper bars, 15 mold parts and 1 sack of coal.]
+
+===========================================================
+
+[REACTION:BRONZE_BELTS_THREE_IN_ONE_SVER]
+[NAME:make bronze-reinforced leather belts (use soft bronze)]
+[BUILDING:SMELTER:NONE]
+[REAGENT:bronze:750:BAR:NO_SUBTYPE:METAL:BRONZE]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:mold:15:TOOL:ITEM_TOOL_MOLD_PART_SVER:NONE:NONE]
+[REAGENT:leather:5:SKIN_TANNED:NONE:NONE:NONE][ANY_LEATHER_MATERIAL]
+[PRODUCT:100:15:PANTS:ITEM_PANTS_BELT_SVER:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:METALCRAFT]
+[CATEGORY:BELTS_METALREWORK_CAST_SVER]
+[DESCRIPTION:Make 15 bronze belts from 5 units of leather, 5 bronze bars, 15 mold parts and 1 sack of coal.]
+
+===========================================================
+
+[REACTION:BISMUTH_BRONZE_BELTS_THREE_IN_ONE_SVER]
+[NAME:make bronze-reinforced leather belts (use bismuth bronze)]
+[BUILDING:SMELTER:NONE]
+[REAGENT:bismuth bronze:750:BAR:NO_SUBTYPE:METAL:BISMUTH_BRONZE]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:mold:15:TOOL:ITEM_TOOL_MOLD_PART_SVER:NONE:NONE]
+[REAGENT:leather:5:SKIN_TANNED:NONE:NONE:NONE][ANY_LEATHER_MATERIAL]
+[PRODUCT:100:15:PANTS:ITEM_PANTS_BELT_SVER:METAL:BRONZE_HARDENED_SVER]
+[FUEL]
+[SKILL:METALCRAFT]
+[CATEGORY:BELTS_METALREWORK_CAST_SVER]
+[DESCRIPTION:Make 15 bronze belts from 5 units of leather, 5 bismuth bronze bars, 15 mold parts and 1 sack of coal.]
+
+===========================================================
+
+[REACTION:IRON_BELTS_THREE_IN_ONE_SVER]
+[NAME:make iron-reinforced leather belts (use bloomery iron)]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:iron:300:BAR:NO_SUBTYPE:METAL:IRON]
+[REAGENT:coal:1:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:grease:4:TOOL:ITEM_TOOL_GREASE_BUCKET_SVER:NONE:NONE]
+[REAGENT:vinegar:4:TOOL:ITEM_TOOL_VINEGAR_BARREL_SVER:NONE:NONE]
+[REAGENT:sand:150:POWDER_MISC:NONE:NONE:NONE][IS_SAND_MATERIAL]
+[REAGENT:sand container:1:NONE:NONE:NONE:NONE]
+	[CONTAINS:sand]
+	[PRESERVE_REAGENT]
+	[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+[REAGENT:leather:2:SKIN_TANNED:NONE:NONE:NONE][ANY_LEATHER_MATERIAL]
+[PRODUCT:100:6:PANTS:ITEM_PANTS_BELT_SVER:METAL:IRON_WROUGHT_SVER]
+[FUEL]
+[SKILL:METALCRAFT]
+[CATEGORY:BELTS_METALREWORK_WELD_SVER]
+[CATEGORY_NAME:Weld cheap belts from unworked metal]
+[DESCRIPTION:Make 6 iron belts from 2 units of leather, 2 bloomery iron bars and 1 sack of coal.]
+[DESCRIPTION:Also requires 4 buckets of grease, 4 barrels of vinegar and 1 bag of sand, for future care.]
+
+===========================================================
+
+[REACTION:STEEL_BELTS_THREE_IN_ONE_SVER]
+[NAME:make steel-reinforced leather belts (use bloomery iron)]
+[BUILDING:METALSMITH:NONE]
+[REAGENT:iron:150:BAR:NO_SUBTYPE:METAL:IRON]
+[REAGENT:coal:2:TOOL:ITEM_TOOL_COAL_SACK_SVER:NONE:NONE]
+[REAGENT:grease:1:TOOL:ITEM_TOOL_GREASE_BUCKET_SVER:NONE:NONE]
+[REAGENT:wax:150:GLOB:NONE:NONE:NONE][REACTION_CLASS:WAX]
+[REAGENT:sand:150:POWDER_MISC:NONE:NONE:NONE][IS_SAND_MATERIAL]
+[REAGENT:sand container:1:NONE:NONE:NONE:NONE]
+	[CONTAINS:sand]
+	[PRESERVE_REAGENT]
+	[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+[REAGENT:leather:1:SKIN_TANNED:NONE:NONE:NONE][ANY_LEATHER_MATERIAL]
+[PRODUCT:100:3:PANTS:ITEM_PANTS_BELT_SVER:METAL:STEEL_TEMPERED_SVER]
+[FUEL]
+[SKILL:METALCRAFT]
+[CATEGORY:BELTS_METALREWORK_WELD_SVER]
+[DESCRIPTION:Make 3 steel belts from 1 unit of leather, 1 bloomery iron bar and 2 sacks of coal.]
+[DESCRIPTION:Also requires 1 bucket of grease, 1 glob of wax and 1 bag of sand, for future care.]
+
+===========================================================

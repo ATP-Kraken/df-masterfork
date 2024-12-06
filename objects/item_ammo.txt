@@ -2,23 +2,179 @@ item_ammo
 
 [OBJECT:ITEM]
 
-[ITEM_AMMO:ITEM_AMMO_BOLTS]
-[NAME:bolt:bolts]
+
+	equivalents of the vanilla ammo (which are using their tags; e.g. not my new stuff) are highlighted by =VANILLA=
+		for those players/modders who don't want to use the new items
+
+	Test observation: ammo attack velocity appears to be irrelevant in ranged combat. Only area and penetration matter.
+
+
+==========================================================
+crossbow, arbalest
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_BOLTS]  =VANILLA=
+[NAME:piercing bolt:piercing bolts]
 [CLASS:BOLT]
-[SIZE:150]
-[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-
-[ITEM_AMMO:ITEM_AMMO_ARROWS]
-[NAME:arrow:arrows]
+[SIZE:6]
+[ATTACK:EDGE:6:740:stab:stabs:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:10:5]
+	
+==========================================================	
+	
+[ITEM_AMMO:ITEM_AMMO_BOLTS_BROAD_SVER]
+[NAME:broadhead bolt:broadhead bolts]
+[CLASS:BOLT]
+[SIZE:6]
+[ATTACK:EDGE:75:740:stab:stabs:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:10:5]
+	
+==========================================================	
+	
+[ITEM_AMMO:ITEM_AMMO_BOLTS_BLUNT_SVER]
+[NAME:hammerhead bolt:hammerhead bolts]
+[CLASS:BOLT]
+[SIZE:16]
+[ATTACK:BLUNT:4:1:hit:hits:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:11:5]
+	
+==========================================================
+bow, longbow
+==========================================================
+	
+[ITEM_AMMO:ITEM_AMMO_ARROWS]  =VANILLA=
+[NAME:bodkin arrow:bodkin arrows]
 [CLASS:ARROW]
-[SIZE:150]
-[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[SIZE:12]
+[ATTACK:EDGE:12:900:stab:stabs:NO_SUB:170]  shaft can bend on hit
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+[ATTACK:EDGE:6:2400:thrust:thrusts:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:10:6]
+	
+==========================================================
+	
+[ITEM_AMMO:ITEM_AMMO_ARROWS_BROAD_SVER]
+[NAME:barbed arrow:barbed arrows]
+[CLASS:ARROW]
+[SIZE:12]
+[ATTACK:EDGE:75:450:stab:stabs:NO_SUB:170]  shaft can bend on hit
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+[ATTACK:EDGE:75:1200:thrust:thrusts:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:10:6]
+	
+==========================================================
+	
+[ITEM_AMMO:ITEM_AMMO_ARROWS_CRESCENT_SVER]  wide, shallow cuts
+[NAME:crescent arrow:crescent arrows]
+[CLASS:ARROW]
+[SIZE:12]
+[ATTACK:EDGE:220:80:stab:stabs:NO_SUB:80]  shaft can bend on hit
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+[ATTACK:EDGE:220:150:thrust:thrusts:NO_SUB:170]
+	[ATTACK_PREPARE_AND_RECOVER:10:6]
+[ATTACK:EDGE:1500:40:slice:slices:NO_SUB:170]
+	[ATTACK_PREPARE_AND_RECOVER:6:4]
+[ATTACK:EDGE:3000:40:cut:cuts:NO_SUB:80]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]
 
-[ITEM_AMMO:ITEM_AMMO_BLOWDARTS]
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_ELVEN_SVER]
+	magical elven crap with no drawbacks
+	strongly unrecommended for metal-forging races
+[NAME:singing arrow:singing arrows]
+[CLASS:ARROW]
+[SIZE:91]
+[ATTACK:EDGE:3:1000:stab:stabs:NO_SUB:170]
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+[ATTACK:EDGE:3:2000:thrust:thrusts:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:10:6]
+
+==========================================================
+blowgun
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_BLOWDARTS]  =VANILLA=
 [NAME:blowdart:blowdarts]
 [CLASS:BLOWDART]
-[SIZE:20]
-[ATTACK:EDGE:1:50:stick:sticks:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[SIZE:20]  unmodified for now
+[ATTACK:EDGE:10:100:stick:sticks:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:9:4]
+[ATTACK:EDGE:10:50:prick:pricks:NO_SUB:170]
+	[ATTACK_PREPARE_AND_RECOVER:5:4]
+	
+==========================================================
+hand ballista
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_HB_BOLTS_SVER]
+[NAME:ballista bolt:ballista bolts]
+[CLASS:HB_AMMO_SVER]
+[SIZE:70]
+[ATTACK:EDGE:8:1350:stab:stabs:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+[ATTACK:EDGE:40:1350:thrust:thrusts:NO_SUB:1270] x3.85
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+	
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_HB_BALLS_SVER]
+[NAME:ballista ball:ballista balls]
+[CLASS:HB_AMMO_SVER]
+[SIZE:56]
+[ATTACK:BLUNT:125:1:hit:hits:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:10:5]
+[ATTACK:BLUNT:250:1:loosely hit:loosely hits:NO_SUB:250]
+	[ATTACK_PREPARE_AND_RECOVER:5:4]
+	
+==========================================================
+sling
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_SLING_BULLETS_SVER]
+[NAME:sling bullet:sling bullets]
+[CLASS:SLING_BULLET_SVER]
+[SIZE:8]
+[ATTACK:EDGE:4:600:pierce:pierces:sharp protrusion:330]
+	[ATTACK_PREPARE_AND_RECOVER:10:5]
+[ATTACK:EDGE:20:400:hit:hits:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:10:5]
+[ATTACK:BLUNT:200:1:loosely hit:loosely hits:NO_SUB:250]
+	[ATTACK_PREPARE_AND_RECOVER:5:4]
+	
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_SLING_BOULDERS_SVER]
+[NAME:sling boulder:sling boulders]
+[CLASS:SLING_BULLET_SVER]
+[SIZE:53]
+[ATTACK:EDGE:260:5:strike:strikes:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:10:5]
+[ATTACK:BLUNT:75:1:hit:hits:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:10:5]
+	
+==========================================================
+spear-thrower
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_SVER]
+[NAME:javelin:javelins]
+[CLASS:THROWING_DART_SVER]
+[SIZE:300]
+[ATTACK:EDGE:16:700:stab:stabs:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:1:10] shield-piercing
+[ATTACK:EDGE:16:2100:thrust:thrusts:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:7:8]
+
+==========================================================
+
+[ITEM_AMMO:ITEM_AMMO_WAR_DARTS_SVER]
+[NAME:war dart:war darts]
+[CLASS:THROWING_DART_SVER]
+[SIZE:55]
+[ATTACK:EDGE:125:1750:stab:stabs:NO_SUB:170]  shaft can bend on hit
+	[ATTACK_PREPARE_AND_RECOVER:8:3]
+[ATTACK:EDGE:75:3500:thrust:thrusts:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:7:8]
+
+==========================================================

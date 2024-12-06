@@ -2,120 +2,101 @@ item_pants
 
 [OBJECT:ITEM]
 
-[ITEM_PANTS:ITEM_PANTS_PANTS]
-[PREPLURAL:pairs of]
-[NAME:trousers:trousers]
-[LBSTEP:MAX]
-[LAYER:OVER]
-[COVERAGE:100]
-[LAYER_SIZE:15]
-[LAYER_PERMIT:30]
-[MATERIAL_SIZE:4]
+
+	equivalents of the vanilla pants (which are using their tags; e.g. not my new stuff) are highlighted by =VANILLA=
+		for those players/modders who don't want to use the new items
+
+	numbers near the LAYER_SIZE (where provided) are the weights for this armor made of iron/steel, for humans
+
+	Notice: non-metal legwear (except for belts and skirts) is no longer used in my civ presets and is not recommended for use in my mod whatsoever.
+		Pants are technically included in certain types of bodywear, while the dwarven need for pants can be fulfilled solely by a belt.
+		This is a workaround for Bug 10784: http://www.bay12games.com/dwarves/mantisbt/view.php?id=10784
+
+
+===========================================================
+cloth / leather / metal
+===========================================================
+
+[ITEM_PANTS:ITEM_PANTS_BELT_SVER]
+[NAME:belt:belts]
+[ARMORLEVEL:0]  can be worn by civilians
+[METAL_ARMOR_LEVELS]
+[LAYER:UNDER]
+[COVERAGE:10]
+[LAYER_SIZE:10] <1 kg
+[LAYER_PERMIT:40]
+[MATERIAL_SIZE:1] 0.3 bar smelting return, with reactions giving 3 belts for 1 bar
 [SOFT]
 [LEATHER]
-[STRUCTURAL_ELASTICITY_WOVEN_THREAD]
-
-[ITEM_PANTS:ITEM_PANTS_GREAVES]
-	this item doesn't make much sense right now, but there aren't any item types you can tie on to your legs yet
-[NAME:greaves:greaves]
-[ARMORLEVEL:3]
-[LBSTEP:MAX]
-[SHAPED]
-[LAYER:ARMOR]
-[COVERAGE:100]
-[LAYER_SIZE:15]
-[LAYER_PERMIT:30]
-[MATERIAL_SIZE:6]
 [METAL]
-[BARRED]
-[HARD]
-
-[ITEM_PANTS:ITEM_PANTS_LEGGINGS]
-[NAME:leggings:leggings]
-[CHAIN_METAL_TEXT]
-[ARMORLEVEL:1]
-[METAL_ARMOR_LEVELS]
-[LBSTEP:MAX]
-[SHAPED]
-[LAYER:ARMOR]
-[COVERAGE:100]
-[LAYER_SIZE:15]
-[LAYER_PERMIT:30]
-[MATERIAL_SIZE:5]
 [SCALED]
-[METAL]
-[LEATHER]
 [BARRED]
 [STRUCTURAL_ELASTICITY_CHAIN_METAL]
-
-[ITEM_PANTS:ITEM_PANTS_LOINCLOTH]
-[NAME:loincloth:loincloths]
-[LAYER:UNDER]
-[COVERAGE:50]
-[LAYER_SIZE:10]
-[LAYER_PERMIT:30]
-[MATERIAL_SIZE:1]
-[SOFT]
-[LEATHER]
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
 
-[ITEM_PANTS:ITEM_PANTS_THONG]
-[NAME:thong:thongs]
-[LAYER:UNDER]
-[COVERAGE:25]
-[LAYER_SIZE:10]
-[LAYER_PERMIT:30]
-[MATERIAL_SIZE:1]
-[SOFT]
-[LEATHER]
-[STRUCTURAL_ELASTICITY_WOVEN_THREAD]
+===========================================================
+plate
+===========================================================
 
-[ITEM_PANTS:ITEM_PANTS_SKIRT]
-[NAME:skirt:skirts]
-[LBSTEP:1]
+[ITEM_PANTS:ITEM_PANTS_GREAVES]  =VANILLA=
+[NAME:tassets:tassets]  'greaves' are now footwear
+[ARMORLEVEL:3]
+[LBSTEP:2]
+[LAYER:COVER]
+[COVERAGE:70] +10 front, +10 down
+[LAYER_SIZE:7] 7 kg
+[LAYER_PERMIT:25]
+[MATERIAL_SIZE:9] 3 bars  5
+[HARD]
+[METAL]
+[BARRED]
+[SCALED]
+
+===========================================================
+
+[ITEM_PANTS:ITEM_PANTS_LOWER_PLATE_SVER]
+[NAME:lower plate:lower plates]
+[ARMORLEVEL:3]
+[SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:100] +10 down
+[LAYER_SIZE:7] 7 kg
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:12] 4 bars  7
+[METAL]
+[HARD]
+
+===========================================================
+mail
+===========================================================
+
+[ITEM_PANTS:ITEM_PANTS_SKIRT_MAIL_SVER]
+[NAME:mail skirt:mail skirts]
+[ARMORLEVEL:2]
+[LBSTEP:2]
 [LAYER:OVER]
-[COVERAGE:100]
-[LAYER_SIZE:10]
-[LAYER_PERMIT:100]
-[MATERIAL_SIZE:2]
-[SOFT]
-[LEATHER]
-[STRUCTURAL_ELASTICITY_WOVEN_THREAD]
+[COVERAGE:95] +10 down
+[LAYER_SIZE:6] 8 kg
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:6] 2 bars  4
+[METAL]
+[HARD]
+[STRUCTURAL_ELASTICITY_CHAIN_ALL]
 
-[ITEM_PANTS:ITEM_PANTS_SKIRT_SHORT]
+===========================================================
+clothing
+===========================================================
+
+[ITEM_PANTS:ITEM_PANTS_SKIRT]  =VANILLA=
 [NAME:skirt:skirts]
-[ADJECTIVE:short]
-[LAYER:OVER]
-[COVERAGE:100]
-[LAYER_SIZE:10]
-[LAYER_PERMIT:100]
-[MATERIAL_SIZE:2]
-[SOFT]
-[LEATHER]
-[STRUCTURAL_ELASTICITY_WOVEN_THREAD]
-
-[ITEM_PANTS:ITEM_PANTS_SKIRT_LONG]
-[NAME:skirt:skirts]
-[ADJECTIVE:long]
-[LBSTEP:MAX]
-[LAYER:OVER]
-[COVERAGE:100]
-[LAYER_SIZE:10]
-[LAYER_PERMIT:100]
-[MATERIAL_SIZE:2]
-[SOFT]
-[LEATHER]
-[STRUCTURAL_ELASTICITY_WOVEN_THREAD]
-
-[ITEM_PANTS:ITEM_PANTS_BRAIES]
-[PREPLURAL:pairs of]
-[NAME:braies:braies]
-[LBSTEP:1]
+[LBSTEP:2]
 [LAYER:UNDER]
 [COVERAGE:100]
 [LAYER_SIZE:10]
 [LAYER_PERMIT:30]
-[MATERIAL_SIZE:3]
+[MATERIAL_SIZE:6]
 [SOFT]
 [LEATHER]
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
+
+===========================================================

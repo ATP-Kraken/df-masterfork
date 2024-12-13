@@ -1,0 +1,1219 @@
+item_weapon_melee
+
+[OBJECT:ITEM]
+
+weapons from Sver's Combat Reworked, renamed and reflavored
+
+	material sizes are imprecise in the game for now, so all (except daggers) are set to take/return an integer number of bars
+
+
+	attack speed info:
+		default speed in the mod is 7:4
+		1:1 is the fastest speed possible and is assumed as 0:0 for all calculations
+
+	attack speed modifiers:
+		+80% = -1 -1 to all && -1 -1 to stab && -0 -1 to jab && -1 -0 to hook
+		+70% = -0 -1 to all && -1 -0 to stab && -1 -0 to jab && -1 -0 to hook
+		+60% = -0 -1 to all && -1 -0 to hook && -1 -0 to jab
+		+40% = -0 -1 to stab && -1 -0 to jab
+		heavy (hammers, maces) = +1 +1
+		aimed (stab, strike etc.) = +1 +0
+		wild (cleave, club etc.) = -1 +2
+		heavy hit (innate vel > 3k) = -2 +1
+		shove = jab
+		two-handed = -0 -1 to hook
+		committed (area < pen, swing; or whip skill) = +0 +1
+		predictable (swing-oriented weapon, swing) = +1 +0
+		unpredictable (swing-oriented weapon, not swing or jab) = -1 +0
+
+	multiattack modifiers:
+		independent = defender or their weapon got forcibly moved away, can't counterattack (hook / bat / warding)
+		normal = both attacker and defender are open or neither is, counterattack can be deflected (standard / close)
+		bad = nothing stands between attacker and defender's weapon, open for counterattack (feint / overswing)
+
+
+	base swing vel formula:
+
+		general
+			vel = 1000 + I% * 10 * (II% / 100) - (100 - I%) * 10 + I% * 10 * ((I% - 50) / 100)
+
+		swords (including huge ones)
+			vel = I% * 10 + I% * 10 * (II% / 100)
+
+		haft weapons with I% below 75% included
+			vel = 1000 + I% * 10 * (II% / 100)
+
+
+	attack vel modifiers:
+		one-handed weapon = divide by 1.5
+		blunt attack (except flat and hook) = multiply by 3.5
+		not "sharp point" or "sturdy" (stabbing attacks) = divide by 2
+
+===========================================================
+axe - (swing +1:+0, hook -0:-1)
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_AXE_BATTLE]  =VANILLA=
+[NAME:battle axe:battle axes] swapped stats with sver's hawk axe (khopesh uses sver's battle axe stats)
+DESCRIPTION:A thin axe that can pierce through brittle armor and easily chop off limbs.
+[SIZE:130] 80% +20%  w7
+[SKILL:AXE]
+[TWO_HANDED:18000] 1H
+[MINIMUM_SIZE:1100] 1700
+[MATERIAL_SIZE:12]
+
+The format is ATTACK:EDGE/BLUNT:contact area:penetration size:verb2nd:verb3rd:noun:velocity multiplier
+Penetration size currently only matters for edged attacks.
+
+[ATTACK:EDGE:230:350:hack:hacks:NO_SUB:800]
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+[ATTACK:EDGE:230:175:closely hack:closely hacks:NO_SUB:530]
+	[ATTACK_PREPARE_AND_RECOVER:6:3] quick
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] edged hook
+[ATTACK:EDGE:350:840:cleave:cleaves:NO_SUB:800]
+	[ATTACK_PREPARE_AND_RECOVER:7:7]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:5:175:strike:strikes:spike:800]
+	[ATTACK_PREPARE_AND_RECOVER:9:5] aimed
+[ATTACK:BLUNT:1770:1000:shove:shoves:NO_SUB:1190]
+	[ATTACK_PREPARE_AND_RECOVER:1:9]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_HATCHET]
+	+1:-1 to all main
+	handedness special
+[NAME:hatchet:hatchets]
+[SIZE:85] 70% +22%  w5
+[SKILL:AXE]
+[TWO_HANDED:68000]         8700
+[MINIMUM_SIZE:6500] 11000  500/700
+[CAN_STONE]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:600:250:hack:hacks:NO_SUB:770]
+	[ATTACK_PREPARE_AND_RECOVER:9:3]
+[ATTACK:EDGE:600:125:closely hack:closely hacks:NO_SUB:470]
+	[ATTACK_PREPARE_AND_RECOVER:7:2] quick
+[ATTACK:EDGE:600:610:cleave:cleaves:NO_SUB:770]
+	[ATTACK_PREPARE_AND_RECOVER:8:6]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:500:200:hook:hooks:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:6:2]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:1250:400:bash:bashes:reverse:2700]
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+[ATTACK:BLUNT:1250:400:shove:shoves:NO_SUB:1190]
+	[ATTACK_PREPARE_AND_RECOVER:1:9]
+
+===========================================================
+	
+[ITEM_WEAPON:IC_WEAPON_KHOPESH]
+[NAME:khopesh:khopeshes] uses sver's battle axe stats
+[SIZE:100] 75% +30%  w5
+[SKILL:AXE]
+[TWO_HANDED:32000] 1H
+[MINIMUM_SIZE:1600] 2500
+[MATERIAL_SIZE:9]
+[ATTACK:EDGE:300:450:hack:hacks:NO_SUB:820]
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+	 standard
+[ATTACK:EDGE:300:225:closely hack:closely hacks:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:6:3] quick
+	 close
+[ATTACK:EDGE:600:1170:cleave:cleaves:NO_SUB:820]
+	[ATTACK_PREPARE_AND_RECOVER:7:7]
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+[ATTACK:BLUNT:450:200:hook:hooks:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:6:2]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] hook
+[ATTACK:BLUNT:1250:400:bash:bashes:pommel:2870]
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+	 standard
+[ATTACK:BLUNT:1250:400:shove:shoves:NO_SUB:1190] 340 x3.5
+	[ATTACK_PREPARE_AND_RECOVER:1:9] 7:4 heavy
+	 feint, warding
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_AXE_HEAD]
+	+1:-1 to all main
+[NAME:head axe:head axes]  hooked axe, horseman's axe, igorot axe etc.
+[SIZE:175] 85% +30%  w9
+[SKILL:AXE]
+[TWO_HANDED:93000] 2H
+[MINIMUM_SIZE:7700] 12000
+[MATERIAL_SIZE:15]
+[ATTACK:EDGE:45:225:chop:chops:NO_SUB:1400]
+	[ATTACK_PREPARE_AND_RECOVER:10:4] aimed
+[ATTACK:EDGE:450:450:hack:hacks:NO_SUB:1400]
+	[ATTACK_PREPARE_AND_RECOVER:9:4]
+[ATTACK:EDGE:900:450:snatch:snatches at:NO_SUB:1110] 850 + 260
+	[ATTACK_PREPARE_AND_RECOVER:6:1] edged hook
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:8:225:strike:strikes:spike:1400] 
+	[ATTACK_PREPARE_AND_RECOVER:10:4] aimed
+[ATTACK:BLUNT:1920:400:shove:shoves:NO_SUB:1750] 500 x3.5
+	[ATTACK_PREPARE_AND_RECOVER:1:9]
+	
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_AXE_GREAT]  =VANILLA=
+[NAME:great axe:great axes] uses stats from bearded axe
+[SIZE:260]  80% +48%  w8
+[SKILL:AXE]
+[TWO_HANDED:404000] 2H
+[MINIMUM_SIZE:34000] 52000
+[MATERIAL_SIZE:15]
+[ATTACK:EDGE:320:800:hack:hacks:NO_SUB:1420] 
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+[ATTACK:EDGE:320:400:closely hack:closely hacks:NO_SUB:1180] 800x1.48
+	[ATTACK_PREPARE_AND_RECOVER:6:3] quick
+[ATTACK:EDGE:650:2435:cleave:cleaves:NO_SUB:1420]
+	[ATTACK_PREPARE_AND_RECOVER:7:7]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:800:200:hook:hooks:NO_SUB:920] 500 + 420
+	[ATTACK_PREPARE_AND_RECOVER:6:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:1900:400:bash:bashes:reverse:4970] 1420 innate
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+[ATTACK:BLUNT:1250:1000:shove:shoves:NO_SUB:1750]
+	[ATTACK_PREPARE_AND_RECOVER:1:8]
+	
+===========================================================
+dagger (very short - +1:+0) (only thieves/snatchers seem to use these)
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_DAGGER_LARGE]  =VANILLA=
+	stabbing coef. = 1
+	sharp point
+[NAME:dagger:daggers]
+[ADJECTIVE:large]
+[SIZE:75]
+[SKILL:DAGGER]
+[TWO_HANDED:50000] 1H
+[MINIMUM_SIZE:2700] 4000
+[MATERIAL_SIZE:16] real 18
+[ATTACK:EDGE:5:100:jab:jabs:NO_SUB:330] 1000/2/1.5
+	[ATTACK_PREPARE_AND_RECOVER:5:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:25:1000:violently jab:violently jabs:NO_SUB:2560] x3.85 special
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+[ATTACK:EDGE:25:1000:thrust:thrusts at:NO_SUB:3850] x3.85 x1.5
+	[ATTACK_PREPARE_AND_RECOVER:13:7] x1.5 special
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_DAGGER_PARRY]
+	stabbing coef. = 1
+	sharp point
+	Multi-attacker's best friend
+[NAME:parrying dagger:parrying daggers]  swordbreaker, smallsword etc.
+[SIZE:75]
+[SKILL:DAGGER]
+[TWO_HANDED:13000] 1H
+[MINIMUM_SIZE:2700] 4000
+[MATERIAL_SIZE:3] real 6
+[ATTACK:EDGE:5:120:jab:jabs:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:5:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:1200:50:cut:cuts:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:6:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:5:600:stab:stabs:NO_SUB:670] pen/2
+	[ATTACK_PREPARE_AND_RECOVER:10:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:5:1200:thrust:thrusts at:NO_SUB:670]
+	[ATTACK_PREPARE_AND_RECOVER:12:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+	
+===========================================================
+hammer (all main vels x1.75; swing +2:+1, thrust/pommel -1:-0; hook -0:-1)
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_HAMMER_WAR]  =VANILLA=
+	stabbing coef. = 1
+[NAME:war hammer:war hammers]
+[SIZE:180] 60% +35%  w7
+[SKILL:HAMMER]
+[TWO_HANDED:57000] 1H
+[MINIMUM_SIZE:4400] 6900
+[MATERIAL_SIZE:12]
+[ATTACK:EDGE:40:1:bash:bashes:NO_SUB:5470] 810 x 1.75 x3.85
+	[ATTACK_PREPARE_AND_RECOVER:10:5] aimed
+	 overswing, warding
+[ATTACK:EDGE:8:100:strike:strikes:fluke:1420] 
+	[ATTACK_PREPARE_AND_RECOVER:10:6] aimed
+	 overswing, warding
+[ATTACK:EDGE:8:375:thrust:thrusts at:spike:670] sturdy
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	 close
+[ATTACK:BLUNT:400:200:hook:hooks:NO_SUB:500] 
+	[ATTACK_PREPARE_AND_RECOVER:6:2]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_MAUL]  =VANILLA=
+	blunt-only vel x3.5
+	+0:+1 to all
+	unwieldy for multi-attacks
+[NAME:maul:mauls]
+[SIZE:815] 83% +36%  w4
+[SKILL:HAMMER]
+[TWO_HANDED:724000] 2H, blunt
+[MINIMUM_SIZE:40000] 63000
+[CAN_STONE]
+[MATERIAL_SIZE:18]
+[ATTACK:BLUNT:230:1:bash:bashes:NO_SUB:12990] 2470-3710 innate; 1410 standard
+	[ATTACK_PREPARE_AND_RECOVER:7:10] heavy hit, wild, aimed
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+
+===========================================================
+mace (all main vels x1.5; swing +2:+1; special -1:-0)
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_MACE]  =VANILLA=
+	blunt-only vel x3.5
+[NAME:mace:maces]
+[SIZE:120] 50% +32%  w2
+[SKILL:MACE]
+[TWO_HANDED:16000] 1H, blunt
+[MINIMUM_SIZE:500] 800
+[CAN_STONE]
+[MATERIAL_SIZE:12]
+[ATTACK:BLUNT:50:1:bash:bashes:NO_SUB:4060] 1160 standard/innate
+	[ATTACK_PREPARE_AND_RECOVER:8:4] quick
+	 standard
+[ATTACK:BLUNT:100:1:club:clubs:NO_SUB:6090] 1740 innate
+	[ATTACK_PREPARE_AND_RECOVER:7:6] quick, wild
+	 overswing, bat
+	
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_MORNINGSTAR]  =VANILLA=
+	stabbing coef. = 1
+[NAME:morningstar:morningstars]
+[SIZE:230] 61% +38%  w6
+[SKILL:MACE]
+[TWO_HANDED:86000] 2H
+[MINIMUM_SIZE:5900] 9200
+[CAN_STONE]
+[MATERIAL_SIZE:9]
+[ATTACK:EDGE:10:15:bash:bashes:NO_SUB:1860] 1240 standard
+	[ATTACK_PREPARE_AND_RECOVER:10:6] aimed
+[ATTACK:EDGE:60:1:club:clubs:NO_SUB:2790]
+	[ATTACK_PREPARE_AND_RECOVER:8:7] wild
+[ATTACK:EDGE:8:300:thrust:thrusts at:spike:1000] sturdy
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	 close
+[ATTACK:BLUNT:1250:1000:strike:strikes:handle:3500] 1000 innate
+	[ATTACK_PREPARE_AND_RECOVER:6:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+
+===========================================================
+mining (swing +2:+1)
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_PICK]  =VANILLA=
+	+0:+1 to all
+	1/3 unlucky
+	unwieldy for multi-attacks
+[NAME:pick:picks]
+[SIZE:230] 67% +30%  w10
+[SKILL:MINING]
+[TWO_HANDED:68000] 1H
+[MINIMUM_SIZE:6500] 11000
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:12:500:strike:strikes:NO_SUB:800]
+	[ATTACK_PREPARE_AND_RECOVER:10:7] aimed
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:500:1:scrape:scrapes:NO_SUB:400] halved vel
+	[ATTACK_PREPARE_AND_RECOVER:8:6]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:120:1:bash:bashes:reverse:800]
+	[ATTACK_PREPARE_AND_RECOVER:10:7] aimed
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:500:200:hook:hooks:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:6:3]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:2250:500:shove:shoves:NO_SUB:1190]
+	[ATTACK_PREPARE_AND_RECOVER:1:10]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+
+===========================================================
+pike
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_PIKE]  =VANILLA=
+	stabbing coef. = 1
+	sharp point
+[NAME:pike:pikes]
+[SIZE:400]
+[SKILL:PIKE]
+[TWO_HANDED:895000] 2H
+[MINIMUM_SIZE:22000] 34000
+[CAN_STONE]
+[MATERIAL_SIZE:15]
+[ATTACK:EDGE:16:2625:stab:stabs:NO_SUB:1000] pen/2
+	[ATTACK_PREPARE_AND_RECOVER:1:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:16:5250:thrust:thrusts at:NO_SUB:1500]
+	[ATTACK_PREPARE_AND_RECOVER:3:8] heavy
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+[ATTACK:BLUNT:16000:6000:slap:slaps:shaft:12600] pike whipping, special
+	[ATTACK_PREPARE_AND_RECOVER:6:14]
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+[ATTACK:BLUNT:16000:6000:bash:bashes:shaft:3500] 1000 innate
+	[ATTACK_PREPARE_AND_RECOVER:6:9]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_HALBERD]  =VANILLA=
+	stabbing coef. = 1
+	sharp point
+[NAME:halberd:halberds]  english bill etc.
+[SIZE:530] 70% +81%  w4
+[SKILL:PIKE]
+[TWO_HANDED:2245000] 2H, as axe
+[MINIMUM_SIZE:32000] 50000
+[MATERIAL_SIZE:12]
+[ATTACK:EDGE:350:125:slash:slashes:NO_SUB:1080] 1.7 x 1270/2
+	[ATTACK_PREPARE_AND_RECOVER:3:2] 4:4 jab-like
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] hook
+[ATTACK:EDGE:700:250:hack:hacks:NO_SUB:1270] 700 + 570
+	[ATTACK_PREPARE_AND_RECOVER:5:2] 6:3 quick
+[ATTACK:EDGE:16:500:feint and jab:feints and jabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:4]
+	[ATTACK_FLAG_BAD_MULTIATTACK] feint
+[ATTACK:EDGE:16:1000:stab:stabs:NO_SUB:1000] pen/1
+	[ATTACK_PREPARE_AND_RECOVER:5:1] 7:4 jab-like
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:5:1:strike:strikes:spike:2750] x1.75  1570 standard
+	[ATTACK_PREPARE_AND_RECOVER:9:6] heavy, aimed, committed, no length bonus
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+[ATTACK:BLUNT:8000:6000:bash:bashes:shaft:3500]
+	[ATTACK_PREPARE_AND_RECOVER:6:7]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_SWORD_2H]  =VANILLA=
+	stabbing coef. = 1
+	+10% swinging vel for leverage
+[NAME:zweihander:zweihanders]  zweihander, espadon etc.
+[SIZE:470] 70% +58% (48)
+[SKILL:PIKE]
+[TWO_HANDED:2373000] 2H
+[MINIMUM_SIZE:18000] 28000
+[MATERIAL_SIZE:15]
+[ATTACK:EDGE:4800:4800:slash:slashes:NO_SUB:1110]
+	[ATTACK_PREPARE_AND_RECOVER:6:2] zweihander windmill
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] bat
+[ATTACK:EDGE:480:480:cleanly slash:cleanly slashes:NO_SUB:880]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:EDGE:480:170:cut:cuts:NO_SUB:350]
+	[ATTACK_PREPARE_AND_RECOVER:3:4]
+	feint, hook
+[ATTACK:EDGE:17:480:jab:jabs:NO_SUB:250]
+	[ATTACK_PREPARE_AND_RECOVER:3:3] -0:-1 extended reach
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:17:4800:thrust:thrusts at:NO_SUB:750] 1000/2 x1.5
+	[ATTACK_PREPARE_AND_RECOVER:8:9] heavy
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+[ATTACK:BLUNT:4800:8000:slap:slaps:flat:1110]
+	[ATTACK_PREPARE_AND_RECOVER:6:2] zweihander windmill
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] bat
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:4200]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+	
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_BARDICHE]
+	stabbing coef. = 17/60 = 0.283
+[NAME:bardiche:bardiches]  horned axe, dane axe, voulge,  etc.
+[SIZE:375] 70% +67%  w6
+[SKILL:PIKE]
+[TWO_HANDED:614000] 2H
+[MINIMUM_SIZE:43000] 66000
+[MATERIAL_SIZE:12]
+[ATTACK:EDGE:900:600:hack:hacks:NO_SUB:1470]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:1800:2125:cleave:cleaves:NO_SUB:1470]
+	[ATTACK_PREPARE_AND_RECOVER:6:6]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:450:300:slash:slashes:NO_SUB:1010]
+	[ATTACK_PREPARE_AND_RECOVER:4:5]
+[ATTACK:EDGE:17:85:thrust:thrusts at:NO_SUB:1000] sturdy
+	[ATTACK_PREPARE_AND_RECOVER:8:3]
+[ATTACK:BLUNT:600:200:hook:hooks:NO_SUB:970] 500 + 470
+	[ATTACK_PREPARE_AND_RECOVER:5:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:2500:400:bash:bashes:reverse:5150] 
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_WARBRAND]
+	no stabbing coef.
+	+10% swinging vel for leverage
+[NAME:warbrand:warbrands]  greatsword of Grutte Pier's fame
+[SIZE:990] 70% +73% (63)
+[SKILL:PIKE]
+[TWO_HANDED:11850000] 2H
+[MINIMUM_SIZE:66000] 103000
+[MATERIAL_SIZE:21]
+[ATTACK:EDGE:6300:6300:slash:slashes:NO_SUB:1220]
+	[ATTACK_PREPARE_AND_RECOVER:5:1] zweihander windmill
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:535:535:cleanly slash:cleanly slashes:NO_SUB:1040]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:EDGE:535:200:cut:cuts:NO_SUB:350]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:EDGE:20:5355:thrust:thrusts at:NO_SUB:750] 1000/2 x1.5
+	[ATTACK_PREPARE_AND_RECOVER:8:9] heavy
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:6300:8000:slap:slaps:flat:1220]
+	[ATTACK_PREPARE_AND_RECOVER:5:1] zweihander windmill
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:4420]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_POLEAXE]
+	stabbing coef. = 1
+	sharp point
+	+1:-2 to swinging
+	+10% swinging vel for leverage
+[NAME:poleaxe:poleaxes]
+[SIZE:360] 67% +71% (61)  w8
+[SKILL:PIKE]
+[TWO_HANDED:945000] 2H
+[MINIMUM_SIZE:55000] 86000
+[MATERIAL_SIZE:21]
+[ATTACK:EDGE:750:375:hack:hacks:NO_SUB:2590] 1480 x1.75 strong blade
+	[ATTACK_PREPARE_AND_RECOVER:10:3] hammer-like
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:5:1:strike:strikes:side spike:2590] x1.75
+	[ATTACK_PREPARE_AND_RECOVER:10:4]
+[ATTACK:EDGE:200:1:bash:bashes:hammer:9970] x3.85
+	[ATTACK_PREPARE_AND_RECOVER:10:3]
+	 overswing, warding
+[ATTACK:EDGE:16:600:feint and jab:feints and jabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:7] no length bonus
+	 feint, warding
+[ATTACK:BLUNT:25:200:hook:hooks:NO_SUB:980] area special
+	[ATTACK_PREPARE_AND_RECOVER:5:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_POLEHAMMER]
+	stabbing coef. = 1
+	sharp point
+	+1:-2 to swinging
+	+10% swinging vel for leverage
+[NAME:polehammer:polehammers]  lucerne hammer, bec de corbin etc.
+[SIZE:245] 52% +65% (55)  w8
+[SKILL:PIKE]
+[TWO_HANDED:269000] 2H
+[MINIMUM_SIZE:17000] 27000
+[MATERIAL_SIZE:18]
+[ATTACK:EDGE:40:1:bash:bashes:NO_SUB:9050] 1340 x3.85
+	[ATTACK_PREPARE_AND_RECOVER:10:3]
+	 overswing, warding
+[ATTACK:EDGE:5:1:strike:strikes:side spike:2350] x1.75
+	[ATTACK_PREPARE_AND_RECOVER:10:4] heavy, aimed, committed, no length bonus, balance-special
+[ATTACK:EDGE:8:315:strike:strikes:fluke:2350] x1.75
+	[ATTACK_PREPARE_AND_RECOVER:10:4]
+	 overswing, warding
+[ATTACK:EDGE:8:600:feint and jab:feints and jabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:7] no length bonus
+[ATTACK:BLUNT:315:200:hook:hooks:NO_SUB:840] 
+	[ATTACK_PREPARE_AND_RECOVER:6:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_GLAIVE]
+	stabbing coef. = 1
+	zero recover on all main
+[NAME:glaive:glaives]
+[SIZE:300] 40% +100%  w3
+[SKILL:PIKE]
+[TWO_HANDED:140000] 2H
+[MINIMUM_SIZE:4800] 7500
+[MATERIAL_SIZE:15]
+[ATTACK:EDGE:500:500:slice:slices:NO_SUB:600] 1.5 x 800/2
+	[ATTACK_PREPARE_AND_RECOVER:3:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:1500:1500:slash:slashes:NO_SUB:800] 400 + 400
+	[ATTACK_PREPARE_AND_RECOVER:8:1] special
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:375:190:cut:cuts:NO_SUB:300] 1.5 x 400/2
+	[ATTACK_PREPARE_AND_RECOVER:1:1] feint
+	 warding, feint
+[ATTACK:EDGE:17:1500:stab:stabs:NO_SUB:500] 1000/2
+	[ATTACK_PREPARE_AND_RECOVER:2:1] jab-like
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:10000:4500:bash:bashes:shaft:3500]
+	[ATTACK_PREPARE_AND_RECOVER:6:7]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_SCYTHE]
+[NAME:war scythe:war scythes]  rhomphaia, falx etc.
+[SIZE:210] 75% +48%
+[SKILL:PIKE]
+[TWO_HANDED:755000] 2H
+[MINIMUM_SIZE:15000] 23000
+[MATERIAL_SIZE:15]
+[ATTACK:EDGE:50:75:chop:chops:NO_SUB:1360]
+	[ATTACK_PREPARE_AND_RECOVER:1:6] feint
+	 feint, warding
+[ATTACK:EDGE:500:150:snatch:snatches at:NO_SUB:1110] 750 + 360
+	[ATTACK_PREPARE_AND_RECOVER:6:1] edged hook
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:3600:3600:slash:slashes:NO_SUB:1050] 750 + 300
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+	 standard
+[ATTACK:EDGE:3600:4645:cleave:cleaves:NO_SUB:1300]
+	[ATTACK_PREPARE_AND_RECOVER:7:7]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:4800:4800:slap:slaps:flat:1050] area special
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+[ATTACK:BLUNT:1250:1000:strike:strikes:handle:3500]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_DAGGERAXE]
+	stabbing coef. = 15/60 = 0.25
+	sharp point
+[NAME:dagger-axe:dagger-axes]  ge, welsh hook etc.
+[SIZE:295] 45% +65%  w14
+[SKILL:PIKE]
+[TWO_HANDED:170000] 2H
+[MINIMUM_SIZE:8600] 14000
+[CAN_STONE]
+[MATERIAL_SIZE:12]
+[ATTACK:EDGE:60:300:chop:chops:NO_SUB:1300]
+	[ATTACK_PREPARE_AND_RECOVER:8:4] aimed
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:300:1200:hack:hacks:NO_SUB:1300]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:600:600:snatch:snatches at:NO_SUB:750] 450 + 300
+	[ATTACK_PREPARE_AND_RECOVER:5:1] edged hook
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:15:150:feint and jab:feints and jabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:5]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:6500:5000:bash:bashes:shaft:3500]
+	[ATTACK_PREPARE_AND_RECOVER:5:5]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_STAFF_SPIKED]
+	stabbing coef. = 1
+[NAME:staff:staves]  goedendag, plancon etc.
+[ADJECTIVE:spiked]
+[SIZE:320] 83% +78%  w3
+[SKILL:PIKE]
+[TWO_HANDED:2633000] 2H
+[MINIMUM_SIZE:27000] 42000
+[MATERIAL_SIZE:6]
+[ATTACK:EDGE:200:1:hit:hits:NO_SUB:1760]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:200:1:bash:bashes:NO_SUB:2640] 1760 standard
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+[ATTACK:EDGE:400:1:club:clubs:NO_SUB:3960]
+	[ATTACK_PREPARE_AND_RECOVER:5:7] heavy hit, wild
+[ATTACK:EDGE:16:500:jab:jabs:spike:500] sturdy
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:2500:6000:strike:strikes:handle:3500] as pommel
+	[ATTACK_PREPARE_AND_RECOVER:6:3]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+spear
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_SPEAR_SHORT]
+	stabbing coef. = 1
+	sharp point
+[NAME:short spear:short spears]
+--ADJECTIVE:short--
+[SIZE:150]
+[SKILL:SPEAR]
+[TWO_HANDED:18000] 1H
+[MINIMUM_SIZE:1800] 2700
+[CAN_STONE]
+[MATERIAL_SIZE:6]
+[ATTACK:EDGE:16:2150:stab:stabs:NO_SUB:670]
+	[ATTACK_PREPARE_AND_RECOVER:6:3] jab-like
+[ATTACK:BLUNT:6400:5000:bash:bashes:shaft:3080]
+	[ATTACK_PREPARE_AND_RECOVER:6:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:1250:5000:strike:strikes:shaft:2340] as pommel
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_SPEAR]  =VANILLA=
+	stabbing coef. = 1
+	sharp point
+[NAME:spear:spears]
+[SIZE:225]
+[SKILL:SPEAR]
+[TWO_HANDED:51000] 1H
+[MINIMUM_SIZE:5000] 7800
+[CAN_STONE]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:12:1300:stab:stabs:NO_SUB:670] pen/1
+	[ATTACK_PREPARE_AND_RECOVER:5:1] jab-like
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:12:520:feint and jab:feints and jabs:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:1:4]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:20:200:hook:hooks:lug:500]
+	[ATTACK_PREPARE_AND_RECOVER:4:2]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:8000:6000:bash:bashes:shaft:2340]
+	[ATTACK_PREPARE_AND_RECOVER:6:5]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_TRIDENT]
+	no stabbing coef.
+	sharp point
+[NAME:trident:tridents]  bladed spear, spetum, partisan etc.
+[SIZE:380] 60% +80%  w6
+[SKILL:SPEAR]
+[TWO_HANDED:99000] 2H
+[MINIMUM_SIZE:6200] 9700
+[MATERIAL_SIZE:9]
+[ATTACK:EDGE:20:1200:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:5:1]
+[ATTACK:EDGE:20:420:feint and jab:feints and jabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:4]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:1400:200:cut:cuts:NO_SUB:480] 1.6 x 600/2
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:250:250:slice:slices:prongs:870] 1.6 x 1080/2
+	[ATTACK_PREPARE_AND_RECOVER:5:3] special
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+[ATTACK:EDGE:50:500:gore:gores:prongs:870]
+	[ATTACK_PREPARE_AND_RECOVER:1:8] aimed
+	[ATTACK_FLAG_BAD_MULTIATTACK] feint
+[ATTACK:BLUNT:200:200:hook:hooks:prongs:1080] 600 + 480
+	[ATTACK_PREPARE_AND_RECOVER:4:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:8000:4500:bash:bashes:shaft:3500]
+	[ATTACK_PREPARE_AND_RECOVER:6:5]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_LANCE] no blunt
+	stabbing coef. = 1
+	sharp point
+[NAME:lance:lances]  sarissa, ahlspiess etc.
+[SIZE:800]
+[SKILL:SPEAR] invaders bring shields!
+[TWO_HANDED:1443000] 2H
+[MINIMUM_SIZE:34000] 53000
+[MATERIAL_SIZE:15]
+[ATTACK:EDGE:8:2025:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:1:1]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] warding
+
+===========================================================
+sword (swing special speeds)
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_SWORD_SHORT]  =VANILLA=
+	stabbing coef. = 1
+[NAME:short sword:short swords]  arming sword etc.
+[SIZE:150] 75% +27%
+[SKILL:SWORD]
+[TWO_HANDED:38000] 1H
+[MINIMUM_SIZE:29000] 45000
+[CAN_STONE]  macuahuitl etc.
+[MATERIAL_SIZE:9]
+[ATTACK:EDGE:2700:2700:slash:slashes:NO_SUB:640]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+	 standard
+[ATTACK:EDGE:270:270:cleanly slash:cleanly slashes:NO_SUB:410]
+	[ATTACK_PREPARE_AND_RECOVER:7:2]
+	 standard
+[ATTACK:EDGE:540:150:cut:cuts:NO_SUB:250]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]
+	[ATTACK_FLAG_BAD_MULTIATTACK] feint
+[ATTACK:EDGE:17:900:stab:stabs:NO_SUB:330] pen/3
+	[ATTACK_PREPARE_AND_RECOVER:7:4] too short for jab
+[ATTACK:EDGE:17:2700:thrust:thrusts at:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:8:8]
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+[ATTACK:BLUNT:2700:4000:slap:slaps:flat:640]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+	 standard
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:2340]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_SWORD_LONG]  =VANILLA=
+	stabbing coef. = 1
+	sharp point
+[NAME:longsword:longswords]
+[SIZE:250] 65% +40%
+[SKILL:SWORD]
+[TWO_HANDED:478000] 2H
+[MINIMUM_SIZE:32000] 49000
+[MATERIAL_SIZE:18]
+[ATTACK:EDGE:4000:4000:slash:slashes:NO_SUB:910]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:EDGE:400:400:cleanly slash:cleanly slashes:NO_SUB:640]
+	[ATTACK_PREPARE_AND_RECOVER:7:2]
+[ATTACK:EDGE:400:150:cut:cuts:NO_SUB:330]
+	[ATTACK_PREPARE_AND_RECOVER:3:4]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:15:400:feint and jab:feints and jabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:7] no length bonus
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:15:1340:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:6:3] jab-like
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:75:4000:thrust:thrusts at:NO_SUB:3850] dagger-like special
+	[ATTACK_PREPARE_AND_RECOVER:9:9]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:4000:6000:slap:slaps:flat:910]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:BLUNT:20:1000:bash:bashes:guard:5990] 1140 x1.5 x3.5
+	[ATTACK_PREPARE_AND_RECOVER:9:5] heavy, aimed
+	 overswing, warding
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_ESTOC]
+	stabbing coef. = 1
+	sharp point
+[NAME:estoc:estocs] tuck etc.
+[SIZE:150] 70% +42%
+[SKILL:SWORD]
+[TWO_HANDED:144000] 2H
+[MINIMUM_SIZE:14000] 22000
+[MATERIAL_SIZE:21]
+[ATTACK:EDGE:5:420:feint and jab:feints and jabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:7] no length bonus
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:5:2100:stab:stabs:NO_SUB:1000] pen/3
+	[ATTACK_PREPARE_AND_RECOVER:6:3] jab-like
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:EDGE:25:4200:thrust:thrusts at:NO_SUB:3850] dagger-like special
+	[ATTACK_PREPARE_AND_RECOVER:9:9]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:20:1000:bash:bashes:guard:5950] 1130 x1.5 x3.5
+	[ATTACK_PREPARE_AND_RECOVER:9:5]
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_SCIMITAR]  =VANILLA=
+	no stabbing coef.
+	sharp point
+[NAME:scimitar:scimitars]  talwar etc.
+[SIZE:120] 75% +33%
+[SKILL:SWORD]
+[TWO_HANDED:86000] 2H
+[MINIMUM_SIZE:55000] 86000
+[MATERIAL_SIZE:12]
+[ATTACK:EDGE:1100:440:slash:slashes:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:7:2]
+[ATTACK:EDGE:160:160:slice:slices:NO_SUB:1250]
+	[ATTACK_PREPARE_AND_RECOVER:9:2]
+[ATTACK:EDGE:330:330:cleanly slash:cleanly slashes:NO_SUB:1000] very curved
+	[ATTACK_PREPARE_AND_RECOVER:5:2]
+[ATTACK:EDGE:330:160:cut:cuts:NO_SUB:370]
+	[ATTACK_PREPARE_AND_RECOVER:4:3]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:16:330:feint and jab:feints and jabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:6] curved
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:160:3300:slap:slaps:flat:1000] area special
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:3500]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_SABRE]
+	stabbing coef. = 17/22 = 0.772
+	sharp point
+[NAME:sabre:sabres]  war knife, messer, falchion etc.
+[SIZE:215] 50% +24%
+[SKILL:SWORD]
+[TWO_HANDED:37000] 1H
+[MINIMUM_SIZE:9500] 15000
+[MATERIAL_SIZE:6]
+[ATTACK:EDGE:2400:290:slash:slashes:NO_SUB:420]
+	[ATTACK_PREPARE_AND_RECOVER:7:2]
+[ATTACK:EDGE:310:310:cleanly slash:cleanly slashes:NO_SUB:320] 420x0.75 curved
+	[ATTACK_PREPARE_AND_RECOVER:5:2]
+[ATTACK:EDGE:615:240:cut:cuts:NO_SUB:170]
+	[ATTACK_PREPARE_AND_RECOVER:4:3]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:17:615:thrust:thrusts at:NO_SUB:670]
+	[ATTACK_PREPARE_AND_RECOVER:8:4] aimed
+[ATTACK:BLUNT:2400:4000:slap:slaps:flat:420]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:2340]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_FALCATA]
+[NAME:falcata:falcatas]  war cleaver, godenak, machete, kukri etc.
+[SIZE:240] 60% +31%
+[SKILL:SWORD]
+[TWO_HANDED:48000] 1H
+[MINIMUM_SIZE:26000] 40000
+[MATERIAL_SIZE:15]
+[ATTACK:EDGE:1800:1800:slash:slashes:NO_SUB:530]
+	[ATTACK_PREPARE_AND_RECOVER:8:3]
+[ATTACK:EDGE:1800:2360:cleave:cleaves:NO_SUB:800]
+	[ATTACK_PREPARE_AND_RECOVER:7:6] wild
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:1800:6000:slap:slaps:flat:530]
+	[ATTACK_PREPARE_AND_RECOVER:8:3]
+[ATTACK:BLUNT:100:750:strike:strikes:pommel:2340]
+	[ATTACK_PREPARE_AND_RECOVER:6:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_FAUSSART]
+[NAME:faussart:faussarts]  great cleaver, executioner sword, odachi etc. (this particular weapon name is pretty apocryphal)
+[SIZE:375] 65% +35%
+[SKILL:SWORD]
+[TWO_HANDED:934000] 2H
+[MINIMUM_SIZE:27000] 41000
+[MATERIAL_SIZE:21]
+[ATTACK:EDGE:1460:1460:hack:hacks:NO_SUB:1320]
+	[ATTACK_PREPARE_AND_RECOVER:9:4] heavy
+[ATTACK:EDGE:3500:3500:slash:slashes:NO_SUB:880]
+	[ATTACK_PREPARE_AND_RECOVER:8:3]
+[ATTACK:EDGE:3500:4725:cleave:cleaves:NO_SUB:1320]
+	[ATTACK_PREPARE_AND_RECOVER:7:6] wild
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:BLUNT:3500:6000:slap:slaps:flat:880]
+	[ATTACK_PREPARE_AND_RECOVER:8:3]
+[ATTACK:BLUNT:100:750:strike:strikes:pommel:3500]
+	[ATTACK_PREPARE_AND_RECOVER:6:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+
+===========================================================
+whip (all main velocities x1.5; all main speeds +1:+2; general vel formula)
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_SCOURGE]  =VANILLA=
+	blunt-only vel x3.5
+	1/3 unlucky
+[NAME:scourge:scourges]  two-handed flail type, not the cattle whip
+[SIZE:220] 100% +39%  w39
+[SKILL:WHIP]
+[TWO_HANDED:263000] 2H
+[MINIMUM_SIZE:57000] 90000
+[MATERIAL_SIZE:12]
+[ATTACK:BLUNT:100:50:bash:spins the cords and bashes:NO_SUB:10990] 2090-3140 innate; 1390 standard
+	[ATTACK_PREPARE_AND_RECOVER:7:9] heavy hit, wild, aimed
+	[ATTACK_FLAG_BAD_MULTIATTACK] overswing
+[ATTACK:BLUNT:200:50:flick:flicks:NO_SUB:740] 150x1.39x3.5 (loose)
+	[ATTACK_PREPARE_AND_RECOVER:1:4] special
+	[ATTACK_FLAG_BAD_MULTIATTACK] feint
+[ATTACK:BLUNT:200:50:bludgeon:bludgeons:NO_SUB:4870] 1390x3.5
+	[ATTACK_PREPARE_AND_RECOVER:1:6] special
+	[ATTACK_FLAG_BAD_MULTIATTACK] feint
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_FLAIL]  =VANILLA=  no blunt
+	1/2 unlucky
+	+0:+1 to all
+[NAME:flail:flails] one-handed kind
+[SIZE:110] 100% +39%  w39
+[SKILL:WHIP]
+[TWO_HANDED:34000] 1H
+[MINIMUM_SIZE:5800] 9000
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:5:1:bash:spins the head and bashes:NO_SUB:1630] 930x1.75
+	[ATTACK_PREPARE_AND_RECOVER:5:11]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:39000:1:entangle:entangles:chain:140]
+	[ATTACK_PREPARE_AND_RECOVER:6:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK] hook
+[ATTACK:EDGE:20:1:flick:flicks:NO_SUB:930]
+	[ATTACK_PREPARE_AND_RECOVER:1:5] special
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+[ATTACK:EDGE:20:1:bash:spins the head and bashes:multiple spikes:1630]
+	[ATTACK_PREPARE_AND_RECOVER:5:11]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_WHIP]  =VANILLA=  no blunt
+	a silly weapon to use in battle, but whatever
+	not recommended for general civ use, but can make for a gimmick artifact
+[NAME:whip:whips]
+[SIZE:50] 100% +20%  w20
+[SKILL:WHIP]
+[TWO_HANDED:26000] 1H
+[MINIMUM_SIZE:2800] 4300
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:20000:50:lash:lashes:NO_SUB:1800] 800 standard
+	[ATTACK_PREPARE_AND_RECOVER:4:11] reversed, wild
+	[ATTACK_FLAG_BAD_MULTIATTACK] feint
+	
+===========================================================
+crossbow
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_CROSSBOW] 300 lbs  =VANILLA=
+[NAME:crossbow:crossbows]
+[SIZE:150]
+[SKILL:HAMMER]
+[RANGED:CROSSBOW:BOLT]
+[SHOOT_FORCE:1400] M70  V50  (hardened bronze hammerhead)
+[SHOOT_MAXVEL:500] M24  V50
+[TWO_HANDED:0]
+[MINIMUM_SIZE:20000] average kobold size
+[MATERIAL_SIZE:6]
+[ATTACK:BLUNT:200:4000:hammer:hammer:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+
+===========================================================
+bow
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_BOW] 110 lbs  =VANILLA=
+[NAME:bow:bows]
+[SIZE:140]
+[SKILL:MACE]
+[RANGED:BOW:ARROW]
+[SHOOT_FORCE:980]  M49  V63  (d.6541 arrow)
+[SHOOT_MAXVEL:630] M49  V39
+[TWO_HANDED:0]
+[MINIMUM_SIZE:38000] smallest elf size
+[MATERIAL_SIZE:1]
+[ATTACK:BLUNT:2500:4000:bash:bashes:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:7:5]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_BOW_LONG] 140 lbs
+[NAME:longbow:longbows]
+[SIZE:210]
+[SKILL:MACE]
+[RANGED:BOW:ARROW]
+[SHOOT_FORCE:1500] M75  V80  (iron arrow)
+[SHOOT_MAXVEL:800] M75  V60
+[TWO_HANDED:0]
+[MINIMUM_SIZE:70000] average human size
+[MATERIAL_SIZE:2]
+[ATTACK:BLUNT:3700:4000:bash:bashes:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:7:5]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_BOW_RECURVE]
+[NAME:recurve bow:recurve bows]  composite
+[SIZE:170]
+[SKILL:MACE]
+[RANGED:BOW:ARROW]
+[SHOOT_FORCE:1620] M81  V86  (iron arrow or d.1025 singing arrow)
+[SHOOT_MAXVEL:860] M81  V64
+[TWO_HANDED:0]
+[MINIMUM_SIZE:60000] average elf size
+[MATERIAL_SIZE:18]
+[ATTACK:BLUNT:3100:1:bash:bashes:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:7:5]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_SLING]
+[NAME:sling:slings]
+[SIZE:150]
+[SKILL:WHIP]
+[RANGED:BLOWGUN:SLING_BULLET]
+[SHOOT_FORCE:3100] M155  V82 (heavy rock boulder or d.32380 bullet)
+[SHOOT_MAXVEL:820] M69   V82 (bullet) - M155  V27 (boulder)
+[TWO_HANDED:0]
+[MINIMUM_SIZE:6000] average fire imp size
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:2500:4000:bash:bashes:handle:1000]
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_ATLATL] (all main velocities x1.5)
+[NAME:atlatl:atlatls]
+[SIZE:100] 75% +40%
+[SKILL:SPEAR]
+[RANGED:BOW:SPEAR_THROWING]
+[SHOOT_FORCE:4940] M247  V42 (silver war dart or d.1960 javelin)
+[SHOOT_MAXVEL:420] M247  V42 (war dart) - M247  V8 (javelin)
+[TWO_HANDED:0]
+[MINIMUM_SIZE:45000] smallest human size
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:100:200:bash:bashes:NO_SUB:1300]
+	[ATTACK_PREPARE_AND_RECOVER:8:6]
+[ATTACK:BLUNT:200:200:club:clubs:NO_SUB:1950]
+	[ATTACK_PREPARE_AND_RECOVER:8:8] wild
+[ATTACK:BLUNT:50:200:shove:shoves:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:7]
+	[ATTACK_FLAG_BAD_MULTIATTACK]
+
+===========================================================
+blowgun
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_BLOWGUN]  =VANILLA=
+[NAME:blowgun:blowguns]
+[SIZE:50]
+[SKILL:DAGGER]
+[RANGED:BLOWGUN:BLOWDART]
+[RANGED:BLOWGUN:BLOWGUN_BULLET]
+[SHOOT_FORCE:100]   unmodified for now
+[SHOOT_MAXVEL:1000] unmodified for now
+[TWO_HANDED:0]
+[MINIMUM_SIZE:5000] unmodified
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:2500:4000:bash:bashes:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:8:5]
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_AXE_TRAINING]  =VANILLA=
+[NAME:training axe:training axes]
+[SIZE:765]
+[SKILL:AXE]
+[TWO_HANDED:15000]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:500:1:hack:hacks:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+[ATTACK:BLUNT:5000:1:slap:slaps:flat:1000]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+[ATTACK:BLUNT:300:200:hook:hooks:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:6:2]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[ATTACK:BLUNT:50:1:shove:shoves:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:9]
+[TRAINING]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_HAMMER_TRAINING]
+[NAME:training mallet:training mallets]
+[SIZE:1380]
+[SKILL:HAMMER]
+[TWO_HANDED:15000]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:10:1:bash:bashes:NO_SUB:1500]
+	[ATTACK_PREPARE_AND_RECOVER:9:4]
+[ATTACK:BLUNT:100:1:shove:shoves:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:9]
+[TRAINING]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_MACE_TRAINING]
+[NAME:training club:training clubs]
+[SIZE:920]
+[SKILL:MACE]
+[TWO_HANDED:15000]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:100:1:bash:bashes:NO_SUB:1500]
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+[ATTACK:BLUNT:100:1:club:clubs:NO_SUB:2250]
+	[ATTACK_PREPARE_AND_RECOVER:7:6]
+[ATTACK:BLUNT:100:1:shove:shoves:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:1:9]
+[TRAINING]
+
+===========================================================
+
+[ITEM_WEAPON:IC_WEAPON_PIKE_TRAINING]
+[NAME:training staff:training staves]
+[SIZE:1225]
+[SKILL:PIKE]
+[TWO_HANDED:200000]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:250:1:hit:hits:NO_SUB:1500]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:EDGE:500:1:club:clubs:NO_SUB:2250]
+	[ATTACK_PREPARE_AND_RECOVER:7:6]
+[ATTACK:BLUNT:50:1:shove:shoves:NO_SUB:1500]
+	[ATTACK_PREPARE_AND_RECOVER:1:8]
+[ATTACK:BLUNT:6000:1:bash:bashes:shaft:1500]
+	[ATTACK_PREPARE_AND_RECOVER:6:7]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[TRAINING]
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_SPEAR_TRAINING]  =VANILLA=
+[NAME:training spear:training spears]
+[SIZE:1725]
+[SKILL:SPEAR]
+[TWO_HANDED:15000]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:50:1:shove:shoves:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:6:2]
+[ATTACK:BLUNT:8000:1:bash:bashes:shaft:1000]
+	[ATTACK_PREPARE_AND_RECOVER:6:5]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[TRAINING]
+
+===========================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_SWORD_SHORT_TRAINING]  =VANILLA=
+[NAME:training sword:training swords]
+[SIZE:920]
+[SKILL:SWORD]
+[TWO_HANDED:15000]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:2000:1:slash:slashes:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:BLUNT:30:1:stab:stabs:NO_SUB:500]
+	[ATTACK_PREPARE_AND_RECOVER:8:4]
+[ATTACK:BLUNT:20000:1:slap:slaps:flat:500]
+	[ATTACK_PREPARE_AND_RECOVER:7:3]
+[ATTACK:BLUNT:100:1:strike:strikes:pommel:1000]
+	[ATTACK_PREPARE_AND_RECOVER:7:4]
+	[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+[TRAINING]
+
+===========================================================

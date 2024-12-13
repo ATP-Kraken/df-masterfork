@@ -8,19 +8,23 @@ creature_civ_dwarf
 	[CASTE_NAME:dwarf:dwarves:dwarven]
 	[CREATURE_TILE:1][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:2]
+	[CREATURE_CLASS:MAMMAL]
+	
 
 	Many of the following tags are actually caste-level tags (in this case, male and female), but because there are no differences between the castes for these tags in a dwarf, you can add them earlier.  Any caste-level tag that occurs before castes are explicitly declared is saved up and placed on any caste that is declared later, unless the caste is explicitly derived from another caste.
 
-	[SKILL_LEARN_RATES:50]
-	[NATURAL_SKILL:DISCIPLINE:1] Sver: better morale
-	[STRANGE_MOODS]
 	[INTELLIGENT]
+	[STRANGE_MOODS]
 	[TRANCES]
 	[BENIGN]
 	[CANOPENDOORS]
 	[PREFSTRING:beards]
-	[CREATURE_CLASS:ALL_CREATURES]
-	[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
+
+	[NATURAL_SKILL:DISCIPLINE:1] Sver: better morale
+
+	[TRAPAVOID][NATURAL_SKILL:SWIMMING:1] Sver: makes sense for civilized creatures
+
+[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
 
 	Next we use body detail plans (which have their own raw file) to streamline the addition of some of the common materials, tissues and their relationships with each other.
 
@@ -93,6 +97,17 @@ creature_civ_dwarf
 	[SECRETION:LOCAL_CREATURE_MAT:SWEAT:LIQUID:BY_CATEGORY:ALL:SKIN:EXERTION]
 	[SECRETION:LOCAL_CREATURE_MAT:TEARS:LIQUID:BY_CATEGORY:EYE:ALL:EXTREME_EMOTION]
 
+	[CAN_DO_INTERACTION:PET_ANIMAL]
+		[CDI:ADV_NAME:Pet animal]
+		[CDI:USAGE_HINT:GREETING]
+		[CDI:BP_REQUIRED:BY_TYPE:GRASP]
+		[CDI:VERB:pet:pets:pets]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:TARGET:B:TOUCHABLE]
+		[CDI:TARGET_RANGE:B:1]
+		[CDI:MAX_TARGET_NUMBER:B:1]
+		[CDI:WAIT_PERIOD:20]
+
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
 		[CDI:ADV_NAME:Spit]
 		[CDI:USAGE_HINT:NEGATIVE_SOCIAL_RESPONSE]
@@ -121,7 +136,7 @@ creature_civ_dwarf
 
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
-	[BODY_SIZE:12:0:60500] // raised slightly to allow more use of two-handed weapons
+	[BODY_SIZE:12:0:60000]
 
 	These body modifiers give individual dwarves different characteristics.  In the case of HEIGHT, BROADNESS and LENGTH, the modifier is also a percentage change to the BODY_SIZE of the individual creature.  The seven numbers afterward give a distribution of ranges.  Each interval has an equal chance of occurring.
 
@@ -199,7 +214,7 @@ creature_civ_dwarf
 
 	These are as before.
 
-	[MAXAGE:150:170]
+	[MAXAGE:150:500]
 
 	Attack definitions are formatted as follows:
 
@@ -251,10 +266,14 @@ creature_civ_dwarf
 	[PROFESSION_NAME:AXEMAN:axedwarf:axedwarves]
 	[PROFESSION_NAME:SWORDSMAN:swordsdwarf:swordsdwarves]
 	[PROFESSION_NAME:MACEMAN:macedwarf:macedwarves]
-	[PROFESSION_NAME:PIKEMAN:pikedwarf:pikedwarves]
+	[PROFESSION_NAME:PIKEMAN:stavesdwarf:stavesdwarves]
 	[PROFESSION_NAME:BOWMAN:bowdwarf:bowdwarves]
 	[PROFESSION_NAME:MASTER_CROSSBOWMAN:Elite Marksdwarf:Elite Marksdwarves]
 	[PROFESSION_NAME:MASTER_BOWMAN:Elite Bowdwarf:Elite Bowdwarves]
+	[PROFESSION_NAME:BARD:skald:skalds]
+	[PROFESSION_NAME:MASTER_PIKEMAN:stavemaster:stavemaster]
+	[PROFESSION_NAME:BLOWGUNMAN:slinger:slingers]
+	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Master Slinger:Master Slingers]
 	[HOMEOTHERM:10067]
 	[ALCOHOL_DEPENDENT]
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph

@@ -2,29 +2,25 @@ inorganic_metal
 
 [OBJECT:INORGANIC]
 
-
-	!! Sver: mundane vanilla metals (copper, bronze, bismuth bronze, silver, iron, steel) are no longer usable for weapons/armor/ammo/shields
-			iron, steel and bronze have been renamed for distinction from modded metals (which have been renamed for cleaner interface)
-			iron and steel are less valuable
-			copper, silver, gold, tin, platinum, aluminium and their alloys (except brass) are more valuable
-
-
 Dwarfoloid picked out a lot of the material numbers here to replace my placeholders.
 Colors added by Bohandas.
 
 [INORGANIC:IRON]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:bloomery iron]  Optional rework: renamed for distinction from modded metals
+	[STATE_NAME_ADJ:ALL_SOLID:iron]
 	[STATE_NAME_ADJ:LIQUID:molten iron]
 	[STATE_NAME_ADJ:GAS:boiling iron]
 	[DISPLAY_COLOR:0:7:1]
 	[BUILD_COLOR:0:7:1]
-	[MATERIAL_VALUE:2]  Optional rework: without military use, there is no reason for it to be expensive
+	[MATERIAL_VALUE:10]
 	[SPEC_HEAT:450]
 	[MELTING_POINT:12768]
 	[BOILING_POINT:15150]
-	  Optional rework: only usable for anvils
-	[ITEMS_ANVIL]
+	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_DIGGER][ITEMS_ARMOR][ITEMS_ANVIL]
+	[ITEMS_HARD]
+	[ITEMS_METAL]
+	[ITEMS_BARRED]
+	[ITEMS_SCALED]
 	[SOLID_DENSITY:7850]
 	[LIQUID_DENSITY:6980]
 	[MOLAR_MASS:55845]
@@ -48,6 +44,7 @@ Colors added by Bohandas.
 	[BENDING_STRAIN_AT_YIELD:73]
 	[MAX_EDGE:10000]
 	[STATE_COLOR:ALL_SOLID:GRAY]
+	[REACTION_CLASS:IRON_ANVIL]
 
 [INORGANIC:GOLD]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -58,7 +55,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling gold]
 	[DISPLAY_COLOR:6:6:1]
 	[BUILD_COLOR:6:6:1]
-	[MATERIAL_VALUE:35]
+	[MATERIAL_VALUE:30]
 	[SPEC_HEAT:129]
 	[MELTING_POINT:11915]
 	[BOILING_POINT:15141]
@@ -97,11 +94,11 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:20]  Optional rework: in accord with new copper value
+	[MATERIAL_VALUE:10]
 	[SPEC_HEAT:230]
 	[MELTING_POINT:11731]
 	[BOILING_POINT:13892]
-	  Optional rework: no longer usable for military purposes
+	[ITEMS_WEAPON][ITEMS_AMMO]
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -137,11 +134,11 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling copper]
 	[DISPLAY_COLOR:6:4:0]
 	[BUILD_COLOR:6:4:0]
-	[MATERIAL_VALUE:4]  Optional rework: copper is more valuable than iron
+	[MATERIAL_VALUE:2]
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
-	  Optional rework: no longer usable for military purposes
+	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_DIGGER][ITEMS_ARMOR]
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -169,6 +166,7 @@ Colors added by Bohandas.
 	[BENDING_STRAIN_AT_YIELD:58]
 	[MAX_EDGE:10000]
 	[STATE_COLOR:ALL_SOLID:COPPER]
+	[MATERIAL_REACTION_PRODUCT:MINERAL_DYE:INORGANIC:MALACHITE_DYE_IC]
 
 [INORGANIC:NICKEL]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -250,42 +248,42 @@ Colors added by Bohandas.
 
 [INORGANIC:BRONZE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:soft bronze]  Optional rework: renamed for distinction from modded metals
+	[STATE_NAME_ADJ:ALL_SOLID:bronze]
 	[STATE_NAME_ADJ:LIQUID:molten bronze]
 	[STATE_NAME_ADJ:GAS:boiling bronze]
 	[DISPLAY_COLOR:6:4:0]
 	[BUILD_COLOR:6:4:0]
-	[MATERIAL_VALUE:7]  Optional rework: in accord with new copper/tin value
+	[MATERIAL_VALUE:20]
 	[SPEC_HEAT:435]
 	[MELTING_POINT:11868]
 	[BOILING_POINT:14140]
-	  Optional rework: no longer usable for military purposes
+	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_DIGGER][ITEMS_ARMOR]
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
-	[SOLID_DENSITY:8250]
-	[LIQUID_DENSITY:8020]
+	[SOLID_DENSITY:8810]
+	[LIQUID_DENSITY:6980]
 	[MOLAR_MASS:80000]
-	[IMPACT_YIELD:602000]
-	[IMPACT_FRACTURE:843500]
-	[IMPACT_STRAIN_AT_YIELD:547]
-	[COMPRESSIVE_YIELD:602000]
-	[COMPRESSIVE_FRACTURE:843500]
-	[COMPRESSIVE_STRAIN_AT_YIELD:547] no data, used 110
-	[TENSILE_YIELD:172000]
-	[TENSILE_FRACTURE:241000]
-	[TENSILE_STRAIN_AT_YIELD:156] 110
-	[TORSION_YIELD:172000]
-	[TORSION_FRACTURE:241000]
-	[TORSION_STRAIN_AT_YIELD:156]
-	[SHEAR_YIELD:172000]
-	[SHEAR_FRACTURE:241000]
-	[SHEAR_STRAIN_AT_YIELD:156] no data, used 110
-	[BENDING_YIELD:172000]
-	[BENDING_FRACTURE:241000]
-	[BENDING_STRAIN_AT_YIELD:156]
-	[MAX_EDGE:10000]
+	[IMPACT_YIELD:280000] from C90500 gunmetal, material properties are comparable enough to use
+	[IMPACT_FRACTURE:1155000] no data, used 3.5x tensile
+	[IMPACT_STRAIN_AT_YIELD:243]
+	[COMPRESSIVE_YIELD:280000]
+	[COMPRESSIVE_FRACTURE:1155000]
+	[COMPRESSIVE_STRAIN_AT_YIELD:243] bulk modulus 115 GPa
+	[TENSILE_YIELD:150000]
+	[TENSILE_FRACTURE:330000]
+	[TENSILE_STRAIN_AT_YIELD:136] young's modulus 110 GPa
+	[TORSION_YIELD:455000]
+	[TORSION_FRACTURE:748000]
+	[TORSION_STRAIN_AT_YIELD:1110]
+	[SHEAR_YIELD:455000]
+	[SHEAR_FRACTURE:748000]
+	[SHEAR_STRAIN_AT_YIELD:1110] shear modulus 41 GPa
+	[BENDING_YIELD:150000]
+	[BENDING_FRACTURE:330000]
+	[BENDING_STRAIN_AT_YIELD:366]
+	[MAX_EDGE:9000] poisson ratio 0.34
 	[STATE_COLOR:ALL_SOLID:BRONZE]
 
 [INORGANIC:BRASS]
@@ -327,19 +325,18 @@ Colors added by Bohandas.
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:BRASS]
 
-[INORGANIC:STEEL]
+[INORGANIC:STEEL] Putnam: Steel already had bulk modulus and young's modulus known in the files, so I could easily get the shear modulus. G = (3KE)/(9K-E)
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:mild steel]  Optional rework: renamed for distinction from modded metals
+	[STATE_NAME_ADJ:ALL_SOLID:steel]
 	[STATE_NAME_ADJ:LIQUID:molten steel]
 	[STATE_NAME_ADJ:GAS:boiling steel]
 	[DISPLAY_COLOR:0:7:1]
 	[BUILD_COLOR:0:7:1]
-	[MATERIAL_VALUE:8]  Optional rework: without military use, there is no reason for it to be expensive
+	[MATERIAL_VALUE:30]
 	[SPEC_HEAT:500]
 	[MELTING_POINT:12718]
 	[BOILING_POINT:14968]
-	  Optional rework: no longer usable for military purposes
-	[ITEMS_ANVIL]
+	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_DIGGER][ITEMS_ARMOR][ITEMS_ANVIL]
 	[SOLID_DENSITY:7850]
 	[LIQUID_DENSITY:6980]
 	[MOLAR_MASS:55845]
@@ -357,16 +354,17 @@ Colors added by Bohandas.
 	[TORSION_STRAIN_AT_YIELD:215]
 	[SHEAR_YIELD:430000]
 	[SHEAR_FRACTURE:720000]
-	[SHEAR_STRAIN_AT_YIELD:215] no data, used 200
+    [SHEAR_STRAIN_AT_YIELD:537] 80 GPa
 	[BENDING_YIELD:430000]
 	[BENDING_FRACTURE:720000]
-	[BENDING_STRAIN_AT_YIELD:215]
+    [BENDING_STRAIN_AT_YIELD:537]
 	[MAX_EDGE:10000]
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
-	[STATE_COLOR:ALL_SOLID:GRAY]
+	[STATE_COLOR:ALL_SOLID:BLUE-GRAY]
+	[REACTION_CLASS:IRON_ANVIL]
 
 [INORGANIC:PIG_IRON]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -410,7 +408,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling platinum]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:32]  Optional rework: in accord with new copper value
+	[MATERIAL_VALUE:40]
 	[SPEC_HEAT:130]
 	[MELTING_POINT:13182]
 	[BOILING_POINT:16885]
@@ -449,7 +447,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling electrum]
 	[DISPLAY_COLOR:6:6:1]
 	[BUILD_COLOR:6:6:1]
-	[MATERIAL_VALUE:40]  Optional rework: in accord with new silver/gold value
+	[MATERIAL_VALUE:20]
 	[SPEC_HEAT:180]
 	[MELTING_POINT:11828]
 	[BOILING_POINT:14968]
@@ -491,7 +489,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling tin]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:10]  Optional rework: tin is more valuable than copper
+	[MATERIAL_VALUE:2]
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -530,7 +528,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling fine pewter]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:13]  Optional rework: in accord with new copper/tin value
+	[MATERIAL_VALUE:5]
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -569,7 +567,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling trifle pewter]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:9]  Optional rework: in accord with new copper/tin value
+	[MATERIAL_VALUE:4]
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -608,7 +606,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling lay pewter]
 	[DISPLAY_COLOR:3:7:0]
 	[BUILD_COLOR:3:7:0]
-	[MATERIAL_VALUE:7]  Optional rework: in accord with new copper/tin value
+	[MATERIAL_VALUE:3]
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -686,7 +684,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling aluminum]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:35]  Optional rework: in accord with new copper value
+	[MATERIAL_VALUE:40]
 	[SPEC_HEAT:900]
 	[MELTING_POINT:11188]
 	[BOILING_POINT:14534]
@@ -726,7 +724,7 @@ temperature values unknown, used nickel
 	[STATE_NAME_ADJ:GAS:boiling nickel silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:4]  Optional rework: in accord with new copper value
+	[MATERIAL_VALUE:3]
 	[SPEC_HEAT:444]
 	[MELTING_POINT:11620] german wiki
 	[BOILING_POINT:15243]
@@ -766,7 +764,7 @@ temperature values unknown, used copper
 	[STATE_NAME_ADJ:GAS:boiling billon]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:12]  Optional rework: in accord with new copper/silver value
+	[MATERIAL_VALUE:6]
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
@@ -807,7 +805,7 @@ value is weighted average of 3 silver and 1 copper
 	[STATE_NAME_ADJ:GAS:boiling sterling silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:16]  Optional rework: in accord with new copper/silver value
+	[MATERIAL_VALUE:8]
 	[SPEC_HEAT:230]
 	[MELTING_POINT:11602] unknown source
 	[BOILING_POINT:13892]
@@ -851,7 +849,7 @@ value of 11 is the weighted average value of 2copper/1silver/1gold components
 	[STATE_NAME_ADJ:GAS:boiling black bronze]
 	[DISPLAY_COLOR:5:6:0]
 	[BUILD_COLOR:5:6:0]
-	[MATERIAL_VALUE:23]  Optional rework: in accord with new copper/silver/gold value
+	[MATERIAL_VALUE:11]
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
@@ -892,7 +890,7 @@ value is weighted average of 3 gold and 1 copper
 	[STATE_NAME_ADJ:GAS:boiling rose gold]
 	[DISPLAY_COLOR:5:5:1]
 	[BUILD_COLOR:5:5:1]
-	[MATERIAL_VALUE:47]  Optional rework: in accord with new copper/gold value
+	[MATERIAL_VALUE:23]
 	[SPEC_HEAT:129]
 	[MELTING_POINT:11915]
 	[BOILING_POINT:15141]
@@ -960,7 +958,6 @@ bismuth itself is brittle, but you can alloy it with tin/copper to make a light-
 	[MAX_EDGE:10000]
 	[STATE_COLOR:ALL_SOLID:HELIOTROPE]
 
-you can make a lighter colored bronze by adding bismuth, used temp values from bronze, used by incas, at least according to one source ha ha
 [INORGANIC:BISMUTH_BRONZE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_NAME_ADJ:ALL_SOLID:bismuth bronze]
@@ -968,33 +965,33 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[STATE_NAME_ADJ:GAS:boiling bismuth bronze]
 	[DISPLAY_COLOR:6:6:1]
 	[BUILD_COLOR:6:6:1]
-	[MATERIAL_VALUE:8]  Optional rework: in accord with new bronze value
+	[MATERIAL_VALUE:21] not better militarily, but should be more expensive due to multiple components
 	[SPEC_HEAT:435]
 	[MELTING_POINT:11868]
 	[BOILING_POINT:14140]
-	  Optional rework: no longer usable for military purposes
-	[SOLID_DENSITY:8250] used bronze
+	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_DIGGER][ITEMS_ARMOR]
+	[SOLID_DENSITY:8890]
 	[LIQUID_DENSITY:8020]
 	[MOLAR_MASS:80000]
-	[IMPACT_YIELD:602000]
-	[IMPACT_FRACTURE:843500]
-	[IMPACT_STRAIN_AT_YIELD:547]
-	[COMPRESSIVE_YIELD:602000]
-	[COMPRESSIVE_FRACTURE:843500]
-	[COMPRESSIVE_STRAIN_AT_YIELD:547] no data, used 110
-	[TENSILE_YIELD:172000]
-	[TENSILE_FRACTURE:241000]
-	[TENSILE_STRAIN_AT_YIELD:156] 110
-	[TORSION_YIELD:172000]
-	[TORSION_FRACTURE:241000]
-	[TORSION_STRAIN_AT_YIELD:156]
-	[SHEAR_YIELD:172000]
-	[SHEAR_FRACTURE:241000]
-	[SHEAR_STRAIN_AT_YIELD:156] no data, used 110
-	[BENDING_YIELD:172000]
-	[BENDING_FRACTURE:241000]
-	[BENDING_STRAIN_AT_YIELD:156]
-	[MAX_EDGE:10000]
+	[IMPACT_YIELD:724500] no data, 3.5x tensile
+	[IMPACT_FRACTURE:1449000]
+	[IMPACT_STRAIN_AT_YIELD:1081]
+	[COMPRESSIVE_YIELD:724500]
+	[COMPRESSIVE_FRACTURE:1449000]
+	[COMPRESSIVE_STRAIN_AT_YIELD:1081] bulk modulus 67 GPa
+	[TENSILE_YIELD:207000]
+	[TENSILE_FRACTURE:414000]
+	[TENSILE_STRAIN_AT_YIELD:188] young's modulus 110 GPa
+	[TORSION_YIELD:207000]
+	[TORSION_FRACTURE:414000]
+	[TORSION_STRAIN_AT_YIELD:462]
+	[SHEAR_YIELD:207000]
+	[SHEAR_FRACTURE:414000]
+	[SHEAR_STRAIN_AT_YIELD:462] shear modulus 44.8 GPa
+	[BENDING_YIELD:207000]
+	[BENDING_FRACTURE:414000]
+	[BENDING_STRAIN_AT_YIELD:462]
+	[MAX_EDGE:9000]
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -1008,11 +1005,11 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[STATE_NAME_ADJ:GAS:boiling adamantine]
 	[DISPLAY_COLOR:3:3:1]
 	[BUILD_COLOR:3:3:1]
-	[MATERIAL_VALUE:350]
+	[MATERIAL_VALUE:300]
 	[SPEC_HEAT:7500]
 	[MELTING_POINT:25000]
 	[BOILING_POINT:50000]
-	[ITEMS_WEAPON][ITEMS_ARMOR]
+	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_DIGGER][ITEMS_ARMOR][ITEMS_ANVIL]
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -1045,49 +1042,103 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[STOCKPILE_THREAD_METAL]
 	[STATE_COLOR:ALL_SOLID:AQUA]
 
-[INORGANIC:MITHRIL]
+[INORGANIC:IC_PORTABLE_ANVIL]
+	[STATE_NAME:ALL_SOLID:lightweight iron]
+	[STATE_ADJ:ALL_SOLID:portable]
+	[STATE_NAME:LIQUID:molten iron]
+	[STATE_NAME:LIQUID:boiling iron]
+	[DISPLAY_COLOR:0:7:1]
+	[BUILD_COLOR:0:7:1]
+	[MELTING_POINT:12768]
+	[BOILING_POINT:15150]
+	[ITEMS_ANVIL]
+	[SOLID_DENSITY:785]
+	[LIQUID_DENSITY:698]
+	[STATE_COLOR:ALL_SOLID:SILVER]
+
+[INORGANIC:IC_GLASS_COBALT]
+	[STATE_COLOR:ALL_SOLID:COBALT]
+	[STATE_NAME_ADJ:SOLID:blue glass]
+	[STATE_COLOR:LIQUID:RED]
+	[STATE_NAME_ADJ:LIQUID:molten blue glass]
+	[STATE_COLOR:GAS:RED]
+	[STATE_NAME_ADJ:GAS:boiling blue glass]
+	[STATE_NAME_ADJ:SOLID_POWDER:smalt]
+	[STATE_NAME_ADJ:SOLID_PASTE:blue glass paste]
+	[STATE_NAME_ADJ:SOLID_PRESSED:pressed blue glass]
+	[BASIC_COLOR:1:0:0]
+	[BUILD_COLOR:1:0:0]
+	[MATERIAL_VALUE:10]
+	[SPEC_HEAT:700]
+	[MELTING_POINT:13600]
+	[BOILING_POINT:16000]
+	[SOLID_DENSITY:2600]
+	[LIQUID_DENSITY:2240]
+	[BENDING_YIELD:33000]
+	[BENDING_FRACTURE:33000]
+	[BENDING_STRAIN_AT_YIELD:47]
+	[SHEAR_YIELD:33000]
+	[SHEAR_FRACTURE:33000]
+	[SHEAR_STRAIN_AT_YIELD:113]
+	[TORSION_YIELD:33000]
+	[TORSION_FRACTURE:33000]
+	[TORSION_STRAIN_AT_YIELD:113]
+	[IMPACT_YIELD:1000000]
+	[IMPACT_FRACTURE:1000000]
+	[IMPACT_STRAIN_AT_YIELD:2222]
+	[TENSILE_YIELD:33000]
+	[TENSILE_FRACTURE:33000]
+	[TENSILE_STRAIN_AT_YIELD:47]
+	[COMPRESSIVE_YIELD:1000000]
+	[COMPRESSIVE_FRACTURE:1000000]
+	[COMPRESSIVE_STRAIN_AT_YIELD:2222]
+	[MAX_EDGE:15000]
+	[ITEMS_HARD]
+	[IS_GLASS]
+	[IS_CERAMIC] this should get the items into civs hands more easily
+	
+[INORGANIC:MITHRIL] by Meph
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_NAME:ALL_SOLID:mithril]
 	[STATE_NAME:SOLID_POWDER:mithril dust]
 	[STATE_NAME_ADJ:LIQUID:molten mithril]
 	[STATE_NAME_ADJ:GAS:mithril vapor]
 	[STATE_ADJ:ALL_SOLID:mithril]
-	[DISPLAY_COLOR:7:6:1]	
-	[BUILD_COLOR:7:6:1]
-	[MATERIAL_VALUE:120]
+	[STATE_COLOR:ALL_SOLID:SILVER]
+*	[DISPLAY_COLOR:7:6:1]	[BUILD_COLOR:7:6:1]
+	[MATERIAL_VALUE:45]
 	[SPEC_HEAT:129]
 	[MELTING_POINT:20000]
 	[BOILING_POINT:25000]
 	[SOLID_DENSITY:2000]10x adam
 	[LIQUID_DENSITY:2600]
 	[MOLAR_MASS:45845]
-	[IMPACT_YIELD:600000] 12% of adm
-	[IMPACT_FRACTURE:600000] 12% of adm
+	[IMPACT_YIELD:2005000]
+	[IMPACT_FRACTURE:3020000]
 	[IMPACT_STRAIN_AT_YIELD:1140]
 	[COMPRESSIVE_YIELD:2005000]
 	[COMPRESSIVE_FRACTURE:3020000]
 	[COMPRESSIVE_STRAIN_AT_YIELD:1140] 160
-	[TENSILE_YIELD:600000] 12% of adm
-	[TENSILE_FRACTURE:600000] 12% of adm
+	[TENSILE_YIELD:530000]
+	[TENSILE_FRACTURE:820000]
 	[TENSILE_STRAIN_AT_YIELD:125] 200
-	[TORSION_YIELD:600000] 12% of adm
+	[TORSION_YIELD:530000]
 	[TORSION_FRACTURE:820000]
 	[TORSION_STRAIN_AT_YIELD:315]
-	[SHEAR_YIELD:600000] 12% of adm
-	[SHEAR_FRACTURE:600000] 12% of adm
+	[SHEAR_YIELD:530000]
+	[SHEAR_FRACTURE:820000]
 	[SHEAR_STRAIN_AT_YIELD:115]
-	[BENDING_YIELD:600000] 12% of adm
-	[BENDING_FRACTURE:600000] 12% of adm
+	[BENDING_YIELD:600000]
+	[BENDING_FRACTURE:900000]
 	[BENDING_STRAIN_AT_YIELD:415]
-	[MAX_EDGE:12000] 12% of adamantine
+	[MAX_EDGE:11000] decreased, this was better than divine metals!
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[ITEMS_WEAPON]
 	[ITEMS_WEAPON_RANGED]
-	[ITEMS_SOFT]
-	[STOCKPILE_THREAD_METAL]
 	[ITEMS_AMMO]
+	[ITEMS_DIGGER]
 	[ITEMS_ARMOR]
-	[STATE_COLOR:ALL_SOLID:WHITE]
+	[ITEMS_ANVIL]

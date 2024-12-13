@@ -71,6 +71,7 @@ Octopuses were sponsored by the generous contributions of the Bay 12 community.
 	[BODY_SIZE:0:168:5000]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION_WITH_HIDE_EFFECT]
+		[CDI:TOKEN:SQUIRT_INK]
 		[CDI:ADV_NAME:Squirt ink]
 		[CDI:USAGE_HINT:FLEEING]
 		[CDI:LOCATION_HINT:IN_WATER]
@@ -127,6 +128,7 @@ Octopuses were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'o']
 	[COLOR:7:0:0]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_OCTOPUS]
 	[COPY_TAGS_FROM:OCTOPUS]
@@ -246,6 +248,7 @@ Crabs were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'c']
 	[COLOR:4:0:1]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_CRAB]
 	[COPY_TAGS_FROM:CRAB]
@@ -378,6 +381,7 @@ Leopard seals were sponsored by the generous contributions of the Bay 12 communi
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'L']
 	[COLOR:0:0:1]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_LEOPARD_SEAL]
 	[COPY_TAGS_FROM:LEOPARD_SEAL]
@@ -473,6 +477,7 @@ Cuttlefish were sponsored by the generous contributions of the Bay 12 community.
 	[BODY_SIZE:0:0:1000]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION_WITH_HIDE_EFFECT]
+		[CDI:TOKEN:SQUIRT_INK]
 		[CDI:ADV_NAME:Squirt ink]
 		[CDI:USAGE_HINT:FLEEING]
 		[CDI:LOCATION_HINT:IN_WATER]
@@ -530,6 +535,7 @@ Cuttlefish were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_CUTTLEFISH]
 	[COPY_TAGS_FROM:CUTTLEFISH]
@@ -672,6 +678,7 @@ Orcas were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'O']
 	[COLOR:0:0:1]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_ORCA]
 	[COPY_TAGS_FROM:ORCA]
@@ -763,6 +770,7 @@ Sponges were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:4:0:1]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_SPONGE]
 	[COPY_TAGS_FROM:SPONGE]
@@ -862,6 +870,7 @@ Horseshoe crabs were sponsored by the generous contributions of the Bay 12 commu
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_HORSESHOE_CRAB]
 	[COPY_TAGS_FROM:HORSESHOE_CRAB]
@@ -997,6 +1006,7 @@ Sperm whales were sponsored by the generous contributions of the Bay 12 communit
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'W']
 	[COLOR:7:0:0]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_SPERM_WHALE]
 	[COPY_TAGS_FROM:SPERM_WHALE]
@@ -1132,6 +1142,7 @@ Elephant seals were sponsored by the generous contributions of the Bay 12 commun
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_ELEPHANT_SEAL]
 	[COPY_TAGS_FROM:ELEPHANT_SEAL]
@@ -1263,6 +1274,7 @@ Harp seals were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'h']
 	[COLOR:7:0:0]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_HARP_SEAL]
 	[COPY_TAGS_FROM:HARP_SEAL]
@@ -1389,6 +1401,7 @@ Nautiluses were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'n']
 	[COLOR:4:0:1]
+	[DOES_NOT_EXIST]
 
 [CREATURE:GIANT_NAUTILUS]
 	[COPY_TAGS_FROM:NAUTILUS]

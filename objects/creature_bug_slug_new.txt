@@ -82,6 +82,7 @@ Damselflies were sponsored by the generous contributions of the Bay 12 community
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'d']
 	[COLOR:3:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_DAMSELFLY]
 	[COPY_TAGS_FROM:DAMSELFLY]
@@ -190,6 +191,7 @@ Moths were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'m']
 	[COLOR:6:0:0]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_MOTH]
 	[COPY_TAGS_FROM:MOTH]
@@ -294,6 +296,7 @@ Grasshoppers were sponsored by the generous contributions of the Bay 12 communit
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'g']
 	[COLOR:2:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_GRASSHOPPER]
 	[COPY_TAGS_FROM:GRASSHOPPER]
@@ -443,6 +446,7 @@ Bark scorpions were sponsored by the generous contributions of the Bay 12 commun
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_BARK_SCORPION]
 	[COPY_TAGS_FROM:BARK_SCORPION]
@@ -569,6 +573,7 @@ Mantises were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'m']
 	[COLOR:2:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_MANTIS]
 	[COPY_TAGS_FROM:MANTIS]
@@ -678,6 +683,7 @@ Ticks were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'t']
 	[COLOR:0:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_TICK]
 	[COPY_TAGS_FROM:TICK]
@@ -785,6 +791,7 @@ Lice were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:0]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_LOUSE]
 	[COPY_TAGS_FROM:LOUSE]
@@ -893,6 +900,7 @@ Thrips were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'t']
 	[COLOR:6:0:0]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_THRIPS]
 	[COPY_TAGS_FROM:THRIPS]
@@ -982,6 +990,7 @@ Slugs were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_SLUG]
 	[COPY_TAGS_FROM:SLUG]
@@ -1091,6 +1100,7 @@ Mosquitos were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'m']
 	[COLOR:0:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_MOSQUITO]
 	[COPY_TAGS_FROM:MOSQUITO]
@@ -1198,6 +1208,7 @@ Jumping spiders were sponsored by the generous contributions of the Bay 12 commu
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'j']
 	[COLOR:0:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_JUMPING_SPIDER]
 	[COPY_TAGS_FROM:SPIDER_JUMPING]
@@ -1366,6 +1377,7 @@ Moon snails were sponsored by the generous contributions of the Bay 12 community
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
+	[APPLY_CREATURE_VARIATION:IC_AQUATIC_TO_AMPHIBIOUS]
 	[GO_TO_START]
 	[NAME:moon snail man:moon snail men:moon snail man]
 	[DESCRIPTION:A colorful person with the head and shell of a moon snail.]
@@ -1374,6 +1386,7 @@ Moon snails were sponsored by the generous contributions of the Bay 12 community
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:4:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_MOON_SNAIL]
 	[COPY_TAGS_FROM:MOON_SNAIL]
@@ -1518,6 +1531,7 @@ Brown recluse spiders were sponsored by the generous contributions of the Bay 12
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_BROWN_RECLUSE_SPIDER]
 	[COPY_TAGS_FROM:SPIDER_BROWN_RECLUSE]
@@ -1632,6 +1646,7 @@ Snails were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:0]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_SNAIL]
 	[COPY_TAGS_FROM:SNAIL]

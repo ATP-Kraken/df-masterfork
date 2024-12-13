@@ -91,6 +91,7 @@ creature_amphibians
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'t']
 	[COLOR:2:0:0]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_TOAD]
 	[COPY_TAGS_FROM:TOAD]

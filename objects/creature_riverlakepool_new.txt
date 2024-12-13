@@ -726,6 +726,7 @@ Leeches were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'l']
 	[COLOR:0:0:1]
+	[DOES_NOT_EXIST] disabled, spawning prevented
 
 [CREATURE:GIANT_LEECH]
 	[COPY_TAGS_FROM:LEECH]

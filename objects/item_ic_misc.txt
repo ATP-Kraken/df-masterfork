@@ -1,0 +1,97 @@
+item_ic_misc
+
+[OBJECT:ITEM]
+
+*** Fort mode tools
+
+[ITEM_TOOL:IC_WRITING_TABLET]
+	[NAME:tablet:tablets]
+	[VALUE:20]
+	[CERAMIC_MAT]
+	[TOOL_USE:CONTAIN_WRITING]
+	[TILE:240]
+	[SIZE:200]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+
+[ITEM_TOOL:IC_WRITING_TABLET_WAX]
+	[NAME:wax tablet:wax tablets]
+	[VALUE:20]
+	[WOOD_MAT]
+	[TOOL_USE:CONTAIN_WRITING]
+	[TILE:240]
+	[SIZE:200]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+
+[ITEM_TOOL:IC_WRITING_STYLUS]
+	[NAME:stylus:styluses]
+	[VALUE:10]
+	[METAL_MAT] graphite, chalk, and feather versions produced by reaction
+	[TILE:'\']
+	[SIZE:20]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+
+*** Adv mode tools
+
+[ITEM_TOOL:IC_TAROT_DECK]
+pure flavor, basically just dice made of paper
+	[NAME:tarot deck:tarot decks]
+	[VALUE:1]
+	[SHEET_MAT]
+	[TOOL_USE:DIVINATION]
+	[TOOL_USE:GAMES_OF_CHANCE]
+	[SHAPE_CATEGORY:CARDS]
+	[USES_FACE_IMAGE_SET]
+	[TILE:8]
+	[SIZE:5]
+	[MATERIAL_SIZE:1]
+
+[ITEM_TOOL:IC_SMITHTOOLS]
+exists more for crafting believability, since the miniforge is another requirement
+should spawn a little more often due to the tool usage token
+	[NAME:smith's tools:smith's tools]
+	[VALUE:10]
+	[TOOL_USE:HOLD_MEAT_FOR_CARVING]
+	[METAL_WEAPON_MAT]
+	[TILE:231]
+	[SIZE:1800]
+	[MATERIAL_SIZE:3]
+	[DESCRIPTION:A small hammer and pliers for shaping molten metal on an anvil.]
+	[NO_DEFAULT_JOB] adv only
+
+[ITEM_TOOL:IC_LOOM]
+using a separate tool for this to gate access to cloth behind buying stuff/making a cabin
+	[NAME:loom:looms]
+	[VALUE:10]
+	[WOOD_MAT]
+	[TILE:35]
+	[SIZE:1800]
+	[MATERIAL_SIZE:1]
+	[DESCRIPTION:A handheld frame for fastening thread when weaving cloth.]
+	[NO_DEFAULT_JOB] adv only
+
+[ITEM_TOOL:IC_DRAWPLATE]
+	[NAME:draw plate:draw plates]
+	[VALUE:10]
+	[METAL_MAT]
+	[TILE:178]
+	[SIZE:100] >1 kg
+	[MATERIAL_SIZE:1]
+	[DESCRIPTION:A shaped die with holes to pull thin wires through.]
+	[NO_DEFAULT_JOB]
+	[INCOMPLETE_ITEM]
+	[UNIMPROVABLE]
+
+[ITEM_TOOL:IC_CHAINPIECE]
+	[NAME:mail links:mail links]
+	[VALUE:10]
+	[METAL_MAT]
+	[TILE:176]
+	[SIZE:500] ~4 kg
+	[MATERIAL_SIZE:3]
+	[DESCRIPTION:A mesh of small circular links, which can be crafted into chainmail or jewelry.]
+	[NO_DEFAULT_JOB]
+	[INCOMPLETE_ITEM]
+	[UNIMPROVABLE]

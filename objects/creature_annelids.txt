@@ -65,3 +65,4 @@ creature_annelids
 	[CREATURE_TILE:'w']
 	[COLOR:7:0:0]
 	[EXTRAVISION]
+	[DOES_NOT_EXIST] disabled, spawning prevented

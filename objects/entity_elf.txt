@@ -5,6 +5,7 @@ entity_elf
 	[CREATURE:ELF]
 	[TRANSLATION:ELF]
 	[DIGGER:ITEM_WEAPON_PICK]
+	[ALL_MAIN_POPS_CONTROLLABLE]
 
 ----weaponry----
 

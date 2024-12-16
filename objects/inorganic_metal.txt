@@ -247,13 +247,16 @@ Colors added by Bohandas.
 	[STATE_COLOR:ALL_SOLID:SILVER]
 
 [INORGANIC:BRONZE]
+	Bronze now has mechanical properties more on-par (though inferior) with steel
+	Work-hardened C90300 tin bronze, realistic shear values taken from Sver's work
+
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_NAME_ADJ:ALL_SOLID:bronze]
 	[STATE_NAME_ADJ:LIQUID:molten bronze]
 	[STATE_NAME_ADJ:GAS:boiling bronze]
 	[DISPLAY_COLOR:6:4:0]
 	[BUILD_COLOR:6:4:0]
-	[MATERIAL_VALUE:22]
+	[MATERIAL_VALUE:20]
 	[SPEC_HEAT:435]
 	[MELTING_POINT:11868]
 	[BOILING_POINT:14140]
@@ -674,8 +677,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_WEAPON]
 	[ITEMS_HARD]
 	[ITEMS_METAL]
-	[ITEMS_BARRED]
-	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
 
 [INORGANIC:ALUMINUM]
@@ -960,6 +961,8 @@ bismuth itself is brittle, but you can alloy it with tin/copper to make a light-
 	[STATE_COLOR:ALL_SOLID:HELIOTROPE]
 
 [INORGANIC:BISMUTH_BRONZE]
+	C89835 lead-free bismuth tin bronze
+	Min tensile strength: 207 MPa
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_NAME_ADJ:ALL_SOLID:bismuth bronze]
 	[STATE_NAME_ADJ:LIQUID:molten bismuth bronze]

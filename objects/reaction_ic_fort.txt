@@ -216,15 +216,6 @@ reaction_ic_fort
 	[SKILL:DISSECT_FISH] it's culinary, but using a rarer skill to give it more utility
 	[AUTOMATIC]
 	
-[REACTION:IC_PAPER_TOY_BOAT]
-	[NAME:make paper toy boat]
-	[BUILDING:CRAFTSMAN:NONE]
-	[REAGENT:sheet:10000:SHEET:NONE:NONE:NONE]
-	[PRODUCT:100:1:TOY:ITEM_TOY_BOAT:GET_MATERIAL_FROM_REAGENT:sheet:NONE]
-		[PRODUCT_PRESSED]
-	[CATEGORY:IC_PAPER_CRAFTS]
-	[SKILL:PAPERMAKING] toss up between this and book binding
-	
 [REACTION:IC_PAPER_COIN]
 	[NAME:make paper coins]
 	[BUILDING:CRAFTSMAN:NONE]

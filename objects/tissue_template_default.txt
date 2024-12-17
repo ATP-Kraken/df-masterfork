@@ -1,24 +1,19 @@
 tissue_template_default
 
-Includes changes from DF Revised 2.2.0
-Includes changes from Sver's DF Combat Reworked 1.7
-Made on game version 0.47.04
-
-	Numbers outside the brackets are backups of the vanilla values.
+CHANGES BY MEPH: Added standardized skin, scale, shell and chitin. One line each, marked with YES_STANDARDIZED_LEATHER
+Standardized meat & organs/bone: marked with YES_STANDARDIZED_MEAT/YES_STANDARDIZED_BONE
 
 [OBJECT:TISSUE_TEMPLATE]
 
-[TISSUE_TEMPLATE:SKIN_TEMPLATE]
+[TISSUE_TEMPLATE:SKIN_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:skin:NP]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SKIN]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SKIN]          { MDF: YES_STANDARDIZED_LEATHER }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_LEATHER:SKIN] { MDF: YES_STANDARDIZED_LEATHER }
 	[RELATIVE_THICKNESS:2]{:1  Revision: skin was cut too easily.}
-
-	Lower is faster.
-	[HEALING_RATE:100]
-
+	[HEALING_RATE:100] Lower is faster.
 	[VASCULAR:1]
-	[PAIN_RECEPTORS:3]{:5      Revision: on the other hand, cuts were too painful.}
+	[PAIN_RECEPTORS:2]{:5:2      Revision: on the other hand, cuts were too painful. Still too painful, - zey.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -35,13 +30,14 @@ Made on game version 0.47.04
 	[INSULATION:100]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:MUSCLE_TEMPLATE]
+[TISSUE_TEMPLATE:MUSCLE_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:muscle:muscles]
 	[THICKENS_ON_STRENGTH]
 	[ARTERIES]
 	[SCARS]
 	[MUSCULAR]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:MUSCLE] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:3]
 	[HEALING_RATE:100]
 	[VASCULAR:5]
@@ -63,12 +59,13 @@ Made on game version 0.47.04
 	[SETTABLE]
 	[SPLINTABLE]
 
-[TISSUE_TEMPLATE:SHELL_TEMPLATE]
+[TISSUE_TEMPLATE:SHELL_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:shell:NP]
 	[STRUCTURAL]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SHELL]
-	[RELATIVE_THICKNESS:2]
-	[HEALING_RATE:1000]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SHELL]          { MDF: YES_STANDARDIZED_LEATHER }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_LEATHER:SHELL] { MDF: YES_STANDARDIZED_LEATHER }
+	[RELATIVE_THICKNESS:3]
+	[HEALING_RATE:850]
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 	[SETTABLE]
@@ -182,9 +179,10 @@ Made on game version 0.47.04
 	[INSULATION:100]
 	[TISSUE_SHAPE:FEATHERS]
 
-[TISSUE_TEMPLATE:SCALE_TEMPLATE]
+[TISSUE_TEMPLATE:SCALE_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:scale:STP]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SCALE]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SCALE]          { MDF: YES_STANDARDIZED_LEATHER }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_LEATHER:SCALE] { MDF: YES_STANDARDIZED_LEATHER }
 	[SCARS]
 	[RELATIVE_THICKNESS:2]{:1  Revision: scales were cut too easily.}
 	[HEALING_RATE:300]{:100    Revision: scale was healing too quickly.}
@@ -240,12 +238,13 @@ Made on game version 0.47.04
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:EYE_TEMPLATE]
+[TISSUE_TEMPLATE:EYE_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:eye tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:EYE]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:EYE]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:EYE] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:500]{:100  Revision: eyes don't heal overnight.}
 	[VASCULAR:13]{:3         Revision: eyes bleed more when cut.}
@@ -253,76 +252,86 @@ Made on game version 0.47.04
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:NERVE_TEMPLATE]
+[TISSUE_TEMPLATE:NERVE_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:nervous tissue:NP]
 	[FUNCTIONAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:NERVE]
-	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:1500]{+   Revision: nerve grows back, especially when it's so easily damaged.}
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:NERVE]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:NERVE] { MDF: YES_STANDARDIZED_MEAT }
+	[RELATIVE_THICKNESS:2]{:1   Revision: too easily severed. - zey}
+	[HEALING_RATE:1500]{+       Revision: nerve grows back, especially when it's so easily damaged.}
 	[VASCULAR:3]
-	[PAIN_RECEPTORS:100]{+  Revision: on the other hand, nerve injuries are painful.}
+	[PAIN_RECEPTORS:100]{+      Revision: on the other hand, nerve injuries are painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:BRAIN_TEMPLATE]
+[TISSUE_TEMPLATE:BRAIN_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:brain tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:BRAIN]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:BRAIN]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:BRAIN] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1500]{+  Revision: brain tissue heals eventually.}
 	[VASCULAR:23]{:3       Revision: brain injuries bleed profusely.}
+	[MAJOR_ARTERIES]       Revision: experimental; should hopefully cause internal organ trauma to be even more severe, - zey.}
 	Sver: no pain, same as vanilla. It appears to be redundant, as even bruising usually causes unconsciousness.
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:LUNG_TEMPLATE]
+[TISSUE_TEMPLATE:LUNG_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:lung tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:LUNG]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:LUNG]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:LUNG] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: lungs healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:33]{:8         Revision: lungs bleed more when cut.  Internal wounds should be punishing.}
+	[VASCULAR:42]{:8         Revision: heart injuries bleed profusely, who thought? - zey}
+	[ARTERIES]               Revision: experimental; should hopefully cause internal organ trauma to be even more severe, - zey.}
 	[PAIN_RECEPTORS:55]{:5   Revision: lungs injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:HEART_TEMPLATE]
+[TISSUE_TEMPLATE:HEART_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:heart tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HEART]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HEART]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:HEART] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: hearts healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:50]{:20        Revision: hearts bleed more when cut.  Internal wounds should be punishing.}
+	[MAJOR_ARTERIES]         Revision: experimental; should hopefully cause internal organ trauma to be even more severe, - zey.}
 	[PAIN_RECEPTORS:50]{:5   Revision: heart injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:LIVER_TEMPLATE]
+[TISSUE_TEMPLATE:LIVER_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:liver tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:LIVER]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:LIVER]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:LIVER] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: livers healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:33]{:8         Revision: liver bleeds more when cut.  Internal wounds should be punishing.}
+	[MAJOR_ARTERIES]         Revision: experimental; should hopefully cause internal organ trauma to be even more severe, - zey.}
 	[PAIN_RECEPTORS:55]{:5   Revision: liver injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:GUT_TEMPLATE]
+[TISSUE_TEMPLATE:GUT_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:gut:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:GUT]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:GUT]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:GUT] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: guts healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:23]{:3         Revision: gut bleeds more when cut.  Internal wounds should be punishing.}
@@ -330,12 +339,13 @@ Made on game version 0.47.04
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:STOMACH_TEMPLATE]
+[TISSUE_TEMPLATE:STOMACH_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:stomach tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:STOMACH]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:STOMACH]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:STOMACH] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: stomachs healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:23]{:3         Revision: stomachs bleed more when cut.  Internal wounds should be punishing.}
@@ -343,12 +353,13 @@ Made on game version 0.47.04
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:GIZZARD_TEMPLATE]
+[TISSUE_TEMPLATE:GIZZARD_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:gizzard tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:GIZZARD]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:GIZZARD]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:GIZZARD] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: gizzards healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:23]{:3         Revision: gizzards bleed more when cut.  Internal wounds should be punishing.}
@@ -356,12 +367,13 @@ Made on game version 0.47.04
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:PANCREAS_TEMPLATE]
+[TISSUE_TEMPLATE:PANCREAS_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:pancreatic tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:PANCREAS]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:PANCREAS]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:PANCREAS] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: pancreases healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:23]{:3         Revision: pancreases bleed more when cut.  Internal wounds should be punishing.}
@@ -369,28 +381,32 @@ Made on game version 0.47.04
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:SPLEEN_TEMPLATE]
+[TISSUE_TEMPLATE:SPLEEN_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:spleen tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPLEEN]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPLEEN]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:SPLEEN] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: spleens healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:33]{:5         Revision: spleens bleed more when cut.  Internal wounds should be punishing.}
+	[MAJOR_ARTERIES]         Revision: experimental; should hopefully cause internal organ trauma to be even more severe, - zey.}
 	[PAIN_RECEPTORS:40]{:5   Revision: spleen injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:KIDNEY_TEMPLATE]
+[TISSUE_TEMPLATE:KIDNEY_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:kidney tissue:NP]
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:KIDNEY]
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:KIDNEY]       { MDF: YES_STANDARDIZED_MEAT }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_MEAT:KIDNEY] { MDF: YES_STANDARDIZED_MEAT }
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: kidneys healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:33]{:8         Revision: kidneys bleed more when cut.  Internal wounds should be punishing.}
+	[ARTERIES]         Revision: experimental; should hopefully cause internal organ trauma to be even more severe, - zey.}
 	[PAIN_RECEPTORS:50]{:5   Revision: kidney injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -403,14 +419,15 @@ Made on game version 0.47.04
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:FLAME]
 	[TISSUE_MAT_STATE:GAS]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:1] Sver: experimental! Change to 100 if too hardcore!
+	[HEALING_RATE:10]{:1 Sver: experimental! Change to 100 if too hardcore!
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
-[TISSUE_TEMPLATE:CHITIN_TEMPLATE]
+[TISSUE_TEMPLATE:CHITIN_TEMPLATE] { STANDARDIZED }
 	[TISSUE_NAME:carapace:NP]{:chitin}
-	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:CHITIN]
+	#SCARS]{                   Revision: chitin creatures usually molt, leaving no scars, - zey.}
+	#TISSUE_MATERIAL:LOCAL_CREATURE_MAT:CHITIN]          { MDF: YES_STANDARDIZED_LEATHER }
+	[TISSUE_MATERIAL:CREATURE_MAT:ANIMAL_LEATHER:CHITIN] { MDF: YES_STANDARDIZED_LEATHER }
 	[RELATIVE_THICKNESS:3]{:1  Revision: chitin was too easily cut.}
 	[HEALING_RATE:300]{:100    Revision: chitin healed too quickly.}
 	{VASCULAR:1                Revision: chitin doesn't bleed.}
@@ -426,8 +443,8 @@ Made on game version 0.47.04
 	[TISSUE_NAME:spine:NP]
 	[STRUCTURAL]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPINE]
-	[HEALING_RATE:1500]{+  Revision: spine injuries shouldn't be permanent.}
-	[RELATIVE_THICKNESS:2]
+	[HEALING_RATE:1500]{+      Revision: spine injuries shouldn't be permanent.}
+	[RELATIVE_THICKNESS:3]{:2  Revision: spines are pretty tough, - zey.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 

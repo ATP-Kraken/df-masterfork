@@ -1101,7 +1101,7 @@ creature_subterranean
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:4]
+		[MULTIPLY_VALUE:3]
 
 [CREATURE:SPIDER_CAVE]
 	[DESCRIPTION:A tiny underground bug, sought after for its thread.]

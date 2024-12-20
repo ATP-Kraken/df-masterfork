@@ -11,12 +11,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:GRASSLAND_TEMPERATE][BIOME:SAVANNA_TEMPERATE][BIOME:ANY_TEMPERATE_RIVER]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen single-grain wheat beer]
 		[STATE_NAME_ADJ:LIQUID:single-grain wheat beer]
 		[STATE_NAME_ADJ:GAS:boiling single-grain wheat beer]
-		[MATERIAL_VALUE:3]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -33,7 +33,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** ear is threshed to spikelets, milled down to flour
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -60,12 +60,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:GRASSLAND_TROPICAL][BIOME:SAVANNA_TROPICAL][BIOME:ANY_TEMPERATE_RIVER][BIOME:ANY_TEMPERATE_LAKE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen two-grain wheat beer]
 		[STATE_NAME_ADJ:LIQUID:two-grain wheat beer]
 		[STATE_NAME_ADJ:GAS:boiling two-grain wheat beer]
-		[MATERIAL_VALUE:3]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -82,7 +82,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** ear is threshed to spikelets, milled down to flour
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -109,12 +109,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:GRASSLAND_TROPICAL][BIOME:SAVANNA_TROPICAL][BIOME:ANY_TEMPERATE_RIVER][BIOME:ANY_TEMPERATE_LAKE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen soft wheat beer]
 		[STATE_NAME_ADJ:LIQUID:soft wheat beer]
 		[STATE_NAME_ADJ:GAS:boiling soft wheat beer]
-		[MATERIAL_VALUE:3]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -131,7 +131,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** ear is threshed to spikelets, milled down to flour
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -158,12 +158,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:GRASSLAND_TROPICAL][BIOME:SAVANNA_TROPICAL][BIOME:ANY_TEMPERATE_RIVER][BIOME:ANY_TEMPERATE_LAKE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen hard wheat beer]
 		[STATE_NAME_ADJ:LIQUID:hard wheat beer]
 		[STATE_NAME_ADJ:GAS:boiling hard wheat beer]
-		[MATERIAL_VALUE:3]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -180,7 +180,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** ear is threshed to spikelets, milled down to flour
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -207,12 +207,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen spelt beer]
 		[STATE_NAME_ADJ:LIQUID:spelt beer]
 		[STATE_NAME_ADJ:GAS:boiling spelt beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -229,7 +229,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** ear is threshed to spikelets, milled down to flour
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -256,12 +256,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:NOT_FREEZING][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen barley wine] a beer
 		[STATE_NAME_ADJ:LIQUID:barley wine]
 		[STATE_NAME_ADJ:GAS:boiling barley wine]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -278,7 +278,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** ear is threshed to spikelets, milled down to flour
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -305,12 +305,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:FOREST_TROPICAL_DRY_BROADLEAF][BIOME:ANY_TEMPERATE_RIVER][BIOME:ANY_TEMPERATE_LAKE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen buckwheat beer]
 		[STATE_NAME_ADJ:LIQUID:buckwheat beer]
 		[STATE_NAME_ADJ:GAS:boiling buckwheat beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -327,7 +327,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** seeds from flower milled
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -362,7 +362,7 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:oat flour]
 		[STATE_COLOR:ALL_SOLID:WHITE]
@@ -376,7 +376,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:oat bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** can be crushed/rolled to oat meal as an intermediate stage
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -398,14 +398,14 @@ plant_crops
 	[NAME:alfalfa][NAME_PLURAL:alfalfa][ADJ:alfalfa]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE] *** people can eat sprouts, adult plant is animal fodder
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_VERMIN]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:NOT_FREEZING][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
 		[STATE_COLOR:ALL:PURPLE]
 		[DISPLAY_COLOR:5:0:1]
@@ -441,12 +441,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:NOT_FREEZING][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen rye beer]
 		[STATE_NAME_ADJ:LIQUID:rye beer]
 		[STATE_NAME_ADJ:GAS:boiling rye beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -463,7 +463,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -490,12 +490,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:GRASSLAND_TROPICAL][BIOME:SAVANNA_TROPICAL][BIOME:ANY_TEMPERATE_RIVER]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen sorghum beer]
 		[STATE_NAME_ADJ:LIQUID:sorghum beer]
 		[STATE_NAME_ADJ:GAS:boiling sorghum beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -514,7 +514,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:sourdough bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -551,12 +551,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][WET][BIOME:ANY_TROPICAL_RIVER][BIOME:ANY_TROPICAL_WETLAND]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen rice beer] wiki: saki is a rice beer, and there are also rice wines
 		[STATE_NAME_ADJ:LIQUID:rice beer]
 		[STATE_NAME_ADJ:GAS:boiling rice beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:5:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -575,7 +575,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:rice cake]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -602,12 +602,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen maize beer]
 		[STATE_NAME_ADJ:LIQUID:maize beer]
 		[STATE_NAME_ADJ:GAS:boiling maize beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -626,7 +626,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:tortilla]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -655,12 +655,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen quinoa beer]
 		[STATE_NAME_ADJ:LIQUID:quinoa beer]
 		[STATE_NAME_ADJ:GAS:boiling quinoa beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -677,7 +677,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** seeds from flower milled
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -713,12 +713,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen kaniwa beer]
 		[STATE_NAME_ADJ:LIQUID:kaniwa beer]
 		[STATE_NAME_ADJ:GAS:boiling kaniwa beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -735,7 +735,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL] *** seeds from flower milled
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -769,8 +769,8 @@ plant_crops
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:58][PICKED_COLOR:2:0:0]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -817,12 +817,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL][BIOME:ANY_TEMPERATE_RIVER]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen pendant amaranth beer]
 		[STATE_NAME_ADJ:LIQUID:pendant amaranth beer]
 		[STATE_NAME_ADJ:GAS:boiling pendant amaranth beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:5:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -839,7 +839,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -877,12 +877,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen blood amaranth beer]
 		[STATE_NAME_ADJ:LIQUID:blood amaranth beer]
 		[STATE_NAME_ADJ:GAS:boiling blood amaranth beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:5:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -899,7 +899,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -940,12 +940,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen purple amaranth beer]
 		[STATE_NAME_ADJ:LIQUID:purple amaranth beer]
 		[STATE_NAME_ADJ:GAS:boiling purple amaranth beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:5:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -962,7 +962,7 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:CHEESE_MAT:LOCAL_PLANT_MAT:BREAD][REACTION_CLASS:FLOUR]
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
 		[STATE_COLOR:ALL:PURPLE]
 		[DISPLAY_COLOR:5:0:0]
@@ -1000,8 +1000,8 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:NOT_FREEZING][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:1]
@@ -1050,8 +1050,8 @@ plant_crops
 	[USE_MATERIAL_TEMPLATE:BREAD:IC_BREAD_TEMPLATE]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL]
-	[VALUE:1]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
 		[STATE_COLOR:ALL:DARK_VIOLET]
 		[DISPLAY_COLOR:5:0:0]
@@ -1092,12 +1092,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen pearl millet beer]
 		[STATE_NAME_ADJ:LIQUID:pearl millet beer]
 		[STATE_NAME_ADJ:GAS:boiling pearl millet beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -1116,7 +1116,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:pearl millet bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1143,12 +1143,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen white millet beer]
 		[STATE_NAME_ADJ:LIQUID:white millet beer]
 		[STATE_NAME_ADJ:GAS:boiling white millet beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -1167,7 +1167,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:white millet bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1194,12 +1194,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen finger millet beer]
 		[STATE_NAME_ADJ:LIQUID:finger millet beer]
 		[STATE_NAME_ADJ:GAS:boiling finger millet beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -1218,7 +1218,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:finger millet bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1245,12 +1245,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen foxtail millet beer]
 		[STATE_NAME_ADJ:LIQUID:foxtail millet beer]
 		[STATE_NAME_ADJ:GAS:boiling foxtail millet beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -1269,7 +1269,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:foxtail millet bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1296,12 +1296,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:SAVANNA_TROPICAL]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen fonio beer]
 		[STATE_NAME_ADJ:LIQUID:fonio beer]
 		[STATE_NAME_ADJ:GAS:boiling fonio beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -1320,7 +1320,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:fonio bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1347,12 +1347,12 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:MOUNTAIN]
-	[VALUE:1]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen teff beer]
 		[STATE_NAME_ADJ:LIQUID:teff beer]
 		[STATE_NAME_ADJ:GAS:boiling teff beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -1371,7 +1371,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:teff bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1397,20 +1397,20 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:GRASSLAND_TROPICAL][BIOME:SAVANNA_TROPICAL]
-	[VALUE:2]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:OIL:PLANT_OIL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen linseed oil]
 		[STATE_NAME_ADJ:LIQUID:linseed oil]
 		[STATE_NAME_ADJ:GAS:boiling linseed oil]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_COOKED]
 	[USE_MATERIAL_TEMPLATE:SOAP:PLANT_SOAP_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:linseed oil soap]
 		[STATE_NAME_ADJ:LIQUID:melted linseed oil soap]
 		[STATE_NAME_ADJ:GAS:n/a]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:flax flour]
 		[STATE_COLOR:ALL_SOLID:WHITE]
@@ -1424,7 +1424,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:flaxseed bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER][AUTUMN]{:WINTER     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1452,7 +1452,7 @@ plant_crops
 		[STATE_NAME_ADJ:SOLID_PASTE:linen slurry]
 		[STATE_NAME_ADJ:SOLID_PRESSED:linen paper]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[REACTION_CLASS:PAPER_SLURRY]
 		[STOCKPILE_GLOB_PASTE]
 	[THREAD:LOCAL_PLANT_MAT:THREAD]
@@ -1475,8 +1475,8 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL]
-	[VALUE:2]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1493,7 +1493,7 @@ plant_crops
 		[STATE_NAME_ADJ:SOLID_PASTE:jute slurry]
 		[STATE_NAME_ADJ:SOLID_PRESSED:jute paper]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[REACTION_CLASS:PAPER_SLURRY]
 		[STOCKPILE_GLOB_PASTE]
 	[THREAD:LOCAL_PLANT_MAT:THREAD]
@@ -1517,20 +1517,20 @@ plant_crops
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TEMPERATE]
-	[VALUE:2]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:OIL:PLANT_OIL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen hempseed oil]
 		[STATE_NAME_ADJ:LIQUID:hempseed oil]
 		[STATE_NAME_ADJ:GAS:boiling hempseed oil]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_COOKED]
 	[USE_MATERIAL_TEMPLATE:SOAP:PLANT_SOAP_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:hempseed oil soap]
 		[STATE_NAME_ADJ:LIQUID:melted hempseed oil soap]
 		[STATE_NAME_ADJ:GAS:n/a]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:hemp flour]
 		[STATE_COLOR:ALL_SOLID:WHITE]
@@ -1544,7 +1544,7 @@ plant_crops
 		[STATE_NAME_ADJ:ALL_SOLID:hempseed bread]
 		[PREFIX:NONE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[SPRING][SUMMER]{:WINTER/AUTUMN:     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1554,7 +1554,7 @@ plant_crops
 		[STATE_NAME_ADJ:SOLID_PRESSED:hemp seed press cake]
 		[MATERIAL_VALUE:1]
 		[EDIBLE_VERMIN]
-		[EDIBLE_RAW]
+		 made seeds not edible raw, - zey.
 		[EDIBLE_COOKED]
 		[MATERIAL_REACTION_PRODUCT:PRESS_LIQUID_MAT:LOCAL_PLANT_MAT:OIL]
 		[PREFIX:NONE]
@@ -1569,7 +1569,7 @@ plant_crops
 		[STATE_NAME_ADJ:SOLID_PASTE:hemp slurry]
 		[STATE_NAME_ADJ:SOLID_PRESSED:hemp paper]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[REACTION_CLASS:PAPER_SLURRY]
 		[STOCKPILE_GLOB_PASTE]
 	[THREAD:LOCAL_PLANT_MAT:THREAD]
@@ -1586,21 +1586,21 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL][BIOME:ANY_SHRUBLAND][BIOME:ANY_SAVANNA]
-	[VALUE:3]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER]{:WINTER:AUTMN     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:OIL:PLANT_OIL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen cottonseed oil]
 		[STATE_NAME_ADJ:LIQUID:cottonseed oil]
 		[STATE_NAME_ADJ:GAS:boiling cottonseed oil]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_COOKED]
 	[USE_MATERIAL_TEMPLATE:SOAP:PLANT_SOAP_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:cottonseed oil soap]
 		[STATE_NAME_ADJ:LIQUID:melted cottonseed oil soap]
 		[STATE_NAME_ADJ:GAS:n/a]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1613,8 +1613,8 @@ plant_crops
 		[STATE_NAME_ADJ:SOLID_PRESSED:cotton seed press cake]
 		[MATERIAL_VALUE:1]
 		[EDIBLE_VERMIN]
-		[EDIBLE_RAW]
-		[EDIBLE_COOKED]
+		 made seeds not edible raw, - zey.
+		[EDIBLE_COOKED}
 		[MATERIAL_REACTION_PRODUCT:PRESS_LIQUID_MAT:LOCAL_PLANT_MAT:OIL]
 		[PREFIX:NONE]
 		[STOCKPILE_GLOB_PASTE]
@@ -1628,7 +1628,7 @@ plant_crops
 		[STATE_NAME_ADJ:SOLID_PASTE:cotton slurry]
 		[STATE_NAME_ADJ:SOLID_PRESSED:cotton paper]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[REACTION_CLASS:PAPER_SLURRY]
 		[STOCKPILE_GLOB_PASTE]
 	[THREAD:LOCAL_PLANT_MAT:THREAD]
@@ -1651,8 +1651,8 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL]
-	[VALUE:1]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER]{:WINTER/AUTUMN:     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1666,7 +1666,7 @@ plant_crops
 		[STATE_NAME_ADJ:SOLID_PASTE:ramie slurry]
 		[STATE_NAME_ADJ:SOLID_PRESSED:ramie paper]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[REACTION_CLASS:PAPER_SLURRY]
 		[STOCKPILE_GLOB_PASTE]
 	[THREAD:LOCAL_PLANT_MAT:THREAD]
@@ -1683,21 +1683,21 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL]
-	[VALUE:1]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER]{:WINTER/AUTUMN:     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:OIL:PLANT_OIL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen kenaf seed oil]
 		[STATE_NAME_ADJ:LIQUID:kenaf seed oil]
 		[STATE_NAME_ADJ:GAS:boiling kenaf seed oil]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_COOKED]
 	[USE_MATERIAL_TEMPLATE:SOAP:PLANT_SOAP_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:kenaf seed oil soap]
 		[STATE_NAME_ADJ:LIQUID:melted kenaf seed oil soap]
 		[STATE_NAME_ADJ:GAS:n/a]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]
@@ -1725,7 +1725,7 @@ plant_crops
 		[STATE_NAME_ADJ:SOLID_PASTE:kenaf slurry]
 		[STATE_NAME_ADJ:SOLID_PRESSED:kenaf paper]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[REACTION_CLASS:PAPER_SLURRY]
 		[STOCKPILE_GLOB_PASTE]
 	[THREAD:LOCAL_PLANT_MAT:THREAD]
@@ -1751,8 +1751,8 @@ plant_crops
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[DRY][BIOME:ANY_TROPICAL_WETLAND]
-	[VALUE:2]
-	[SPRING][SUMMER][AUTUMN][WINTER]
+	[VALUE:1][GROWDUR:1000]{:n/a     new: added growthduration, part of making aquiring food more difficult. - zey}
+	[SPRING][SUMMER]{:WINTER/AUTUMN:     revision: removed growing period, part of making aquiring food more difficult. - zey}
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
 		[STATE_COLOR:ALL:GREEN]
 		[DISPLAY_COLOR:2:0:0]

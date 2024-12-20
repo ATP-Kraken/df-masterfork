@@ -29,7 +29,7 @@ creature_fake
         [ARENA_RESTRICTED]
         [DOES_NOT_EXIST]
 
-[CREATURE:ANIMAL_LAMELLAR] fake creature for orcish leather
+#CREATURE:ANIMAL_LAMELLAR] fake creature for orcish leather
    [NAME:lamellar:lamellar:lamellar]
    [USE_MATERIAL_TEMPLATE:LAMELLAR_LEATHER:LAMELLAR_LEATHER_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:LEATHER:LAMELLAR_LEATHER_TEMPLATE]
@@ -37,7 +37,7 @@ creature_fake
         [ARENA_RESTRICTED]
         [DOES_NOT_EXIST]
 
-[CREATURE:ANIMAL_BLOOD] fake creature for bloods
+#CREATURE:ANIMAL_BLOOD] fake creature for bloods
    [NAME:spilled:spilled:spilled]
    [USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:GOO:GOO_TEMPLATE]
@@ -47,7 +47,7 @@ creature_fake
         [ARENA_RESTRICTED]
         [DOES_NOT_EXIST]
 
-[CREATURE:ANIMAL_MILK] fake creature for milks
+#CREATURE:ANIMAL_MILK] fake creature for milks
    [NAME:fresh:fresh:fresh]
    [USE_MATERIAL_TEMPLATE:MILK:MILK_TEMPLATE]
    	[USE_MATERIAL_TEMPLATE:SLIME:SLIME_TEMPLATE]
@@ -65,7 +65,7 @@ creature_fake
         [ARENA_RESTRICTED]
         [DOES_NOT_EXIST]
 
-[CREATURE:ANIMAL_MILK_AGED] fake creature for milks
+#CREATURE:ANIMAL_MILK_AGED] fake creature for milks
    [NAME:aged:aged:aged]
    [USE_MATERIAL_TEMPLATE:MILK:MILK_TEMPLATE]
    	[USE_MATERIAL_TEMPLATE:SLIME:SLIME_TEMPLATE]
@@ -110,7 +110,7 @@ creature_fake
         [ARENA_RESTRICTED]
         [DOES_NOT_EXIST]
 
-[CREATURE:ANIMAL_BONE] fake creature for bone
+#CREATURE:ANIMAL_BONE] fake creature for bone
    [NAME:cleaned:cleaned:cleaned]
    [USE_MATERIAL_TEMPLATE:BONE:BONE_TEMPLATE]
    [SELECT_MATERIAL:ALL]
@@ -124,7 +124,7 @@ creature_fake
         [ARENA_RESTRICTED]
         [DOES_NOT_EXIST]
 		
-		[CREATURE:INSTAKILL_CREATURE]
+#CREATURE:INSTAKILL_CREATURE]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:Cloud of blood and gore]
 	[NAME:cloud of blood and gore:cloud of blood and gore:cloud of blood and gore]
 	[CASTE_NAME:cloud of blood and gore:cloud of blood and gore:cloud of blood and gore]

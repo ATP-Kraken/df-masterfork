@@ -1492,7 +1492,7 @@ material_template_default
 	[STATE_COLOR:GAS:WHITE]
 	[STATE_NAME_ADJ:GAS:n/a]
 	[DISPLAY_COLOR:7:0:1]
-	[MATERIAL_VALUE:1]
+	[MATERIAL_VALUE:3] made silk more valuable across the board, - zey.
 	[SPEC_HEAT:420]
 	[IGNITE_POINT:10393]{:10508   Revision: 425 F, lights more easily.}
 	[MELTING_POINT:NONE]

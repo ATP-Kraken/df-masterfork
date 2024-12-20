@@ -9,7 +9,7 @@ plant_standard
 
 	Here the material is added to the plant, using a template from the material file.
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[MATERIAL_REACTION_PRODUCT:DRINK_MAT:LOCAL_PLANT_MAT:DRINK]
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 
@@ -25,7 +25,7 @@ plant_standard
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
 	[PICKED_TILE:6][PICKED_COLOR:5:0:0]
-	[GROWDUR:450][VALUE:2]{:300  Revision: increased growth time by 50%, - zey.}
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 
 	Next we establish an alcohol material in much the same way as the structural material.
 	
@@ -35,7 +35,7 @@ plant_standard
 		[STATE_NAME_ADJ:LIQUID:dwarven wine]
 		[STATE_NAME_ADJ:GAS:boiling dwarven wine]
 		We also set a few more numbers to distinguish the alcohol from the template.
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:5:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -64,12 +64,12 @@ plant_standard
 [PLANT:GRASS_TAIL_PIG]
 	[NAME:pig tail][NAME_PLURAL:pig tails][ADJ:pig tail]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 		[MATERIAL_REACTION_PRODUCT:PRESS_PAPER_MAT:LOCAL_PLANT_MAT:THREAD]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:231][PICKED_COLOR:7:0:0]
-	[GROWDUR:450][VALUE:2]{:300  Revision: increased growth time by 50%, - zey.}
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:SEED:SEED_TEMPLATE]
 		[MATERIAL_VALUE:1]
 		[EDIBLE_VERMIN]
@@ -84,7 +84,7 @@ plant_standard
 		[STATE_NAME_ADJ:SOLID_PRESSED:pig tail paper]
 		[PREFIX:NONE]
 		[REACTION_CLASS:PAPER_SLURRY]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[STOCKPILE_GLOB_PASTE]
 	[THREAD:LOCAL_PLANT_MAT:THREAD]
 	[PREFSTRING:twisting stalks]
@@ -99,7 +99,7 @@ plant_standard
 [PLANT:GRASS_WHEAT_CAVE]
 	[NAME:cave wheat][NAME_PLURAL:cave wheat][ADJ:cave wheat]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_VERMIN]
 		[MATERIAL_REACTION_PRODUCT:DRINK_MAT:LOCAL_PLANT_MAT:DRINK]
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
@@ -107,12 +107,12 @@ plant_standard
 		[REACTION_CLASS:MILL_FLOUR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:231][PICKED_COLOR:7:0:1]
-	[GROWDUR:750][VALUE:2]{:500  Revision: increased growth time by 50%, - zey.}
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen dwarven beer]
 		[STATE_NAME_ADJ:LIQUID:dwarven beer]
 		[STATE_NAME_ADJ:GAS:boiling dwarven beer]
-		[MATERIAL_VALUE:3]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -152,7 +152,7 @@ plant_standard
 [PLANT:POD_SWEET]
 	[NAME:sweet pod][NAME_PLURAL:sweet pods][ADJ:sweet pod]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_VERMIN]
 		[MATERIAL_REACTION_PRODUCT:DRINK_MAT:LOCAL_PLANT_MAT:DRINK]
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
@@ -160,12 +160,12 @@ plant_standard
 		[REACTION_CLASS:MILL_SUGAR]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:232][PICKED_COLOR:4:0:1]
-	[GROWDUR:750][VALUE:2]{:500  Revision: increased growth time by 50%, - zey.}
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen dwarven rum]
 		[STATE_NAME_ADJ:LIQUID:dwarven rum]
 		[STATE_NAME_ADJ:GAS:boiling dwarven rum]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:5:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -212,13 +212,13 @@ plant_standard
 [PLANT:BUSH_QUARRY]
 	[NAME:quarry bush][NAME_PLURAL:quarry bushes][ADJ:quarry bush]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_VERMIN]
 		[ITEM_REACTION_PRODUCT:BAG_ITEM:PLANT_GROWTH:LEAVES:LOCAL_PLANT_MAT:LEAF]
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:5][PICKED_COLOR:7:0:0]
-	[GROWDUR:750][VALUE:2]{:500  Revision: increased growth time by 50%, - zey.}
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:OIL:PLANT_OIL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen rock nut oil]
 		[STATE_NAME_ADJ:LIQUID:rock nut oil]
@@ -273,21 +273,14 @@ plant_standard
 		[EDIBLE_VERMIN]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
-		[MATERIAL_REACTION_PRODUCT:DRINK_MAT:LOCAL_PLANT_MAT:DRINK]
+
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:231][PICKED_COLOR:0:0:1]
 	[WET][BIOME:ANY_WETLAND]
-	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
-		[STATE_NAME_ADJ:ALL_SOLID:frozen swamp whiskey]
-		[STATE_NAME_ADJ:LIQUID:swamp whiskey]
-		[STATE_NAME_ADJ:GAS:boiling swamp whiskey]
-		[MATERIAL_VALUE:1]
-		[DISPLAY_COLOR:0:0:1]
-		[EDIBLE_RAW]
-		[EDIBLE_COOKED]
-		[PREFIX:NONE]
-	[DRINK:LOCAL_PLANT_MAT:DRINK]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
+	removed plant drink, - zey.
+
 	[USE_MATERIAL_TEMPLATE:SEED:SEED_TEMPLATE]
 	[SEED:muck root seed:muck root seeds:6:0:0:LOCAL_PLANT_MAT:SEED]
 	[SPRING][SUMMER][AUTUMN][WINTER]
@@ -307,12 +300,12 @@ plant_standard
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:232][PICKED_COLOR:6:0:0]
 	[DRY][BIOME:ANY_WETLAND]
-	[VALUE:2]
+	[VALUE:1]
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen tuber beer]
 		[STATE_NAME_ADJ:LIQUID:tuber beer]
 		[STATE_NAME_ADJ:GAS:boiling tuber beer]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:7:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -359,6 +352,7 @@ plant_standard
 
 [PLANT:BERRIES_PRICKLE]
 	[NAME:prickle berry][NAME_PLURAL:prickle berries][ADJ:prickle berry]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
 		[MATERIAL_VALUE:1]
 		[EDIBLE_VERMIN]
@@ -392,7 +386,7 @@ plant_standard
 [PLANT:BERRIES_STRAW]
 	[NAME:strawberry plant][NAME_PLURAL:strawberry plants][ADJ:strawberry plant]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_VERMIN]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -406,12 +400,12 @@ plant_standard
 		[STOCKPILE_PLANT_GROWTH]
 	[PICKED_TILE:58][PICKED_COLOR:4:0:0]
 	[DRY][BIOME:NOT_FREEZING]
-	[VALUE:2]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen strawberry wine]
 		[STATE_NAME_ADJ:LIQUID:strawberry wine]
 		[STATE_NAME_ADJ:GAS:boiling strawberry wine]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:5:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -438,7 +432,7 @@ plant_standard
 [PLANT:GRASS_LONGLAND]
 	[NAME:longland grass][NAME_PLURAL:longland grass][ADJ:longland grass]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_VERMIN]
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 		[MATERIAL_REACTION_PRODUCT:MILL_MAT:LOCAL_PLANT_MAT:MILL]
@@ -446,7 +440,7 @@ plant_standard
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:231][PICKED_COLOR:6:0:1]
 	[DRY][BIOME:NOT_FREEZING]
-	[VALUE:2]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:longland flour]
 		[STATE_COLOR:ALL_SOLID:WHITE]
@@ -517,7 +511,7 @@ plant_standard
 [PLANT:BERRIES_FISHER]
 	[NAME:fisher berry][NAME_PLURAL:fisher berries][ADJ:fisher berry]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_VERMIN]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -526,12 +520,12 @@ plant_standard
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:58][PICKED_COLOR:7:0:0]
 	[WET][BIOME:NOT_FREEZING]
-	[VALUE:2]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen fisher berry wine]
 		[STATE_NAME_ADJ:LIQUID:fisher berry wine]
 		[STATE_NAME_ADJ:GAS:boiling fisher berry wine]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -549,13 +543,13 @@ plant_standard
 [PLANT:REED_ROPE]
 	[NAME:rope reed][NAME_PLURAL:rope reeds][ADJ:rope reed]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 		[MATERIAL_REACTION_PRODUCT:PRESS_PAPER_MAT:LOCAL_PLANT_MAT:THREAD]
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:159][PICKED_COLOR:2:0:0]
 	[WET][BIOME:NOT_FREEZING]
-	[VALUE:2]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[SPRING][SUMMER][AUTUMN][WINTER]
 	[FREQUENCY:50]
 	[CLUSTERSIZE:5]
@@ -564,7 +558,7 @@ plant_standard
 		[STATE_NAME_ADJ:SOLID_PASTE:rope reed slurry]
 		[STATE_NAME_ADJ:SOLID_PRESSED:rope reed paper]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[REACTION_CLASS:PAPER_SLURRY]
 		[STOCKPILE_GLOB_PASTE]
 	[THREAD:LOCAL_PLANT_MAT:THREAD]
@@ -577,10 +571,10 @@ plant_standard
 [PLANT:MUSHROOM_CUP_DIMPLE]
 	[NAME:dimple cup][NAME_PLURAL:dimple cups][ADJ:dimple cup]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:3][PICKED_COLOR:1:0:1]
-	[GROWDUR:750][VALUE:2]{:500  Revision: increased growth time by 50%, - zey.}
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:dimple dye]
 		[STATE_COLOR:ALL_SOLID:MIDNIGHT_BLUE]
@@ -609,11 +603,11 @@ plant_standard
 [PLANT:WEED_BLADE]
 	[NAME:blade weed][NAME_PLURAL:blade weed][ADJ:blade weed]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:231][PICKED_COLOR:2:0:0]
 	[DRY][BIOME:NOT_FREEZING]
-	[VALUE:2]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:emerald dye]
 		[STATE_COLOR:ALL_SOLID:EMERALD]
@@ -638,7 +632,7 @@ plant_standard
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:231][PICKED_COLOR:6:0:0]
 	[DRY][BIOME:NOT_FREEZING]
-	[VALUE:1]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:redroot dye]
 		[STATE_COLOR:ALL_SOLID:BROWN]
@@ -664,6 +658,7 @@ plant_standard
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:231][PICKED_COLOR:0:0:1]
 	[DRY][EVIL][BIOME:NOT_FREEZING]
+	[GROWDUR:1000]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:sliver dye]
 		[STATE_COLOR:ALL_SOLID:BLACK]
@@ -684,7 +679,7 @@ plant_standard
 [PLANT:BERRY_SUN]
 	[NAME:sun berry][NAME_PLURAL:sun berries][ADJ:sun berry]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		[MATERIAL_VALUE:3]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[EDIBLE_VERMIN]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -693,7 +688,7 @@ plant_standard
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:58][PICKED_COLOR:6:0:1]
 	[WET][GOOD][BIOME:NOT_FREEZING]
-	[VALUE:3]
+	[GROWDUR:1000][VALUE:1]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen sunshine]
 		[STATE_NAME_ADJ:LIQUID:sunshine]
@@ -723,11 +718,12 @@ plant_standard
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:21][PICKED_COLOR:3:0:1]
 	[DRY][SAVAGE][BIOME:NOT_FREEZING]
+	[GROWDUR:1000]{:300  Revision: increased growthdur to 1000, - zey.}
 	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:frozen whip wine]
 		[STATE_NAME_ADJ:LIQUID:whip wine]
 		[STATE_NAME_ADJ:GAS:boiling whip wine]
-		[MATERIAL_VALUE:3]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:3:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -2227,7 +2223,7 @@ Uristocrat did the density values.
 		[STATE_NAME_ADJ:ALL_SOLID:frozen mango wine]
 		[STATE_NAME_ADJ:LIQUID:mango wine]
 		[STATE_NAME_ADJ:GAS:boiling mango wine]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		[DISPLAY_COLOR:6:0:0]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -2432,7 +2428,7 @@ Uristocrat did the density values.
 		[STATE_NAME_ADJ:SOLID_PASTE:coir pith]
 		[STATE_NAME_ADJ:SOLID_PRESSED:coir paper]
 		[PREFIX:NONE]
-		[MATERIAL_VALUE:2]
+		[MATERIAL_VALUE:1] nerfed crop values across the board, - zey.
 		REACTION_CLASS:PAPER_SLURRY
 		STOCKPILE_GLOB_PASTE (doesn't exist as PLANT item)
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]

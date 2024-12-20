@@ -469,9 +469,9 @@ entity_dwarf
     [ACTIVE_SEASON:SUMMER]
     [SIEGER]
 
-	[MAX_STARTING_CIV_NUMBER:100]
-	[MAX_POP_NUMBER:10000]
-	[MAX_SITE_POP_NUMBER:250]
+	[MAX_STARTING_CIV_NUMBER:3]
+	[MAX_POP_NUMBER:20000]
+	[MAX_SITE_POP_NUMBER:120]
 
     [RELIGION:PANTHEON] 
 	[RELIGION_SPHERE:EARTH]
@@ -610,10 +610,11 @@ entity_dwarf
 	[VARIABLE_VALUE:KNOWLEDGE:15:30]
 
 	[POSITION:MONARCH]
-		[NAME:monarch:monarchs]
-		[NAME_MALE:high king:high kings]
-		[NAME_MALE:high queen:high queens]
+		[NAME:high-monarch:high-monarchs]
+		[NAME_MALE:High King:High Kings]
+		[NAME_FEMALE:High Queen:High Queens]
 		[ALLOWED_CLASS:DWARF_MALE]
+		[ALLOWED_CLASS:DWARF_FEMALE]
 		[NUMBER:1]
 		[SPOUSE_MALE:King-consort:kings consort]
 		[SPOUSE_FEMALE:King-consort:kings consort]

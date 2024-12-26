@@ -16,6 +16,15 @@ creature_civ_orc
 	[BONECARN]
 	[PREFSTRING:tusks]
 	[PREFSTRING:green skin]
+	[NATURAL_SKILL:DISCIPLINE:2]
+	[NATURAL_SKILL:MELEE_COMBAT:1]
+	[NATURAL_SKILL:INTIMIDATION:1]
+	[TRAPAVOID][NATURAL_SKILL:SWIMMING:1] Sver: makes sense for civilized creatures
+	[SKILL_LEARN_RATES:50] all civ creatures learn slower to make skilled individuals rarer, - zey.
+	[SKILL_LEARN_RATE:COOK:25] cooking is too strong at the moment, - zey.
+	[NO_PHYS_ATT_RUST] makes sense for orcs, - zey.
+	[SKILL_RUST_RATES:12:24:24] vanilla: 8:16:16 { approx. 50% slower skill rust for all races to balance out slower learn rates. }
+	
 	[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE:2TUSKS]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 	[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]

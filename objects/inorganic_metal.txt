@@ -1144,3 +1144,4 @@ bismuth itself is brittle, but you can alloy it with tin/copper to make a light-
 	[ITEMS_WEAPON_RANGED]
 	[ITEMS_ARMOR]
 	[ITEMS_ANVIL]
+	[SPECIAL]

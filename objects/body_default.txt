@@ -1824,7 +1824,7 @@ Kraken: more renaming
 [BODYGLOSS:BONE_THIGH:thigh:femur:thighs:femurs] applicable to arthropod limb segments (coxa-trochanter-femur-patella-tibia-metatarsus-tarsus)
 [BODYGLOSS:BONE_CALF:calf:tibia:calves:tibiae]
 
-[BODY:PEARL]
-	[BP:PEARL:pearl sac:STP][CONTYPE:UPPERBODY][INTERNAL][SMALL][CATEGORY:GROWTH]
-		[VERMIN_BUTCHER_ITEM]
-		[DEFAULT_RELSIZE:200]
+[BODY:PEARL] Modest Mod
+    [BP:PEARL:pearl:STP][CONTYPE:UPPERBODY][SMALL][INTERNAL][CATEGORY:PEARL]
+        [DEFAULT_RELSIZE:20]
+        [VERMIN_BUTCHER_ITEM]

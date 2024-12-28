@@ -467,3 +467,4 @@ Standardized meat & organs/bone: marked with YES_STANDARDIZED_MEAT/YES_STANDARDI
 	[RELATIVE_THICKNESS:1]
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
+

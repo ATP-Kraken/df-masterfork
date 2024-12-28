@@ -285,7 +285,7 @@ creature_civ_dwarf
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:5951:5419:4898:1463:6944:8233] 6 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[SWIMS_LEARNED]
-    [PERSONALITY:LOVE_PROPENSITY:5:60:100] { 55.0 avg }
+    [PERSONALITY:LOVE_PROPENSITY:0:60:100] { 55.0 avg }
 	[PERSONALITY:HATE_PROPENSITY:0:40:95] { 45.0 avg }
 	[PERSONALITY:ENVY_PROPENSITY:0:55:100] { 51.6 avg }
 	[PERSONALITY:CHEER_PROPENSITY:0:55:100] { 51.6 avg }
@@ -378,132 +378,132 @@ creature_civ_dwarf
 
 [CASTE:MERCHANT_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:merchants guild dwarf:merchants guild dwarves:dwarven]
+    [CASTE_NAME:dwarf merchant:dwarven merchants:dwarven]
     [MALE]
 
 [CASTE:MERCHANT_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:merchants guild dwarf:merchants guild dwarves:dwarven]
+    [CASTE_NAME:dwarf merchant:dwarven merchants:dwarven]
 	[FEMALE]
 
 [CASTE:CARPENTER_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:carpenters guild dwarf:carpenters guild dwarves:dwarven]
+    [CASTE_NAME:dwarf carpenter:dwarven carpenters:dwarven]
 	[MALE]
 
 [CASTE:CARPENTER_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:carpenters guild dwarf:carpenters guild dwarves:dwarven]
+    [CASTE_NAME:dwarf carpenter:dwarven carpenters:dwarven]
 	[FEMALE]
 
 [CASTE:MASON_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:masons guild dwarf:masons guild dwarves:dwarven]
+    [CASTE_NAME:dwarf mason:dwarven masons:dwarven]
 	[MALE]
 
 [CASTE:MASON_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:masons guild dwarf:masons guild dwarves:dwarven]
+    [CASTE_NAME:dwarf mason:dwarven masons:dwarven]
 	[FEMALE]
 
 [CASTE:BEAST_WARDEN_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:beast wardens guild dwarf:beast wardens guild dwarves:dwarven]
+    [CASTE_NAME:dwarf beast-warden:dwarven beast-wardens:dwarven]
 	[MALE]
 
 [CASTE:BEAST_WARDEN_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:beast wardens guild dwarf:beast wardens guild dwarves:dwarven]
+    [CASTE_NAME:dwarf beast-warden:dwarven beast-wardens:dwarven]
 	[FEMALE]
 
 [CASTE:SMITH_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:smiths guild dwarf:smiths guild dwarves:dwarven]
+    [CASTE_NAME:dwarf smith:dwarven smiths:dwarven]
 	[MALE]
 
 [CASTE:SMITH_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:smiths guild dwarf:smiths guild dwarves:dwarven]
+    [CASTE_NAME:dwarf smith:dwarven smiths:dwarven]
 	[FEMALE]
 
 [CASTE:JEWELER_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:jewelers guild dwarf:jewelers guild dwarves:dwarven]
+    [CASTE_NAME:dwarf jeweler:dwarven jewelers:dwarven]
 	[MALE]
 
 [CASTE:JEWELER_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:jewelers guild dwarf:jewelers guild dwarves:dwarven]
+    [CASTE_NAME:dwarf jeweler:dwarven jewelers:dwarven]
 	[FEMALE]
 
 [CASTE:ARTISAN_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:artisans guild dwarf:artisans guild dwarves:dwarven]
+    [CASTE_NAME:dwarf artisan:dwarven artisans:dwarven]
 	[MALE]
 
 [CASTE:ARTISAN_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:artisans guild dwarf:artisans guild dwarves:dwarven]
+    [CASTE_NAME:dwarf artisan:dwarven artisans:dwarven]
 	[FEMALE]
 
 [CASTE:FISHERMAN_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:fishermans guild dwarf:fishermans guild dwarves:dwarven]
+    [CASTE_NAME:dwarf fisher:dwarven fishers:dwarven]
 	[MALE]
 
 [CASTE:FISHERMAN_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:fishermans guild dwarf:fishermans guild dwarves:dwarven]
+    [CASTE_NAME:dwarf fisher:dwarven fishers:dwarven]
 	[FEMALE]
 
 [CASTE:FARMER_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:farmers guild dwarf:farmers guild dwarves:dwarven]
+    [CASTE_NAME:dwarf farmer:dwarven farmers:dwarven]
 		[MALE]
 
 [CASTE:FARMER_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:farmers guild dwarf:farmers guild dwarves:dwarven]
+    [CASTE_NAME:dwarf farmer:dwarven farmers:dwarven]
 	[FEMALE]
 
 [CASTE:HEALER_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:healers guild dwarf:healers guild dwarves:dwarven]
+    [CASTE_NAME:dwarf healer:dwarven healers:dwarven]
 	[MALE]
 
 [CASTE:HEALER_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:healers guild dwarf:healers guild dwarves:dwarven]
+    [CASTE_NAME:dwarf healer:dwarven healers:dwarven]
 	[FEMALE]
 
 [CASTE:ENGINEER_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:engineers guild dwarf:engineers guild dwarves:dwarven]
+    [CASTE_NAME:dwarf engineer:dwarven engineers:dwarven]
 	[MALE]
 
 [CASTE:ENGINEER_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:engineers guild dwarf:engineers guild dwarves:dwarven]
+    [CASTE_NAME:dwarf engineer:dwarven engineers:dwarven]
 	[FEMALE]		
 		
 [CASTE:WARRIOR_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:warriors guild dwarf:warriors guild dwarves:dwarven]
+    [CASTE_NAME:dwarf warrior:dwarven warriors:dwarven]
 	[MALE]
 
 [CASTE:WARRIOR_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:warriors guild dwarf:warriors guild dwarves:dwarven]
+    [CASTE_NAME:dwarf warrior:dwarven warriors:dwarven]
 	[FEMALE]
 
 [CASTE:RANGER_MALE]
     [CREATURE_CLASS:DWARF_MALE]
-    [CASTE_NAME:ranger dwarf:ranger dwarves:dwarven]
+    [CASTE_NAME:dwarf ranger:dwarven rangers:dwarven]
 	[MALE]
 
 [CASTE:RANGER_FEMALE]
     [CREATURE_CLASS:DWARF_FEMALE]
-    [CASTE_NAME:ranger dwarf:ranger dwarves:dwarven]
+    [CASTE_NAME:dwarf ranger:dwarven rangers:dwarven]
 	[FEMALE]
 	
 	[SELECT_CASTE:FEMALE]
@@ -641,19 +641,38 @@ creature_civ_dwarf
 	[FEMALE]
 	[MULTIPLE_LITTER_RARE]
 	[POP_RATIO:364]      
-    [SKILL_RATE:FLATTERY:80:0:0:0]                
-    [SKILL_RATE:INTIMIDATION:80:0:0:0]                
-    [SKILL_RATE:JUDGING_INTENT:80:0:0:0]           
-    [SKILL_RATE:NEGOTIATION:80:0:0:0]                
-    [SKILL_RATE:PACIFY:80:0:0:0]                
-    [SKILL_RATE:PERSUASION:80:0:0:0]                
-    [SKILL_RATE:TEACHING:80:0:0:0]                
-    [SKILL_RATE:APPRAISAL:80:0:0:0]     
-    [SKILL_RATE:LEADERSHIP:80:0:0:0]                
-    [SKILL_RATE:ORGANIZATION:80:0:0:0]                
-    [SKILL_RATE:RECORD_KEEPING:80:0:0:0]
-	[NATURAL_SKILL:APPRAISAL:1]
-	[NATURAL_SKILL:NEGOTIATION:1]
+    [SKILL_RATE:FLATTERY:75:0:0:0]                
+    [SKILL_RATE:INTIMIDATION:75:0:0:0]                
+    [SKILL_RATE:JUDGING_INTENT:75:0:0:0]           
+    [SKILL_RATE:NEGOTIATION:75:0:0:0]                
+    [SKILL_RATE:PACIFY:75:0:0:0]                
+    [SKILL_RATE:PERSUASION:75:0:0:0]                
+    [SKILL_RATE:TEACHING:75:0:0:0]                
+    [SKILL_RATE:APPRAISAL:75:0:0:0]     
+    [SKILL_RATE:LEADERSHIP:75:0:0:0]                
+    [SKILL_RATE:ORGANIZATION:75:0:0:0]                
+    [SKILL_RATE:RECORD_KEEPING:75:0:0:0]
+	[NATURAL_SKILL:APPRAISAL:2]
+	[NATURAL_SKILL:NEGOTIATION:2]
+	-----# guild specific attribute values   START #-----
+	[MENT_ATT_RANGE:LINGUISTIC_ABILITY:450:1050:1250:1500:1650:1850:2750]   { ≈10%+ lower values, ≈20%+ upper values. 1500avg }
+	[MENT_ATT_RANGE:SOCIAL_AWARENESS:450:1050:1250:1500:1650:1850:2750]     { ≈10%+ lower values, ≈20%+ upper values. 1500avg }
+	[MENT_ATT_RANGE:MEMORY:450:1050:1250:1500:1650:1850:2750]               { ≈10%+ lower values, ≈20%+ upper values. 1500avg }
+	[MENT_ATT_RANGE:INTUITION:450:1050:1250:1500:1650:1850:2750]            { ≈10%+ lower values, ≈20%+ upper values. 1500avg }
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+	[PERSONALITY:GREGARIOUSNESS:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:FRIENDLINESS:20:75:100]                                    { 65.0 avg }
+	[PERSONALITY:POLITENESS:20:75:100]                                      { 65.0 avg }
+	[PERSONALITY:ACTIVITY_LEVEL:20:75:100]                                  { 65.0 avg }
+	-----# guild specific personality values   END #-----
     [CASTE_PROFESSION_NAME:CLERK:Clerk*:Clerks*]
     [CASTE_PROFESSION_NAME:ADMINISTRATOR:Administrator*:Administrators*]
     [CASTE_PROFESSION_NAME:TRADER:Trader*:Traders*]
@@ -666,19 +685,38 @@ creature_civ_dwarf
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[POP_RATIO:364]
-    [SKILL_RATE:FLATTERY:80:0:0:0]                
-    [SKILL_RATE:INTIMIDATION:80:0:0:0]                
-    [SKILL_RATE:JUDGING_INTENT:80:0:0:0]           
-    [SKILL_RATE:NEGOTIATION:80:0:0:0]                
-    [SKILL_RATE:PACIFY:80:0:0:0]                
-    [SKILL_RATE:PERSUASION:80:0:0:0]                
-    [SKILL_RATE:TEACHING:80:0:0:0]                
-    [SKILL_RATE:APPRAISAL:80:0:0:0]     
-    [SKILL_RATE:LEADERSHIP:80:0:0:0]                
-    [SKILL_RATE:ORGANIZATION:80:0:0:0]                
-    [SKILL_RATE:RECORD_KEEPING:80:0:0:0]
-	[NATURAL_SKILL:APPRAISAL:1]
-	[NATURAL_SKILL:NEGOTIATION:1]
+    [SKILL_RATE:FLATTERY:75:0:0:0]                
+    [SKILL_RATE:INTIMIDATION:75:0:0:0]                
+    [SKILL_RATE:JUDGING_INTENT:75:0:0:0]           
+    [SKILL_RATE:NEGOTIATION:75:0:0:0]                
+    [SKILL_RATE:PACIFY:75:0:0:0]                
+    [SKILL_RATE:PERSUASION:75:0:0:0]                
+    [SKILL_RATE:TEACHING:75:0:0:0]                
+    [SKILL_RATE:APPRAISAL:75:0:0:0]     
+    [SKILL_RATE:LEADERSHIP:75:0:0:0]                
+    [SKILL_RATE:ORGANIZATION:75:0:0:0]                
+    [SKILL_RATE:RECORD_KEEPING:75:0:0:0]
+	[NATURAL_SKILL:APPRAISAL:2]
+	[NATURAL_SKILL:NEGOTIATION:2]
+	-----# guild specific attribute values   START #-----
+	[MENT_ATT_RANGE:LINGUISTIC_ABILITY:450:1050:1250:1500:1650:1850:2750]   { ≈10%+ lower values, ≈20%+ upper values. 1500avg }
+	[MENT_ATT_RANGE:SOCIAL_AWARENESS:450:1050:1250:1500:1650:1850:2750]     { ≈10%+ lower values, ≈20%+ upper values. 1500avg }
+	[MENT_ATT_RANGE:MEMORY:450:1050:1250:1500:1650:1850:2750]               { ≈10%+ lower values, ≈20%+ upper values. 1500avg }
+	[MENT_ATT_RANGE:INTUITION:450:1050:1250:1500:1650:1850:2750]            { ≈10%+ lower values, ≈20%+ upper values. 1500avg }
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+	[PERSONALITY:GREGARIOUSNESS:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:FRIENDLINESS:20:75:100]                                    { 65.0 avg }
+	[PERSONALITY:POLITENESS:20:75:100]                                      { 65.0 avg }
+	[PERSONALITY:ACTIVITY_LEVEL:20:75:100]                                  { 65.0 avg }
+	-----# guild specific personality values   END #-----
     [CASTE_PROFESSION_NAME:CLERK:Clerk*:Clerks*]                                    
     [CASTE_PROFESSION_NAME:ADMINISTRATOR:Administrator*:Administrators*]                                    
     [CASTE_PROFESSION_NAME:TRADER:Trader*:Traders*]        
@@ -697,12 +735,25 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:WOODCRAFTER:Woodcrafter*:Woodcrafters*]  
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]  
 	[DESCRIPTION:*CARPENTERS GUILD* This dwarf has joined the guild of woodworkers, lumberjacks and bowyers. Its not the most popular guild among dwarves, since the work is mostly outdoors, but the fact that elves hate it with a passion makes more then up for it.]
-	[SKILL_RATE:BOWYER:80:0:0:0]    
-	[SKILL_RATE:CARPENTRY:80:0:0:0]      
-	[SKILL_RATE:WOODCRAFT:80:0:0:0]                
-	[SKILL_RATE:WOODCUTTING:80:0:0:0]
-	[NATURAL_SKILL:CARPENTRY:1]
-	[NATURAL_SKILL:WOODCRAFT:1]
+	[SKILL_RATE:BOWYER:75:0:0:0]    
+	[SKILL_RATE:CARPENTRY:75:0:0:0]      
+	[SKILL_RATE:WOODCRAFT:75:0:0:0]                
+	[SKILL_RATE:WOODCUTTING:75:0:0:0]
+	[NATURAL_SKILL:CARPENTRY:2]
+	[NATURAL_SKILL:WOODCRAFT:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     
 [SELECT_CASTE:CARPENTER_MALE]
 	[MALE]
@@ -716,12 +767,25 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:WOODCRAFTER:Woodcrafter*:Woodcrafters*]  
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*CARPENTERS GUILD* This dwarf has joined the guild of woodworkers, lumberjacks and bowyers. Its not the most popular guild among dwarves, since the work is mostly outdoors, but the fact that elves hate it with a passion makes more then up for it.]
-	[SKILL_RATE:BOWYER:80:0:0:0]    
-	[SKILL_RATE:CARPENTRY:80:0:0:0]      
-	[SKILL_RATE:WOODCRAFT:80:0:0:0]                
-	[SKILL_RATE:WOODCUTTING:80:0:0:0]
-	[NATURAL_SKILL:CARPENTRY:1]
-	[NATURAL_SKILL:WOODCRAFT:1]
+	[SKILL_RATE:BOWYER:75:0:0:0]    
+	[SKILL_RATE:CARPENTRY:75:0:0:0]      
+	[SKILL_RATE:WOODCRAFT:75:0:0:0]                
+	[SKILL_RATE:WOODCUTTING:75:0:0:0]
+	[NATURAL_SKILL:CARPENTRY:2]
+	[NATURAL_SKILL:WOODCRAFT:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     
 [SELECT_CASTE:MASON_FEMALE]
 	[FEMALE]
@@ -731,15 +795,29 @@ creature_civ_dwarf
 	[CASTE_PROFESSION_NAME:STONEWORKER:Stoneworker*:Stoneworkers*]                                    
 	[CASTE_PROFESSION_NAME:ENGRAVER:Engraver*:Engravers*]                                    
 	[CASTE_PROFESSION_NAME:MASON:Mason*:Masons*]  
-	[CASTE_PROFESSION_NAME:STONECRAFTER:Stonecrafter & Potter*:Stonecrafters & Potter*]
+	[CASTE_PROFESSION_NAME:STONECRAFTER:Stonecrafter*:Stonecrafters*]
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]    
 	[DESCRIPTION:*MASONS GUILD* This dwarf is member of the most prominent of all dwarven guilds, the masons. Working with stone is an age old tradition among dwarven society and the masons guild has honed this skill to perfection. Members learn masonry, engraving and mining, as well as skills like architecture and archeology.]
-	[SKILL_RATE:MINING:80:0:0:0]                 
-	[SKILL_RATE:MASONRY:80:0:0:0]         
-	[SKILL_RATE:STONECRAFT:80:0:0:0]          
-	[SKILL_RATE:ENGRAVE_STONE:80:0:0:0]
-	[NATURAL_SKILL:MASONRY:1]
-	[NATURAL_SKILL:STONECRAFT:1]
+	[SKILL_RATE:MINING:75:0:0:0]                 
+	[SKILL_RATE:MASONRY:75:0:0:0]         
+	[SKILL_RATE:STONECRAFT:75:0:0:0]          
+	[SKILL_RATE:ENGRAVE_STONE:75:0:0:0]
+	[NATURAL_SKILL:MASONRY:2]
+	[NATURAL_SKILL:STONECRAFT:2]
+	[NATURAL_SKILL:MINING:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     
 [SELECT_CASTE:MASON_MALE]
 	[MALE]
@@ -750,15 +828,29 @@ creature_civ_dwarf
 	[CASTE_PROFESSION_NAME:STONEWORKER:Stoneworker*:Stoneworkers*]                                    
 	[CASTE_PROFESSION_NAME:ENGRAVER:Engraver*:Engravers*]                                    
 	[CASTE_PROFESSION_NAME:MASON:Mason*:Masons*]  
-	[CASTE_PROFESSION_NAME:STONECRAFTER:Stonecrafter & Potter*:Stonecrafters & Potter*]
+	[CASTE_PROFESSION_NAME:STONECRAFTER:Stonecrafter*:Stonecrafters*]
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*MASONS GUILD* This dwarf is member of the most prominent of all dwarven guilds, the masons. Working with stone is an age old tradition among dwarven society and the masons guild has honed this skill to perfection. Members learn masonry, engraving and mining, as well as skills like architecture and archeology.]
-	[SKILL_RATE:MINING:80:0:0:0]                
-	[SKILL_RATE:MASONRY:80:0:0:0]         
-	[SKILL_RATE:STONECRAFT:80:0:0:0]          
-	[SKILL_RATE:ENGRAVE_STONE:80:0:0:0]
-	[NATURAL_SKILL:MASONRY:1]
-	[NATURAL_SKILL:STONECRAFT:1]
+	[SKILL_RATE:MINING:75:0:0:0]                
+	[SKILL_RATE:MASONRY:75:0:0:0]         
+	[SKILL_RATE:STONECRAFT:75:0:0:0]          
+	[SKILL_RATE:ENGRAVE_STONE:75:0:0:0]
+	[NATURAL_SKILL:MASONRY:2]
+	[NATURAL_SKILL:STONECRAFT:2]
+	[NATURAL_SKILL:MINING:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     
 [SELECT_CASTE:BEAST_WARDEN_FEMALE]
 	[FEMALE]
@@ -773,15 +865,30 @@ creature_civ_dwarf
 	[CASTE_PROFESSION_NAME:BEEKEEPER:Beekeeper*:Beekeepers*]    
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*BEAST WARDENS GUILD* This dwarf has joined the society of the beast wardens, a group of dwarves dedicated to the training and control of animals. While not recognized as a real guild by dwarven society, they do make excellent rangers, trappers and animal trainers. Building and maintaining insect hives falls under their responsibility as well.]
-	[SKILL_RATE:ANIMALCARE:80:0:0:0]                
-	[SKILL_RATE:ANIMALTRAIN:80:0:0:0]                
-	[SKILL_RATE:BEEKEEPING:80:0:0:0]   
-	[SKILL_RATE:DISSECT_VERMIN:80:0:0:0] 
-	[SKILL_RATE:TRAPPING:80:0:0:0]  
-	[SKILL_RATE:SNEAK:80:0:0:0]
-	[NATURAL_SKILL:ANIMALCARE:1]
-	[NATURAL_SKILL:ANIMALTRAIN:1]
-	[NATURAL_SKILL:BEEKEEPING:1]
+	[SKILL_RATE:ANIMALCARE:75:0:0:0]                
+	[SKILL_RATE:ANIMALTRAIN:75:0:0:0]                
+	[SKILL_RATE:BEEKEEPING:75:0:0:0]   
+	[SKILL_RATE:DISSECT_VERMIN:75:0:0:0] 
+	[SKILL_RATE:TRAPPING:75:0:0:0]  
+	[SKILL_RATE:SNEAK:75:0:0:0]
+	[NATURAL_SKILL:ANIMALCARE:2]
+	[NATURAL_SKILL:ANIMALTRAIN:2]
+	[NATURAL_SKILL:BEEKEEPING:2]
+	[NATURAL_SKILL:TRAPPING:2]
+	[NATURAL_SKILL:SNEAK:1]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
         
 [SELECT_CASTE:BEAST_WARDEN_MALE]
 	[MALE]
@@ -797,15 +904,30 @@ creature_civ_dwarf
 	[CASTE_PROFESSION_NAME:BEEKEEPER:Beekeeper*:Beekeepers*]    
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*BEAST WARDENS GUILD* This dwarf has joined the society of the beast wardens, a group of dwarves dedicated to the training and control of animals. While not recognized as a real guild by dwarven society, they do make excellent rangers, trappers and animal trainers. Building and maintaining insect hives falls under their responsibility as well.]
-	[SKILL_RATE:ANIMALCARE:80:0:0:0]                
-	[SKILL_RATE:ANIMALTRAIN:80:0:0:0]                
-	[SKILL_RATE:BEEKEEPING:80:0:0:0]   
-	[SKILL_RATE:DISSECT_VERMIN:80:0:0:0] 
-	[SKILL_RATE:TRAPPING:80:0:0:0]  
-	[SKILL_RATE:SNEAK:80:0:0:0]
-	[NATURAL_SKILL:ANIMALCARE:1]
-	[NATURAL_SKILL:ANIMALTRAIN:1]
-	[NATURAL_SKILL:BEEKEEPING:1]
+	[SKILL_RATE:ANIMALCARE:75:0:0:0]                
+	[SKILL_RATE:ANIMALTRAIN:75:0:0:0]                
+	[SKILL_RATE:BEEKEEPING:75:0:0:0]   
+	[SKILL_RATE:DISSECT_VERMIN:75:0:0:0] 
+	[SKILL_RATE:TRAPPING:75:0:0:0]  
+	[SKILL_RATE:SNEAK:75:0:0:0]
+	[NATURAL_SKILL:ANIMALCARE:2]
+	[NATURAL_SKILL:ANIMALTRAIN:2]
+	[NATURAL_SKILL:BEEKEEPING:2]
+	[NATURAL_SKILL:TRAPPING:2]
+	[NATURAL_SKILL:SNEAK:1]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     	
 [SELECT_CASTE:SMITH_FEMALE]
 	[FEMALE]
@@ -820,14 +942,29 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:WOOD_BURNER:Woodburner*:Woodburners*]  
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*SMITHS GUILD* This dwarf is member of the second largest dwarven guild, the smiths. What they lack in numbers in comparison to the masons guild, they make more then up with their dedication and skill in metalworks. They constantly tend to their furnaces or ovens and metal seems to bend to their will.]
-    [SKILL_RATE:SMELT:80:0:0:0]                
-    [SKILL_RATE:FORGE_ARMOR:80:0:0:0]                
-    [SKILL_RATE:FORGE_FURNITURE:80:0:0:0]                
-    [SKILL_RATE:FORGE_WEAPON:80:0:0:0]           
-    [SKILL_RATE:WOOD_BURNING:80:0:0:0]              
-	[NATURAL_SKILL:SMELT:1]
-	[NATURAL_SKILL:FORGE_ARMOR:1]
-	[NATURAL_SKILL:FORGE_WEAPON:1]
+    [SKILL_RATE:SMELT:75:0:0:0]                
+    [SKILL_RATE:FORGE_ARMOR:75:0:0:0]                
+    [SKILL_RATE:FORGE_FURNITURE:75:0:0:0]                
+    [SKILL_RATE:FORGE_WEAPON:75:0:0:0]           
+    [SKILL_RATE:WOOD_BURNING:75:0:0:0]              
+	[NATURAL_SKILL:SMELT:2]
+	[NATURAL_SKILL:FORGE_ARMOR:2]
+	[NATURAL_SKILL:FORGE_WEAPON:2]
+	[NATURAL_SKILL:FORGE_FURNITURE:2]
+	[NATURAL_SKILL:WOOD_BURNING:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     	
 [SELECT_CASTE:SMITH_MALE]
 	[MALE]
@@ -843,15 +980,30 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:WOOD_BURNER:Woodburner*:Woodburners*]  
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*SMITHS GUILD* This dwarf is member of the second largest dwarven guild, the smiths. What they lack in numbers in comparison to the masons guild, they make more then up with their dedication and skill in metalworks. They constantly tend to their furnaces or ovens and metal seems to bend to their will.]
-    [SKILL_RATE:SMELT:80:0:0:0]                
-    [SKILL_RATE:FORGE_ARMOR:80:0:0:0]                
-    [SKILL_RATE:FORGE_FURNITURE:80:0:0:0]                  
-    [SKILL_RATE:FORGE_WEAPON:80:0:0:0]                
-    [SKILL_RATE:WOOD_BURNING:80:0:0:0]              
-    [SKILL_RATE:METALCRAFT:80:0:0:0]
-	[NATURAL_SKILL:SMELT:1]
-	[NATURAL_SKILL:FORGE_ARMOR:1]
-	[NATURAL_SKILL:FORGE_WEAPON:1]
+    [SKILL_RATE:SMELT:75:0:0:0]                
+    [SKILL_RATE:FORGE_ARMOR:75:0:0:0]                
+    [SKILL_RATE:FORGE_FURNITURE:75:0:0:0]                  
+    [SKILL_RATE:FORGE_WEAPON:75:0:0:0]                
+    [SKILL_RATE:WOOD_BURNING:75:0:0:0]              
+    [SKILL_RATE:METALCRAFT:75:0:0:0]
+	[NATURAL_SKILL:SMELT:2]
+	[NATURAL_SKILL:FORGE_ARMOR:2]
+	[NATURAL_SKILL:FORGE_WEAPON:2]
+	[NATURAL_SKILL:FORGE_FURNITURE:2]
+	[NATURAL_SKILL:WOOD_BURNING:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     	
 [SELECT_CASTE:JEWELER_FEMALE]
 	[FEMALE]
@@ -863,10 +1015,23 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:GLASSMAKER:Glassmaker*:Glassmakers*]  
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*JEWELERS GUILD* This dwarf has proven skill in the fine arts. The members of the jewelers guild create the finest gemstones in the realm. They are in constant squabble with the merchants guild, which controls the taxes on said tradegoods.]
-    [SKILL_RATE:ENCRUSTGEM:80:0:0:0]        
-    [SKILL_RATE:CUTGEM:80:0:0:0]
-	[NATURAL_SKILL:ENCRUSTGEM:1]
-	[NATURAL_SKILL:CUTGEM:1]
+    [SKILL_RATE:ENCRUSTGEM:75:0:0:0]        
+    [SKILL_RATE:CUTGEM:75:0:0:0]
+	[NATURAL_SKILL:ENCRUSTGEM:2]
+	[NATURAL_SKILL:CUTGEM:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     
 [SELECT_CASTE:JEWELER_MALE]
 	[MALE]
@@ -879,10 +1044,23 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:GLASSMAKER:Glassmaker*:Glassmakers*]  
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*JEWELERS GUILD* This dwarf has proven skill in the fine arts. The members of the jewelers guild create the finest gemstones in the realm. They are in constant squabble with the merchants guild, which controls the taxes on said tradegoods.]
-    [SKILL_RATE:ENCRUSTGEM:80:0:0:0]        
-    [SKILL_RATE:CUTGEM:80:0:0:0]
-	[NATURAL_SKILL:ENCRUSTGEM:1]
-	[NATURAL_SKILL:CUTGEM:1]
+    [SKILL_RATE:ENCRUSTGEM:75:0:0:0]        
+    [SKILL_RATE:CUTGEM:75:0:0:0]
+	[NATURAL_SKILL:ENCRUSTGEM:2]
+	[NATURAL_SKILL:CUTGEM:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     
 [SELECT_CASTE:ARTISAN_FEMALE]
 	[FEMALE]
@@ -894,26 +1072,45 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:TANNER:Tanner*:Tanners*]                                             
     [CASTE_PROFESSION_NAME:BONE_CARVER:Bone carver*:Bone carvers*]                                    
     [CASTE_PROFESSION_NAME:WEAVER:Weaver*:Weavers*]                                    
-    [CASTE_PROFESSION_NAME:CLOTHIER:Clothier*:Clothiers*] 
+    [CASTE_PROFESSION_NAME:CLOTHIER:Clothier*:Clothiers*]
+	[CASTE_PROFESSION_NAME:COOK:Cook*:Cooks*]
     [CASTE_PROFESSION_NAME:POTTER:Potter*:Potters*]                                         
     [CASTE_PROFESSION_NAME:GLAZER:Glazer*:Glazers*] 
-    [CASTE_PROFESSION_NAME:SPINNER:Spinner*:Spinners*]   
+    [CASTE_PROFESSION_NAME:SPINNER:Spinner*:Spinners*]
+	[CASTE_PROFESSION_NAME:DYER:Dyer*:Dyers*]
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
-	[DESCRIPTION:*ARTISANS GUILD* This dwarf is a member of the artisans guild. Most artisans of the smaller industries fall under this category; be it brewing, weaving and tanning, leather or clothes fit for royalty.]
-    [SKILL_RATE:TANNER:80:0:0:0]	
-    [SKILL_RATE:BONECARVE:80:0:0:0]  
-    [SKILL_RATE:WEAVING:80:0:0:0] 
-    [SKILL_RATE:SPINNING:80:0:0:0]     
-    [SKILL_RATE:POTTERY:80:0:0:0]   
-    [SKILL_RATE:CLOTHESMAKING:80:0:0:0]   
-    [SKILL_RATE:LEATHERWORK:80:0:0:0]     
-    [SKILL_RATE:GLAZING:80:0:0:0]
-	[SKILL_RATE:BREWING:80:0:0:0]
-	[NATURAL_SKILL:CLOTHESMAKING:1]
-	[NATURAL_SKILL:LEATHERWORK:1]
-	[NATURAL_SKILL:WEAVING:1]
-	[NATURAL_SKILL:TANNER:1]
-	[NATURAL_SKILL:BREWING:1]
+	[DESCRIPTION:*ARTISANS GUILD* This dwarf is a member of the artisans guild. Most artisans of the smaller industries fall under this category; be it brewing, cooking, weaving and tanning, leather or clothes fit for royalty.]
+    [SKILL_RATE:TANNER:75:0:0:0]	
+    [SKILL_RATE:BONECARVE:75:0:0:0]  
+    [SKILL_RATE:WEAVING:75:0:0:0] 
+    [SKILL_RATE:SPINNING:75:0:0:0]     
+    [SKILL_RATE:POTTERY:75:0:0:0]   
+    [SKILL_RATE:CLOTHESMAKING:75:0:0:0]   
+    [SKILL_RATE:LEATHERWORK:75:0:0:0]     
+    [SKILL_RATE:GLAZING:75:0:0:0]
+	[SKILL_RATE:BREWING:75:0:0:0]
+	[SKILL_RATE:BREWING:75:0:0:0]
+	[SKILL_RATE:DYER:50:0:0:0]
+	[NATURAL_SKILL:CLOTHESMAKING:2]
+	[NATURAL_SKILL:LEATHERWORK:2]
+	[NATURAL_SKILL:WEAVING:2]
+	[NATURAL_SKILL:TANNER:2]
+	[NATURAL_SKILL:BREWING:2]
+	[NATURAL_SKILL:COOK:2]
+	[NATURAL_SKILL:DYER:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
 	
 [SELECT_CASTE:ARTISAN_MALE]
 	[MALE]
@@ -925,26 +1122,45 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:TANNER:Tanner*:Tanners*]                    
     [CASTE_PROFESSION_NAME:BONE_CARVER:Bone carver*:Bone carvers*]                                    
     [CASTE_PROFESSION_NAME:WEAVER:Weaver*:Weavers*]                                    
-    [CASTE_PROFESSION_NAME:CLOTHIER:Clothier*:Clothiers*] 
+    [CASTE_PROFESSION_NAME:CLOTHIER:Clothier*:Clothiers*]
+	[CASTE_PROFESSION_NAME:COOK:Cook*:Cooks*]
     [CASTE_PROFESSION_NAME:POTTER:Potter*:Potters*]                                         
     [CASTE_PROFESSION_NAME:GLAZER:Glazer*:Glazers*] 
-    [CASTE_PROFESSION_NAME:SPINNER:Spinner*:Spinners*]   
+    [CASTE_PROFESSION_NAME:SPINNER:Spinner*:Spinners*]
+	[CASTE_PROFESSION_NAME:DYER:Dyer*:Dyers*]
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
-	[DESCRIPTION:*ARTISANS GUILD* This dwarf is a member of the artisans guild. Most artisans of the smaller industries fall under this category; be it brewing, weaving and tanning, leather or clothes fit for royalty.]
-	[SKILL_RATE:TANNER:80:0:0:0]
-    [SKILL_RATE:BONECARVE:80:0:0:0]
-    [SKILL_RATE:WEAVING:80:0:0:0] 
-    [SKILL_RATE:SPINNING:80:0:0:0]     
-    [SKILL_RATE:POTTERY:80:0:0:0]   
-    [SKILL_RATE:CLOTHESMAKING:80:0:0:0]   
-    [SKILL_RATE:LEATHERWORK:80:0:0:0]     
-    [SKILL_RATE:GLAZING:80:0:0:0]
-	[SKILL_RATE:BREWING:80:0:0:0]
-	[NATURAL_SKILL:CLOTHESMAKING:1]
-	[NATURAL_SKILL:LEATHERWORK:1]
-	[NATURAL_SKILL:WEAVING:1]
-	[NATURAL_SKILL:TANNER:1]
-	[NATURAL_SKILL:BREWING:1]
+	[DESCRIPTION:*ARTISANS GUILD* This dwarf is a member of the artisans guild. Most artisans of the smaller industries fall under this category; be it brewing, cooking, weaving and tanning, leather or clothes fit for royalty.]
+    [SKILL_RATE:TANNER:75:0:0:0]	
+    [SKILL_RATE:BONECARVE:75:0:0:0]  
+    [SKILL_RATE:WEAVING:75:0:0:0] 
+    [SKILL_RATE:SPINNING:75:0:0:0]     
+    [SKILL_RATE:POTTERY:75:0:0:0]   
+    [SKILL_RATE:CLOTHESMAKING:75:0:0:0]   
+    [SKILL_RATE:LEATHERWORK:75:0:0:0]     
+    [SKILL_RATE:GLAZING:75:0:0:0]
+	[SKILL_RATE:BREWING:75:0:0:0]
+	[SKILL_RATE:BREWING:75:0:0:0]
+	[SKILL_RATE:DYER:50:0:0:0]
+	[NATURAL_SKILL:CLOTHESMAKING:2]
+	[NATURAL_SKILL:LEATHERWORK:2]
+	[NATURAL_SKILL:WEAVING:2]
+	[NATURAL_SKILL:TANNER:2]
+	[NATURAL_SKILL:BREWING:2]
+	[NATURAL_SKILL:COOK:2]
+	[NATURAL_SKILL:DYER:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
         
 [SELECT_CASTE:FISHERMAN_FEMALE]
 	[FEMALE]
@@ -956,12 +1172,25 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:FISH_CLEANER:Fish cleaner*:Fish cleaners*]  
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*FISHERMANS GUILD* This dwarf has joined the eccentric guild of fishers. Founded by the self-proclaimed carp-slayer, this guild is watched with distrust by other dwarves. How is sitting next to water, waiting for the fish to come to you a real profession? Regardless of what other dwarves think, the members of this guild have mastered the skill of the waiting game.]
-    [SKILL_RATE:DISSECT_FISH:80:0:0:0]                      
-    [SKILL_RATE:FISH:80:0:0:0]    
-    [SKILL_RATE:PROCESSFISH:80:0:0:0]
-	[NATURAL_SKILL:DISSECT_FISH:1]
-	[NATURAL_SKILL:FISH:1]
-	[NATURAL_SKILL:PROCESSFISH:1]
+    [SKILL_RATE:DISSECT_FISH:75:0:0:0]                      
+    [SKILL_RATE:FISH:75:0:0:0]    
+    [SKILL_RATE:PROCESSFISH:75:0:0:0]
+	[NATURAL_SKILL:DISSECT_FISH:2]
+	[NATURAL_SKILL:FISH:2]
+	[NATURAL_SKILL:PROCESSFISH:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
         
 [SELECT_CASTE:FISHERMAN_MALE]
 	[MALE]
@@ -974,12 +1203,25 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:FISH_CLEANER:Fish cleaner*:Fish cleaners*]  
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*FISHERMANS GUILD* This dwarf has joined the eccentric guild of fishers. Founded by the self-proclaimed carp-slayer, this guild is watched with distrust by other dwarves. How is sitting next to water, waiting for the fish to come to you a real profession? Regardless of what other dwarves think, the members of this guild have mastered the skill of the waiting game.]
-    [SKILL_RATE:DISSECT_FISH:80:0:0:0]                      
-    [SKILL_RATE:FISH:80:0:0:0]    
-    [SKILL_RATE:PROCESSFISH:80:0:0:0]
-	[NATURAL_SKILL:DISSECT_FISH:1]
-	[NATURAL_SKILL:FISH:1]
-	[NATURAL_SKILL:PROCESSFISH:1]
+    [SKILL_RATE:DISSECT_FISH:75:0:0:0]
+    [SKILL_RATE:FISH:75:0:0:0]    
+    [SKILL_RATE:PROCESSFISH:75:0:0:0]
+	[NATURAL_SKILL:DISSECT_FISH:2]
+	[NATURAL_SKILL:FISH:2]
+	[NATURAL_SKILL:PROCESSFISH:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     	
 [SELECT_CASTE:FARMER_FEMALE]
 	[FEMALE]
@@ -989,28 +1231,41 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:FARMER:Farmworker*:Farmworkers*]                                    
     [CASTE_PROFESSION_NAME:CHEESE_MAKER:Cheese maker*:Cheese makers*]                                    
     [CASTE_PROFESSION_NAME:MILKER:Milker*:Milkers*]                                    
-    [CASTE_PROFESSION_NAME:COOK:Cook*:Cooks*]                                    
     [CASTE_PROFESSION_NAME:THRESHER:Thresher*:Threshers*]      
-    [CASTE_PROFESSION_NAME:DYER:Dyer*:Dyers*]   
-    [SKILL_RATE:MILLING:80:0:0:0] 
     [CASTE_PROFESSION_NAME:MILLER:Miller*:Miller*]  
     [CASTE_PROFESSION_NAME:PLANTER:Farmer*:Farmers*]  
     [CASTE_PROFESSION_NAME:SHEARER:Shearer*:Shearers*]                                    
     [CASTE_PROFESSION_NAME:BREWER:Brewer*:Brewers*]    
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]   
-	[DESCRIPTION:*FARMERS GUILD* This dwarf belongs to the guild of farmworkers, millers and cooks. They handle most of the food production, from planting crops and harvests, over milking and cheesemaking, to butchery and cooking. A spartan occupation; but essential of every fortress.]
-    [SKILL_RATE:CHEESEMAKING:80:0:0:0]     
-    [SKILL_RATE:BUTCHER:80:0:0:0]  
-    [SKILL_RATE:COOK:80:0:0:0]   
-    [SKILL_RATE:DYER:80:0:0:0] 
-    [SKILL_RATE:PROCESSPLANTS:80:0:0:0]             
-    [SKILL_RATE:SHEARING:80:0:0:0]            
-    [SKILL_RATE:MILK:80:0:0:0]            
+	[DESCRIPTION:*FARMERS GUILD* This dwarf belongs to the guild of farmworkers, millers, and cheesemakers. They handle most of the food production, from planting crops and harvests, over milking and cheesemaking. A spartan occupation but essential for every fortress.]
+    [SKILL_RATE:CHEESEMAKING:75:0:0:0]     
+    [SKILL_RATE:BUTCHER:75:0:0:0]  
+    [SKILL_RATE:PROCESSPLANTS:75:0:0:0]             
+    [SKILL_RATE:SHEARING:75:0:0:0]            
+    [SKILL_RATE:MILK:75:0:0:0]            
     [SKILL_RATE:PLANT:70:0:0:0]
-	[NATURAL_SKILL:COOK:1]
-	[NATURAL_SKILL:CHEESEMAKING:1]
-	[NATURAL_SKILL:PLANT:1]
-    	
+	[SKILL_RATE:MILLING:75:0:0:0]
+	[NATURAL_SKILL:CHEESEMAKING:2]
+	[NATURAL_SKILL:MILK:2]
+	[NATURAL_SKILL:SHEARING:2]
+	[NATURAL_SKILL:PLANT:2]
+	[NATURAL_SKILL:PROCESSPLANTS:2]
+	[NATURAL_SKILL:MILLING:2]
+	[NATURAL_SKILL:BUTCHER:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
+
 [SELECT_CASTE:FARMER_MALE]
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
@@ -1020,32 +1275,46 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:FARMER:Farmworker*:Farmworkers*]                                    
     [CASTE_PROFESSION_NAME:CHEESE_MAKER:Cheese maker*:Cheese makers*]                                    
     [CASTE_PROFESSION_NAME:MILKER:Milker*:Milkers*]                                    
-    [CASTE_PROFESSION_NAME:COOK:Cook*:Cooks*]                                    
     [CASTE_PROFESSION_NAME:THRESHER:Thresher*:Threshers*]      
-    [CASTE_PROFESSION_NAME:DYER:Dyer*:Dyers*]   
     [CASTE_PROFESSION_NAME:PLANTER:Farmer*:Farmers*]  
     [CASTE_PROFESSION_NAME:SHEARER:Shearer*:Shearers*]                                   
-    [SKILL_RATE:MILLING:80:0:0:0] 
+    [SKILL_RATE:MILLING:75:0:0:0] 
     [CASTE_PROFESSION_NAME:MILLER:Miller*:Miller*]   
     [CASTE_PROFESSION_NAME:BREWER:Brewer*:Brewers*]    
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
-	[DESCRIPTION:*FARMERS GUILD* This dwarf belongs to the guild of farmworkers, millers and cooks. They handle most of the food production, from planting crops and harvests, over milking and cheesemaking, to butchery and cooking. A spartan occupation; but essential of every fortress.]
-    [SKILL_RATE:CHEESEMAKING:80:0:0:0]       
-    [SKILL_RATE:BUTCHER:80:0:0:0]  
-    [SKILL_RATE:COOK:80:0:0:0]   
-    [SKILL_RATE:DYER:80:0:0:0] 
-    [SKILL_RATE:PROCESSPLANTS:80:0:0:0]             
-    [SKILL_RATE:SHEARING:80:0:0:0]            
-    [SKILL_RATE:MILK:80:0:0:0]            
+	[DESCRIPTION:*FARMERS GUILD* This dwarf belongs to the guild of farmworkers, millers, and cheesemakers. They handle most of the food production, from planting crops and harvests, over milking and cheesemaking. A spartan occupation but essential for every fortress.]
+    [SKILL_RATE:CHEESEMAKING:75:0:0:0]     
+    [SKILL_RATE:BUTCHER:75:0:0:0]  
+    [SKILL_RATE:PROCESSPLANTS:75:0:0:0]             
+    [SKILL_RATE:SHEARING:75:0:0:0]            
+    [SKILL_RATE:MILK:75:0:0:0]            
     [SKILL_RATE:PLANT:70:0:0:0]
-	[NATURAL_SKILL:COOK:1]
-	[NATURAL_SKILL:CHEESEMAKING:1]
-	[NATURAL_SKILL:PLANT:1]
+	[SKILL_RATE:MILLING:75:0:0:0]
+	[NATURAL_SKILL:CHEESEMAKING:2]
+	[NATURAL_SKILL:MILK:2]
+	[NATURAL_SKILL:SHEARING:2]
+	[NATURAL_SKILL:PLANT:2]
+	[NATURAL_SKILL:PROCESSPLANTS:2]
+	[NATURAL_SKILL:MILLING:2]
+	[NATURAL_SKILL:BUTCHER:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
     	
 [SELECT_CASTE:HEALER_FEMALE]
 	[FEMALE]
 	[MULTIPLE_LITTER_RARE]
-	[POP_RATIO:364]    
+	[POP_RATIO:455]    
     [CASTE_PROFESSION_NAME:DOCTOR:Doctor*:Doctors*]                                    
     [CASTE_PROFESSION_NAME:DIAGNOSER:Diagnoser*:Diagnosers*]                                    
     [CASTE_PROFESSION_NAME:BONE_SETTER:Bone doctor*:Bone doctors*]                                    
@@ -1053,22 +1322,35 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:SURGEON:Surgeon*:Surgeons*]   
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*HEALERS GUILD* This dwarf is a member of the guild of healers. Mad butchers some might call them, but they do their best to patch unlucky dwarves back together. Enough dwarves owe their lives to them to establish the healers as a valid, bonafide guild.]
-    [SKILL_RATE:DIAGNOSE:80:0:0:0]                
-    [SKILL_RATE:DRESS_WOUNDS:80:0:0:0]                
-    [SKILL_RATE:SET_BONE:80:0:0:0]                
-    [SKILL_RATE:SURGERY:80:0:0:0]                
-    [SKILL_RATE:SUTURE:80:0:0:0]
-	[NATURAL_SKILL:DIAGNOSE:1]
-	[NATURAL_SKILL:DRESS_WOUNDS:1]
-	[NATURAL_SKILL:SET_BONE:1]
-	[NATURAL_SKILL:SURGERY:1]
-	[NATURAL_SKILL:SUTURE:1]
+    [SKILL_RATE:DIAGNOSE:75:0:0:0]                
+    [SKILL_RATE:DRESS_WOUNDS:75:0:0:0]                
+    [SKILL_RATE:SET_BONE:75:0:0:0]                
+    [SKILL_RATE:SURGERY:75:0:0:0]                
+    [SKILL_RATE:SUTURE:75:0:0:0]
+	[NATURAL_SKILL:DIAGNOSE:2]
+	[NATURAL_SKILL:DRESS_WOUNDS:2]
+	[NATURAL_SKILL:SET_BONE:2]
+	[NATURAL_SKILL:SURGERY:2]
+	[NATURAL_SKILL:SUTURE:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
 	
 [SELECT_CASTE:HEALER_MALE]
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:364]          
+	[POP_RATIO:273]          
     [CASTE_PROFESSION_NAME:DOCTOR:Doctor*:Doctors*]                                    
     [CASTE_PROFESSION_NAME:DIAGNOSER:Diagnoser*:Diagnosers*]                                    
     [CASTE_PROFESSION_NAME:BONE_SETTER:Bone doctor*:Bone doctors*]                                    
@@ -1076,16 +1358,29 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:SURGEON:Surgeon*:Surgeons*]   
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*HEALERS GUILD* This dwarf is a member of the guild of healers. Mad butchers some might call them, but they do their best to patch unlucky dwarves back together. Enough dwarves owe their lives to them to establish the healers as a valid, bonafide guild.]
-    [SKILL_RATE:DIAGNOSE:80:0:0:0]                
-    [SKILL_RATE:DRESS_WOUNDS:80:0:0:0]                
-    [SKILL_RATE:SET_BONE:80:0:0:0]                
-    [SKILL_RATE:SURGERY:80:0:0:0]                
-    [SKILL_RATE:SUTURE:80:0:0:0]
-	[NATURAL_SKILL:DIAGNOSE:1]
-	[NATURAL_SKILL:DRESS_WOUNDS:1]
-	[NATURAL_SKILL:SET_BONE:1]
-	[NATURAL_SKILL:SURGERY:1]
-	[NATURAL_SKILL:SUTURE:1]
+    [SKILL_RATE:DIAGNOSE:75:0:0:0]                
+    [SKILL_RATE:DRESS_WOUNDS:75:0:0:0]                
+    [SKILL_RATE:SET_BONE:75:0:0:0]                
+    [SKILL_RATE:SURGERY:75:0:0:0]                
+    [SKILL_RATE:SUTURE:75:0:0:0]
+	[NATURAL_SKILL:DIAGNOSE:2]
+	[NATURAL_SKILL:DRESS_WOUNDS:2]
+	[NATURAL_SKILL:SET_BONE:2]
+	[NATURAL_SKILL:SURGERY:2]
+	[NATURAL_SKILL:SUTURE:2]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+
+	-----# guild specific personality values   END #-----
 	
 [SELECT_CASTE:ENGINEER_FEMALE]
 	[FEMALE]
@@ -1099,21 +1394,40 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:PRESSER:Presser*:Pressers*]   
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*ENGINEERS GUILD* This dwarf is a member of the guild of mechanics, machine operators and siege engineers. All things technical are governed by them. Without the engineers guild fortresses would lack pumpstacks, trap hallways and other automated defenses. They even allow intrepid inventors to join their ranks.]
-    [SKILL_RATE:SIEGECRAFT:90:0:0:0]  
-    [SKILL_RATE:OPERATE_PUMP:80:0:0:0]  
-    [SKILL_RATE:MECHANICS:80:0:0:0]  
-    [SKILL_RATE:SIEGEOPERATE:90:0:0:0]  
-    [SKILL_RATE:PRESSING:80:0:0:0]
-	[NATURAL_SKILL:SIEGECRAFT:2]
+    [SKILL_RATE:SIEGECRAFT:125:0:0:0]
+    [SKILL_RATE:SIEGEOPERATE:125:0:0:0]
+    [SKILL_RATE:OPERATE_PUMP:85:0:0:0]  
+    [SKILL_RATE:MECHANICS:85:0:0:0]  
+    [SKILL_RATE:PRESSING:85:0:0:0]
+	[SKILL_RATE:CRITICAL_THINKING:85:0:0:0]
+	[SKILL_RATE:LOGIC:85:0:0:0]
+	[SKILL_RATE:MATHEMATICS:85:0:0:0]
+	[SKILL_RATE:OPTICS_ENGINEER:85:0:0:0]
+	[SKILL_RATE:FLUID_ENGINEER:85:0:0:0]
+	[NATURAL_SKILL:SIEGECRAFT:3]
 	[NATURAL_SKILL:OPERATE_PUMP:1]
 	[NATURAL_SKILL:MECHANICS:1]
-	[NATURAL_SKILL:SIEGEOPERATE:2]
+	[NATURAL_SKILL:SIEGEOPERATE:3]
 	[NATURAL_SKILL:PRESSING:1]
 	[NATURAL_SKILL:CRITICAL_THINKING:1]
 	[NATURAL_SKILL:LOGIC:1]
 	[NATURAL_SKILL:MATHEMATICS:1]
 	[NATURAL_SKILL:OPTICS_ENGINEER:1]
 	[NATURAL_SKILL:FLUID_ENGINEER:1]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+	[PERSONALITY:IMAGINATION:10:70:100]                                     { 60.0 avg }
+	[PERSONALITY:ABSTRACT_INCLINED:10:70:100]                               { 60.0 avg }
+	-----# guild specific personality values   END #-----
 	
 [SELECT_CASTE:ENGINEER_MALE]
 	[MALE]
@@ -1128,57 +1442,88 @@ creature_civ_dwarf
     [CASTE_PROFESSION_NAME:PRESSER:Presser*:Pressers*]   
 	[CASTE_PROFESSION_NAME:STANDARD:Peasant*:Peasants*]
 	[DESCRIPTION:*ENGINEERS GUILD* This dwarf is a member of the guild of mechanics, machine operators and siege engineers. All things technical are governed by them. Without the engineers guild fortresses would lack pumpstacks, trap hallways and other automated defenses. They even allow intrepid inventors to join their ranks.]
-    [SKILL_RATE:SIEGECRAFT:80:0:0:0]  
-    [SKILL_RATE:OPERATE_PUMP:80:0:0:0]  
-    [SKILL_RATE:MECHANICS:80:0:0:0]  
-    [SKILL_RATE:SIEGEOPERATE:80:0:0:0]  
-    [SKILL_RATE:PRESSING:80:0:0:0]
-	[NATURAL_SKILL:SIEGECRAFT:2]
+    [SKILL_RATE:SIEGECRAFT:125:0:0:0]
+    [SKILL_RATE:SIEGEOPERATE:125:0:0:0]
+    [SKILL_RATE:OPERATE_PUMP:85:0:0:0]  
+    [SKILL_RATE:MECHANICS:85:0:0:0]  
+    [SKILL_RATE:PRESSING:85:0:0:0]
+	[SKILL_RATE:CRITICAL_THINKING:85:0:0:0]
+	[SKILL_RATE:LOGIC:85:0:0:0]
+	[SKILL_RATE:MATHEMATICS:85:0:0:0]
+	[SKILL_RATE:OPTICS_ENGINEER:85:0:0:0]
+	[SKILL_RATE:FLUID_ENGINEER:85:0:0:0]
+	[NATURAL_SKILL:SIEGECRAFT:3]
 	[NATURAL_SKILL:OPERATE_PUMP:1]
 	[NATURAL_SKILL:MECHANICS:1]
-	[NATURAL_SKILL:SIEGEOPERATE:2]
+	[NATURAL_SKILL:SIEGEOPERATE:3]
 	[NATURAL_SKILL:PRESSING:1]
 	[NATURAL_SKILL:CRITICAL_THINKING:1]
 	[NATURAL_SKILL:LOGIC:1]
 	[NATURAL_SKILL:MATHEMATICS:1]
 	[NATURAL_SKILL:OPTICS_ENGINEER:1]
 	[NATURAL_SKILL:FLUID_ENGINEER:1]
+	-----# guild specific attribute values   START #-----
+
+	-----# guild specific attribute values     END #-----
+	-----# guild default attribute values    START #-----
+	[MENT_ATT_RANGE:WILLPOWER:250:475:675:850:1000:1200:1500]               { ≈10%- lower values, ≈20%- upper values. 850avg }
+	[PERSONALITY:ENVY_PROPENSITY:10:70:100]                                 { 60.0 avg }
+	[PERSONALITY:DEPRESSION_PROPENSITY:10:70:100]                           { 60.0 avg }
+	[PERSONALITY:ANXIETY_PROPENSITY:10:70:100]                              { 60.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:10:70:100]                            { 60.0 avg }
+	-----# guild default attribute values      END #-----
+    -----# guild specific personality values START #-----
+	[PERSONALITY:IMAGINATION:10:70:100]                                     { 60.0 avg }
+	[PERSONALITY:ABSTRACT_INCLINED:10:70:100]                               { 60.0 avg }
+	-----# guild specific personality values   END #-----
 	
 [SELECT_CASTE:WARRIOR_FEMALE]
 	[FEMALE][TRANCES]
 	[MULTIPLE_LITTER_RARE]
-	[POP_RATIO:250]
-    [SKILL_RATE:TEACHING:80:0:0:0]        
-    [SKILL_RATE:LEADERSHIP:80:0:0:0]   
-    [SKILL_RATE:MILITARY_TACTICS:80:0:0:0]                
-    [SKILL_RATE:SITUATIONAL_AWARENESS:80:0:0:0]    
-    [SKILL_RATE:KNOWLEDGE_ACQUISITION:80:0:0:0] 
-    [SKILL_RATE:AXE:80:0:0:0]                
-    [SKILL_RATE:BITE:80:0:0:0]                 
-    [SKILL_RATE:DAGGER:80:0:0:0]                
-    [SKILL_RATE:GRASP_STRIKE:80:0:0:0]                
-    [SKILL_RATE:HAMMER:80:0:0:0]                
-    [SKILL_RATE:MACE:80:0:0:0]
-    [SKILL_RATE:MELEE_COMBAT:65:0:0:0]                
-    [SKILL_RATE:MILITARY_TACTICS:80:0:0:0]                
-    [SKILL_RATE:MISC_WEAPON:80:0:0:0]                
-    [SKILL_RATE:PIKE:80:0:0:0]                               
-    [SKILL_RATE:SITUATIONAL_AWARENESS:80:0:0:0]     
-    [SKILL_RATE:SPEAR:80:0:0:0]                
-    [SKILL_RATE:STANCE_STRIKE:80:0:0:0]                
-    [SKILL_RATE:SWORD:80:0:0:0]                
-    [SKILL_RATE:WHIP:80:0:0:0]
+	[POP_RATIO:375]
+    [SKILL_RATE:TEACHING:75:0:0:0]        
+    [SKILL_RATE:LEADERSHIP:75:0:0:0]   
+    [SKILL_RATE:SITUATIONAL_AWARENESS:75:0:0:0]    
+    [SKILL_RATE:KNOWLEDGE_ACQUISITION:75:0:0:0] 
+    [SKILL_RATE:AXE:75:0:0:0]                                
+    [SKILL_RATE:DAGGER:75:0:0:0]                
+    [SKILL_RATE:GRASP_STRIKE:75:0:0:0]                
+    [SKILL_RATE:HAMMER:75:0:0:0]                
+    [SKILL_RATE:MACE:75:0:0:0]
+    [SKILL_RATE:MELEE_COMBAT:60:0:0:0]                
+    [SKILL_RATE:MILITARY_TACTICS:75:0:0:0]                
+    [SKILL_RATE:MISC_WEAPON:75:0:0:0]                
+    [SKILL_RATE:PIKE:75:0:0:0]                                 
+    [SKILL_RATE:SPEAR:75:0:0:0]                
+    [SKILL_RATE:STANCE_STRIKE:75:0:0:0]                
+    [SKILL_RATE:SWORD:75:0:0:0]                
+    [SKILL_RATE:WHIP:75:0:0:0]
 	[NATURAL_SKILL:MELEE_COMBAT:1]
 	[NATURAL_SKILL:ARMOR:1]
 	[NATURAL_SKILL:SHIELD:1]
 	[NATURAL_SKILL:DODGING:1]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
+	[NATURAL_SKILL:TEACHING:1]
+	[NATURAL_SKILL:MILITARY_TACTICS:1]
+	[NATURAL_SKILL:KNOWLEDGE_ACQUISITION:1]
 	[SELECT_TISSUE:BONE]
 		[HEALING_RATE:500]1000
 		[PAIN_RECEPTORS:35]50
-	[PHYS_ATT_RANGE:STRENGTH:950:1050:1150:1250:1500:2000:2500]       
-	[PHYS_ATT_RANGE:RECUPERATION:950:1050:1150:1250:1500:2000:2500]       
-	[MENT_ATT_RANGE:WILLPOWER:950:1050:1150:1250:1500:2000:2500]     
+	[PHYS_ATT_RANGE:STRENGTH:950:1050:1150:1250:1500:2000:2500]
+	[PHYS_ATT_RANGE:RECUPERATION:950:1050:1150:1250:1500:2000:2500]
+	[MENT_ATT_RANGE:WILLPOWER:950:1050:1150:1250:1500:2000:2500]
+	[PERSONALITY:VIOLENT:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:BRAVERY:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:CONFIDENCE:20:75:100]                               { 65.0 avg }
+	[PERSONALITY:AMBITION:20:75:100]                                 { 65.0 avg }
+	[PERSONALITY:VENGEFUL:20:75:100]                                 { 65.0 avg }
+	[PERSONALITY:DUTIFULNESS:20:75:100]                              { 65.0 avg }
+	[PERSONALITY:ASSERTIVENESS:20:75:100]                            { 65.0 avg }
+	[PERSONALITY:ACTIVITY_LEVEL:20:75:100]                           { 65.0 avg }
+	[PERSONALITY:EXCITEMENT_SEEKING:20:75:100]                       { 65.0 avg }
+	[PERSONALITY:CRUELTY:0:55:100]                                   { 51.6 avg }
+	[PERSONALITY:DISDAIN_ADVICE:0:40:80]                             { 40.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:0:40:80]                       { 40.0 avg }
     [DESCRIPTION:*WARRIORS GUILD* Having undergone the garrison training, this dwarf has learned the fundamental rules of war. Guild Members learn to handle all melee weapons, military tactics, leadership and situational awareness. They are conditioned to pain, have a higher willpower and recuperation than civilians. The guild training also encompasses rigorous fitness exercises, raising their strength.]
     [CASTE_PROFESSION_NAME:HAMMERMAN:Hammerdwarf*:Hammerdwarves*]                                    
     [CASTE_PROFESSION_NAME:MASTER_HAMMERMAN:Hammer lord*:Hammer lords*]                                    
@@ -1201,38 +1546,50 @@ creature_civ_dwarf
 	[MALE][TRANCES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:750]
-    [SKILL_RATE:TEACHING:80:0:0:0]        
-    [SKILL_RATE:LEADERSHIP:80:0:0:0]   
-    [SKILL_RATE:MILITARY_TACTICS:80:0:0:0]                
-    [SKILL_RATE:SITUATIONAL_AWARENESS:80:0:0:0]    
-    [SKILL_RATE:KNOWLEDGE_ACQUISITION:80:0:0:0] 
-    [SKILL_RATE:AXE:80:0:0:0]                
-    [SKILL_RATE:BITE:80:0:0:0]                 
-    [SKILL_RATE:DAGGER:80:0:0:0]                
-    [SKILL_RATE:GRASP_STRIKE:80:0:0:0]                
-    [SKILL_RATE:HAMMER:80:0:0:0]                
-    [SKILL_RATE:MACE:80:0:0:0]                
-    [SKILL_RATE:MELEE_COMBAT:65:0:0:0]                
-    [SKILL_RATE:MILITARY_TACTICS:80:0:0:0]                
-    [SKILL_RATE:MISC_WEAPON:80:0:0:0]                
-    [SKILL_RATE:PIKE:80:0:0:0]                               
-    [SKILL_RATE:SITUATIONAL_AWARENESS:80:0:0:0]     
-    [SKILL_RATE:SPEAR:80:0:0:0]                
-    [SKILL_RATE:STANCE_STRIKE:80:0:0:0]                
-    [SKILL_RATE:SWORD:80:0:0:0]                
-    [SKILL_RATE:WHIP:80:0:0:0]       
+	[POP_RATIO:625]
+    [SKILL_RATE:TEACHING:75:0:0:0]        
+    [SKILL_RATE:LEADERSHIP:75:0:0:0]   
+    [SKILL_RATE:SITUATIONAL_AWARENESS:75:0:0:0]    
+    [SKILL_RATE:KNOWLEDGE_ACQUISITION:75:0:0:0] 
+    [SKILL_RATE:AXE:75:0:0:0]                                
+    [SKILL_RATE:DAGGER:75:0:0:0]                
+    [SKILL_RATE:GRASP_STRIKE:75:0:0:0]                
+    [SKILL_RATE:HAMMER:75:0:0:0]                
+    [SKILL_RATE:MACE:75:0:0:0]
+    [SKILL_RATE:MELEE_COMBAT:60:0:0:0]                
+    [SKILL_RATE:MILITARY_TACTICS:75:0:0:0]                
+    [SKILL_RATE:MISC_WEAPON:75:0:0:0]                
+    [SKILL_RATE:PIKE:75:0:0:0]                                 
+    [SKILL_RATE:SPEAR:75:0:0:0]                
+    [SKILL_RATE:STANCE_STRIKE:75:0:0:0]                
+    [SKILL_RATE:SWORD:75:0:0:0]                
+    [SKILL_RATE:WHIP:75:0:0:0]
 	[NATURAL_SKILL:MELEE_COMBAT:1]
 	[NATURAL_SKILL:ARMOR:1]
 	[NATURAL_SKILL:SHIELD:1]
 	[NATURAL_SKILL:DODGING:1]
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]	
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
+	[NATURAL_SKILL:TEACHING:1]
+	[NATURAL_SKILL:MILITARY_TACTICS:1]
+	[NATURAL_SKILL:KNOWLEDGE_ACQUISITION:1]
 	[SELECT_TISSUE:BONE]
 		[HEALING_RATE:500]1000
 		[PAIN_RECEPTORS:35]50
 	[PHYS_ATT_RANGE:STRENGTH:950:1050:1150:1250:1500:2000:2500]
 	[PHYS_ATT_RANGE:RECUPERATION:950:1050:1150:1250:1500:2000:2500]   
 	[MENT_ATT_RANGE:WILLPOWER:950:1050:1150:1250:1500:2000:2500]
+	[PERSONALITY:VIOLENT:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:BRAVERY:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:CONFIDENCE:20:75:100]                               { 65.0 avg }
+	[PERSONALITY:AMBITION:20:75:100]                                 { 65.0 avg }
+	[PERSONALITY:VENGEFUL:20:75:100]                                 { 65.0 avg }
+	[PERSONALITY:DUTIFULNESS:20:75:100]                              { 65.0 avg }
+	[PERSONALITY:ASSERTIVENESS:20:75:100]                            { 65.0 avg }
+	[PERSONALITY:ACTIVITY_LEVEL:20:75:100]                           { 65.0 avg }
+	[PERSONALITY:EXCITEMENT_SEEKING:20:75:100]                       { 65.0 avg }
+	[PERSONALITY:CRUELTY:0:55:100]                                   { 51.6 avg }
+	[PERSONALITY:DISDAIN_ADVICE:0:40:80]                             { 40.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:0:40:80]                       { 40.0 avg }
 	[DESCRIPTION:*WARRIORS GUILD* Having undergone the garrison training, this dwarf has learned the fundamental rules of war. Guild Members learn to handle all melee weapons, military tactics, leadership and situational awareness. They are conditioned to pain, have a higher willpower and recuperation than civilians. The guild training also encompasses rigorous fitness exercises, raising their strength.]
     [CASTE_PROFESSION_NAME:HAMMERMAN:Hammerdwarf*:Hammerdwarves*]                                    
     [CASTE_PROFESSION_NAME:MASTER_HAMMERMAN:Hammer lord*:Hammer lords*]                                    
@@ -1255,28 +1612,40 @@ creature_civ_dwarf
 	[FEMALE]
 	[MULTIPLE_LITTER_RARE]
 	[POP_RATIO:250]
-    [SKILL_RATE:TEACHING:80:0:0:0]        
-    [SKILL_RATE:LEADERSHIP:80:0:0:0]   
-    [SKILL_RATE:MILITARY_TACTICS:80:0:0:0]                
-    [SKILL_RATE:SITUATIONAL_AWARENESS:80:0:0:0]    
-    [SKILL_RATE:KNOWLEDGE_ACQUISITION:80:0:0:0] 
-    [SKILL_RATE:ARMOR:80:0:0:0]              
-    [SKILL_RATE:BLOWGUN:80:0:0:0]                
-    [SKILL_RATE:BOW:80:0:0:0]                
-    [SKILL_RATE:CROSSBOW:80:0:0:0]             
-    [SKILL_RATE:DODGING:80:0:0:0]                    
-    [SKILL_RATE:MILITARY_TACTICS:80:0:0:0]           
-    [SKILL_RATE:RANGED_COMBAT:80:0:0:0]                       
-    [SKILL_RATE:SITUATIONAL_AWARENESS:80:0:0:0]         
-    [SKILL_RATE:THROW:80:0:0:0]    
-	[NATURAL_SKILL:RANGED_COMBAT:1]
+    [SKILL_RATE:TEACHING:75:0:0:0]        
+    [SKILL_RATE:LEADERSHIP:75:0:0:0]   
+    [SKILL_RATE:MILITARY_TACTICS:65:0:0:0]                
+    [SKILL_RATE:SITUATIONAL_AWARENESS:75:0:0:0]    
+    [SKILL_RATE:KNOWLEDGE_ACQUISITION:75:0:0:0] 
+    [SKILL_RATE:ARMOR:65:0:0:0]              
+    [SKILL_RATE:BLOWGUN:75:0:0:0]                
+    [SKILL_RATE:BOW:75:0:0:0]                
+    [SKILL_RATE:CROSSBOW:75:0:0:0]             
+    [SKILL_RATE:DODGING:75:0:0:0]                    
+    [SKILL_RATE:MILITARY_TACTICS:65:0:0:0]           
+    [SKILL_RATE:RANGED_COMBAT:65:0:0:0]                       
+    [SKILL_RATE:SITUATIONAL_AWARENESS:75:0:0:0]         
+    [SKILL_RATE:THROW:75:0:0:0]    
+	[NATURAL_SKILL:RANGED_COMBAT:2]
 	[NATURAL_SKILL:ARMOR:1]
 	[NATURAL_SKILL:DODGING:1]
 	[NATURAL_SKILL:SNEAK:1]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]
     [VIEWRANGE:25] 20 is default  
-	[PHYS_ATT_RANGE:RECUPERATION:1250:1500:1750:2000:2300:3000:4000]      
-	[MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2300:3000:4000]      
+	[PHYS_ATT_RANGE:RECUPERATION:1250:1500:1750:2000:2300:3000:4000]
+	[MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2300:3000:4000]
+	[PERSONALITY:VIOLENT:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:BRAVERY:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:CONFIDENCE:20:75:100]                               { 65.0 avg }
+	[PERSONALITY:AMBITION:20:75:100]                                 { 65.0 avg }
+	[PERSONALITY:VENGEFUL:20:75:100]                                 { 65.0 avg }
+	[PERSONALITY:DUTIFULNESS:20:75:100]                              { 65.0 avg }
+	[PERSONALITY:ASSERTIVENESS:20:75:100]                            { 65.0 avg }
+	[PERSONALITY:ACTIVITY_LEVEL:20:75:100]                           { 65.0 avg }
+	[PERSONALITY:EXCITEMENT_SEEKING:20:75:100]                       { 65.0 avg }
+	[PERSONALITY:CRUELTY:0:55:100]                                   { 51.6 avg }
+	[PERSONALITY:DISDAIN_ADVICE:0:40:80]                             { 40.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:0:40:80]                       { 40.0 avg }
 	[SELECT_TISSUE:BONE]
 		[HEALING_RATE:500]1000
 		[PAIN_RECEPTORS:40]50
@@ -1295,28 +1664,40 @@ creature_civ_dwarf
     [BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
     [BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
     [POP_RATIO:750]
-    [SKILL_RATE:TEACHING:80:0:0:0]        
-    [SKILL_RATE:LEADERSHIP:80:0:0:0]   
-    [SKILL_RATE:MILITARY_TACTICS:80:0:0:0]                
-    [SKILL_RATE:SITUATIONAL_AWARENESS:80:0:0:0]    
-    [SKILL_RATE:KNOWLEDGE_ACQUISITION:80:0:0:0] 
-    [SKILL_RATE:ARMOR:80:0:0:0]              
-    [SKILL_RATE:BLOWGUN:80:0:0:0]                
-    [SKILL_RATE:BOW:80:0:0:0]                
-    [SKILL_RATE:CROSSBOW:80:0:0:0]             
-    [SKILL_RATE:DODGING:80:0:0:0]                    
-    [SKILL_RATE:MILITARY_TACTICS:80:0:0:0]           
-    [SKILL_RATE:RANGED_COMBAT:80:0:0:0]                       
-    [SKILL_RATE:SITUATIONAL_AWARENESS:80:0:0:0]         
-    [SKILL_RATE:THROW:80:0:0:0]    
-	[NATURAL_SKILL:RANGED_COMBAT:1]
+    [SKILL_RATE:TEACHING:75:0:0:0]        
+    [SKILL_RATE:LEADERSHIP:75:0:0:0]   
+    [SKILL_RATE:MILITARY_TACTICS:65:0:0:0]                
+    [SKILL_RATE:SITUATIONAL_AWARENESS:75:0:0:0]    
+    [SKILL_RATE:KNOWLEDGE_ACQUISITION:75:0:0:0] 
+    [SKILL_RATE:ARMOR:65:0:0:0]              
+    [SKILL_RATE:BLOWGUN:75:0:0:0]                
+    [SKILL_RATE:BOW:75:0:0:0]                
+    [SKILL_RATE:CROSSBOW:75:0:0:0]             
+    [SKILL_RATE:DODGING:75:0:0:0]                    
+    [SKILL_RATE:MILITARY_TACTICS:65:0:0:0]           
+    [SKILL_RATE:RANGED_COMBAT:65:0:0:0]                       
+    [SKILL_RATE:SITUATIONAL_AWARENESS:75:0:0:0]         
+    [SKILL_RATE:THROW:75:0:0:0]    
+	[NATURAL_SKILL:RANGED_COMBAT:2]
 	[NATURAL_SKILL:ARMOR:1]
 	[NATURAL_SKILL:DODGING:1]
 	[NATURAL_SKILL:SNEAK:1]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]
     [VIEWRANGE:25] 20 is default  
-    [PHYS_ATT_RANGE:RECUPERATION:1250:1500:1750:2000:2300:3000:4000]      
-    [MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2300:3000:4000]      
+    [PHYS_ATT_RANGE:RECUPERATION:1250:1500:1750:2000:2300:3000:4000]
+    [MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2300:3000:4000]
+	[PERSONALITY:VIOLENT:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:BRAVERY:20:75:100]                                  { 65.0 avg }
+	[PERSONALITY:CONFIDENCE:20:75:100]                               { 65.0 avg }
+	[PERSONALITY:AMBITION:20:75:100]                                 { 65.0 avg }
+	[PERSONALITY:VENGEFUL:20:75:100]                                 { 65.0 avg }
+	[PERSONALITY:DUTIFULNESS:20:75:100]                              { 65.0 avg }
+	[PERSONALITY:ASSERTIVENESS:20:75:100]                            { 65.0 avg }
+	[PERSONALITY:ACTIVITY_LEVEL:20:75:100]                           { 65.0 avg }
+	[PERSONALITY:EXCITEMENT_SEEKING:20:75:100]                       { 65.0 avg }
+	[PERSONALITY:CRUELTY:0:55:100]                                   { 51.6 avg }
+	[PERSONALITY:DISDAIN_ADVICE:0:40:80]                             { 40.0 avg }
+	[PERSONALITY:STRESS_VULNERABILITY:0:40:80]                       { 40.0 avg }
     [SELECT_TISSUE:BONE]
 	    [HEALING_RATE:500]1000
 	    [PAIN_RECEPTORS:40]50

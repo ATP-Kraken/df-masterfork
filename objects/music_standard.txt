@@ -78,7 +78,7 @@ music_standard
 		[CARD:STRIKE_THE_EARTH_CARD_4]
 	[EVENT:JUST_EMBARKED]
 	[CONTEXT:MAIN]
-	[FREQUENCY:UNCOMMON] can also play any time, half as often as the other candidates
+	(FREQUENCY:FORCED) can also play any time, half as often as the other candidates
 
 [MUSIC:TRACK_11]
 	[FILE:STRANGE_MOODS]

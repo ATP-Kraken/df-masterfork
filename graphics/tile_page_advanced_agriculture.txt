@@ -1,0 +1,8 @@
+tile_page_advanced_agriculture
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:AA_GARDEN_PICKED]
+	[FILE:images/aa_garden_picked.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:1824]

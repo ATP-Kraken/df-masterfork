@@ -1,5 +1,6 @@
 
-Base Dwarf Fortress assets by Bay 12 Games
+Dwarf Fortress by Bay 12 Games
+Published by Kitfox Games
 
 Original MDF (Masterwork) mod by Meph and his contributors
 
@@ -10,7 +11,7 @@ Fork by Zeyon & Chbost
 
 Contributors: 
 
--
+- DPh Kraken
 -
 -
 -
@@ -29,3 +30,5 @@ Masterfork contains RAWs and other assets from the following mods (non-exhaustiv
  - New Genesis (Volume II) by Deon # https://steamcommunity.com/sharedfiles/filedetails/?id=2901564943
  - Bourbon's March of Wrath by Bourbon # https://steamcommunity.com/sharedfiles/filedetails/?id=2901789546
  - Creature Graphics Extended - REDUX by Digganob # https://steamcommunity.com/sharedfiles/filedetails/?id=3265552481
+ - Modest Plants & Reactions by Button # https://steamcommunity.com/sharedfiles/filedetails/?id=3159675996
+ - Advanced Agriculture by Droseran # https://steamcommunity.com/sharedfiles/filedetails/?id=3094095525

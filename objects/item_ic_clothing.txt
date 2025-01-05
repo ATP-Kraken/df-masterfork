@@ -322,6 +322,7 @@ handwear
 
 [ITEM_GLOVES:ITEM_GLOVES_GLOVES]
 [NAME:glove:gloves]
+[PREPLURAL:pairs of]
 [MATERIAL_SIZE:1]
 [LAYER:UNDER]
 [COVERAGE:100]
@@ -333,6 +334,7 @@ handwear
 
 [ITEM_GLOVES:ITEM_GLOVES_MITTENS]
 [NAME:mitten:mittens]
+[PREPLURAL:pairs of]
 [LAYER:COVER]
 [COVERAGE:150]
 [LAYER_SIZE:15]
@@ -344,6 +346,7 @@ handwear
 
 [ITEM_GLOVES:ITEM_GLOVES_WRAPS]
 [NAME:hand wrapping:hand wrappings]
+[PREPLURAL:pairs of]
 [MATERIAL_SIZE:1]
 [LAYER:UNDER]
 [COVERAGE:50]
@@ -358,7 +361,6 @@ legwear
 ==========================================================
 
 [ITEM_PANTS:ITEM_PANTS_PANTS]
-[PREPLURAL:pairs of]
 [NAME:trousers:trousers]
 [LBSTEP:MAX]
 [LAYER:OVER]
@@ -521,6 +523,7 @@ footwear
 
 [ITEM_SHOES:ITEM_SHOES_SHOES]
 [NAME:shoe:shoes]
+[PREPLURAL:pairs of]
 [LAYER:OVER]
 [COVERAGE:100]
 [LAYER_SIZE:20]
@@ -532,6 +535,7 @@ footwear
 
 [ITEM_SHOES:ITEM_SHOES_SOCKS]
 [NAME:sock:socks]
+[PREPLURAL:pairs of]
 [LAYER:UNDER]
 [COVERAGE:100]
 [LAYER_SIZE:10]
@@ -541,7 +545,8 @@ footwear
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
 
 [ITEM_SHOES:ITEM_SHOES_BOOTS_LOW]
-[NAME:low boot:low boots]
+[NAME:boot:boots]
+[PREPLURAL:pairs of]
 [UPSTEP:1]
 [ARMORLEVEL:1]
 [METAL_ARMOR_LEVELS]
@@ -554,6 +559,7 @@ footwear
 
 [ITEM_SHOES:ITEM_SHOES_SANDAL]
 [NAME:sandal:sandals]
+[PREPLURAL:pairs of]
 [LAYER:OVER]
 [COVERAGE:95]
 [LAYER_SIZE:25]
@@ -565,6 +571,7 @@ footwear
 
 [ITEM_SHOES:IC_SHOES_STOCKINGS]
 [NAME:stocking:stockings] tall socks
+[PREPLURAL:pairs of]
 [UPSTEP:2]
 [LAYER:UNDER]
 [COVERAGE:100]
@@ -576,6 +583,7 @@ footwear
 
 [ITEM_SHOES:IC_SHOES_STOCKINGS_FISHNET]
 [NAME:fishnet stocking:fishnet stockings] ahistorical, mainly for merfolk. or a really funny artifact.
+[PREPLURAL:pairs of]
 [UPSTEP:2]
 [LAYER:UNDER]
 [COVERAGE:50]
@@ -587,6 +595,7 @@ footwear
 
 [ITEM_SHOES:IC_SHOES_SLIPPER]
 [NAME:slipper:slippers] pumps, flats, low cut shoe
+[PREPLURAL:pairs of]
 [LAYER:OVER]
 [COVERAGE:95]
 [LAYER_SIZE:25]
@@ -598,6 +607,7 @@ if only glassblowers could make these
 
 [ITEM_SHOES:IC_SHOES_WRAPS]
 [NAME:foot wrapping:foot wrappings]
+[PREPLURAL:pairs of]
 [LAYER:UNDER]
 [COVERAGE:50]
 [LAYER_SIZE:10]
@@ -608,6 +618,7 @@ if only glassblowers could make these
 
 [ITEM_SHOES:IC_SHOES_CLOGS] produce by reaction only
 [NAME:clog:clogs]
+[PREPLURAL:pairs of]
 [LAYER:OVER]
 [COVERAGE:100]
 [LAYER_SIZE:25]

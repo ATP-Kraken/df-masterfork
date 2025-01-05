@@ -10394,7 +10394,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:CAVORT]
 	[VERB:cavort:cavorts:cavorted:cavorted:cavorting]
 
-[WORD:COMMON]
+[WORD]
 	[NOUN:common:commons]
 		[REAR_COMPOUND_NOUN_PLUR] +
 		[THE_NOUN_PLUR] +
@@ -13146,11 +13146,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
-[WORD:UNCOMMON]
+[WORD]
 	[ADJ:uncommon]
 		[ADJ_DIST:4]
 
-[WORD:RARE]
+[WORD]
 	[ADJ:rare]
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]

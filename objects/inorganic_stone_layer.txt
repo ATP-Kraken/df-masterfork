@@ -209,6 +209,9 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 	[BENDING_STRAIN_AT_YIELD:53]
     [STATE_NAME_ADJ:ALL_SOLID:obsidian][DISPLAY_COLOR:0:7:1][TILE:177][LAVA]
     [MAX_EDGE:20000]
+	-- Modest Mod --
+	[MAT_FIXED_TEMP:10000] With the temperature disabled, the obsidian will be eternaly hot and dwarves will never step on it
+	-- Modest Mod --
     [IGNEOUS_EXTRUSIVE]
     [MATERIAL_VALUE:5] increased value. - zey
     [IS_STONE]

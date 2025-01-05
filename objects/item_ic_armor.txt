@@ -10,9 +10,9 @@ squamous's notes on armor spawning:
 	4. HOWEVER NPC civs will assign a helmet and body armor [to the civilization uniform], either of which is completely random and ignores any ARMORLEVEL logic, which is how ARMORLEVEL:3 items can be used
 	
 
-==========================================================
+
 headwear
-==========================================================
+
 
 [ITEM_HELM:ITEM_HELM_HELM]
 [NAME:helm:helms]
@@ -104,9 +104,9 @@ when fashion exists: pot (current worn cap), bascinet, kettle
 [SOFT]
 [STRUCTURAL_ELASTICITY_CHAIN_METAL] for adamantine
 
-==========================================================
+
 body armor - plate
-==========================================================
+
 
 [ITEM_ARMOR:ITEM_ARMOR_BREASTPLATE]
 [NAME:cuirass:cuirasses]
@@ -116,7 +116,7 @@ body armor - plate
 [LBSTEP:0]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:125]
 [LAYER_SIZE:8] 8 kg
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:45] 15 bars
@@ -152,9 +152,9 @@ body armor - plate
 [BARRED]
 [SCALED]
 
-==========================================================
+
 body armor - composite
-==========================================================
+
 
 [ITEM_ARMOR:ITEM_ARMOR_MAIL_SHIRT]
 [NAME:mail hauberk:mail hauberks]
@@ -162,7 +162,7 @@ body armor - composite
 [UBSTEP:1]
 [LBSTEP:1]
 [LAYER:OVER]
-[COVERAGE:95]
+[COVERAGE:99]
 [LAYER_SIZE:6] 8 kg
 [LAYER_PERMIT:30]
 [MATERIAL_SIZE:21] 7 bars
@@ -201,9 +201,9 @@ body armor - composite
 [SCALED]
 [BARRED]
 
-==========================================================
+
 body armor - soft
-==========================================================
+
 
 [ITEM_ARMOR:ITEM_ARMOR_LEATHER]
 [ADJECTIVE:boiled]
@@ -214,7 +214,7 @@ body armor - soft
 [LBSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:125]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:6]
@@ -238,25 +238,20 @@ body armor - soft
 [UBSTEP:MAX]
 [LBSTEP:1]
 [LAYER:UNDER]
-[COVERAGE:100]
+[COVERAGE:125]
 [LAYER_SIZE:10] 2 kg
 [LAYER_PERMIT:45]
 [MATERIAL_SIZE:24]
-[SOFT]  replace with LEATHER if you want somewhat functioning padded armor without changing the material properties of cloth and silk
-STRUCTURAL_ELASTICITY_WOVEN_THREAD  adding brackets will downgrade protection to that of clothing
-[STRUCTURAL_ELASTICITY_CHAIN_METAL] for adamantine
+[LEATHER]
 
-==========================================================
 hand armor
-==========================================================
-
 [ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS]
 [NAME:gauntlet:gauntlets]
 [ARMORLEVEL:1]
 [METAL_ARMOR_LEVELS]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:110]
 [LAYER_SIZE:12]
 [LAYER_PERMIT:12]
 [MATERIAL_SIZE:6] 2 bars
@@ -332,9 +327,9 @@ hand armor
 [SCALED]
 [STRUCTURAL_ELASTICITY_CHAIN_ALL]
 
-==========================================================
+
 leg armor
-==========================================================
+
 
 [ITEM_PANTS:ITEM_PANTS_GREAVES]
 [PREPLURAL:pairs of]
@@ -344,7 +339,7 @@ leg armor
 [LBSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100] +10 down
+[COVERAGE:110] +10 down
 [LAYER_SIZE:7] 7 kg
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:15] 5 bars
@@ -421,35 +416,33 @@ leg armor
 [METAL]
 [HARD]
 
-==========================================================
+
 foot armor
-==========================================================
+
 
 [ITEM_SHOES:ITEM_SHOES_BOOTS]
-[NAME:jackboot:jackboots]
-[ARMORLEVEL:1]
+[NAME:plate boot:plate boots]
+[ARMORLEVEL:3]
 [UPSTEP:1]
-[METAL_ARMOR_LEVELS]
-[LAYER:OVER]
-[COVERAGE:100]
-[LAYER_SIZE:25]
+[LAYER:ARMOR]
+[COVERAGE:120]
+[LAYER_SIZE:30]
 [LAYER_PERMIT:15]
-[MATERIAL_SIZE:2]
-METAL removing sabatons for now
-HARD
-[LEATHER]
+[MATERIAL_SIZE:6]
+[METAL]
+[HARD]
 
-[ITEM_SHOES:IC_SHOES_CALIGAE] boot copy, but more roman
-[NAME:caliga:caligae]
-[ARMORLEVEL:1]
-[UPSTEP:1]
-[METAL_ARMOR_LEVELS]
-[LAYER:OVER]
-[COVERAGE:100]
-[LAYER_SIZE:25]
-[LAYER_PERMIT:15]
-[MATERIAL_SIZE:2]
-[LEATHER]
+(ITEM_SHOES:IC_SHOES_CALIGAE] boot copy, but more roman { disabling for now, - zey.}
+(NAME:caliga:caligae]
+(ARMORLEVEL:1]
+(UPSTEP:1]
+(METAL_ARMOR_LEVELS]
+(LAYER:OVER]
+(COVERAGE:100]
+(LAYER_SIZE:25]
+(LAYER_PERMIT:15]
+(MATERIAL_SIZE:2]
+(LEATHER]
 
 [ITEM_SHOES:ITEM_SHOES_CHAUSSE]
 [NAME:chausse:chausses]

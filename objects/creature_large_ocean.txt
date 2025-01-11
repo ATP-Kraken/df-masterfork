@@ -315,7 +315,7 @@ creature_large_ocean
 	[CASTE_NAME:frill shark:frill sharks:frill shark]
 	[CHILD:1][GENERAL_CHILD_NAME:frill shark pup:frill shark pups]
 	[CREATURE_TILE:'s'][COLOR:3:0:0]
-	[LARGE_ROAMING][FREQUENCY:1]
+	[LARGE_ROAMING][FREQUENCY:3]{:1
 	[AQUATIC][UNDERSWIM][IMMOBILE_LAND]
 	[PREFSTRING:needle teeth]
 	[PREFSTRING:frilled gill slits]

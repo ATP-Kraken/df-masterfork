@@ -1,6 +1,4 @@
-material_template_agriculture
-
-# Advanced Agriculture Mod #
+material_template_advanced_agriculture
 
 [OBJECT:MATERIAL_TEMPLATE]
 

@@ -164,7 +164,7 @@ reaction_ic_fort
 	[PRODUCT:100:2:CHEESE:NONE:GET_MATERIAL_FROM_REAGENT:flour:CHEESE_MAT] doubled output to compensate for harder crops - zey
 	[SKILL:COOK]
 	[AUTOMATIC]
-	
+
 [REACTION:IC_KITCHEN_SUSHI]
 	[NAME:make sushi]
 	[BUILDING:KITCHEN:CUSTOM_S]

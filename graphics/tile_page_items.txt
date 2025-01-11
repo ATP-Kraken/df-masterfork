@@ -185,4 +185,4 @@ tile_page_items
 [TILE_PAGE:ITEM_REMNANTS]
 	[FILE:images/remnants.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM:1:1]
+	[PAGE_DIM:4:5]

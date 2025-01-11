@@ -1,6 +1,6 @@
 plant_wild_crops
 
-# Advanced Agriculture Mod #
+# Advanced Agriculture by 'Droseran' #
 
 [OBJECT:PLANT]
 
@@ -510,8 +510,6 @@ plant_wild_crops
 		[GROWTH_TIMING:120000:200000]
 		[GROWTH_PRINT:'%':'%':2:0:0:120000:200000:4]
 		[GROWTH_HAS_SEED]
-
-[CUT_PLANT:WILD_CARROT]
 
 [PLANT:WILD_CARROT] Daucus carota
 	[NAME:wild carrot][NAME_PLURAL:wild carrots][ADJ:wild carrot]

@@ -1,8 +1,8 @@
-reaction_mass_brewing
-
-# Advanced Agriculture Mod #
+reaction_advanced_agriculture_brewing
 
 [OBJECT:REACTION]
+
+[CUT_REACTION:MAKE_MEAD]
 
 [REACTION:MAKE_MEAD]
 	[NAME:Make mead from any type of honey]
@@ -10,10 +10,6 @@ reaction_mass_brewing
 	[REAGENT:honey:150:LIQUID_MISC:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:DRINK_MAT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:honey container:1:NONE:NONE:NONE:NONE]
 		[CONTAINS:honey]
 		[PRESERVE_REAGENT]
@@ -33,10 +29,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:APPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -55,10 +47,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:APPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -78,10 +66,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:APPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -102,10 +86,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:APRICOT:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -122,10 +102,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:APRICOT:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -143,10 +119,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:APRICOT:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -165,10 +137,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BANANA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -185,10 +153,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BANANA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -206,10 +170,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BANANA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -228,10 +188,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BARLEY:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -249,10 +205,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BARLEY:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -271,10 +223,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:BARLEY:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -294,10 +242,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BAYBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -314,10 +258,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BAYBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -335,10 +275,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BAYBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -357,10 +293,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BEET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -377,10 +309,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BEET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -398,10 +326,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:BEET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -420,10 +344,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BILBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -441,10 +361,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BILBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -463,10 +379,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BILBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -486,10 +398,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:BIRCH:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -506,10 +414,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:BIRCH:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -527,10 +431,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:BIRCH:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -549,10 +449,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BLACKBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -570,10 +466,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BLACKBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -592,10 +484,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BLACKBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -615,10 +503,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TUBER_BLOATED:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -636,10 +520,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TUBER_BLOATED:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -658,10 +538,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:TUBER_BLOATED:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -681,10 +557,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BLOOD_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -702,10 +574,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BLOOD_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -724,10 +592,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:BLOOD_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -747,10 +611,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BLUEBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -768,10 +628,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BLUEBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -790,10 +646,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BLUEBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -813,10 +665,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BUCKWHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -834,10 +682,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BUCKWHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -856,10 +700,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:BUCKWHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -879,10 +719,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:BEAN:PLANT_MAT:CACAO:BEAN]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -899,10 +735,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:BEAN:PLANT_MAT:CACAO:BEAN]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -920,10 +752,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:BEAN:PLANT_MAT:CACAO:BEAN]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -942,10 +770,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CARAMBOLA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -962,10 +786,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CARAMBOLA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -983,10 +803,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:CARAMBOLA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1005,10 +821,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CARROT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1025,10 +837,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CARROT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1046,10 +854,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:CARROT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1068,10 +872,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CASSAVA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1089,10 +889,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CASSAVA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1111,10 +907,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:CASSAVA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1134,10 +926,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:GRASS_WHEAT_CAVE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1155,10 +943,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:GRASS_WHEAT_CAVE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1177,10 +961,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:GRASS_WHEAT_CAVE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1200,10 +980,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CHERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1220,10 +996,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CHERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1241,10 +1013,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:CHERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1263,10 +1031,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CHICORY:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1283,10 +1047,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CHICORY:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1304,10 +1064,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:CHICORY:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1326,10 +1082,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:PALM:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1346,10 +1098,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:PALM:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1367,10 +1115,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:PALM:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1389,10 +1133,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:BEAN:PLANT_MAT:COFFEE:BEAN]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1409,10 +1149,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:BEAN:PLANT_MAT:COFFEE:BEAN]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1430,10 +1166,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:BEAN:PLANT_MAT:COFFEE:BEAN]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1452,10 +1184,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CRANBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1473,10 +1201,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CRANBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1495,10 +1219,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:CRANBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1518,10 +1238,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CUSTARD-APPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1538,10 +1254,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CUSTARD-APPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1559,10 +1271,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:CUSTARD-APPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1581,10 +1289,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:DATE_PALM:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1601,10 +1305,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:DATE_PALM:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1622,10 +1322,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:DATE_PALM:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1644,10 +1340,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:DURIAN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1664,10 +1356,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:DURIAN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1685,10 +1373,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:DURIAN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1707,10 +1391,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FINGER_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1728,10 +1408,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FINGER_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1750,10 +1426,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:FINGER_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1773,10 +1445,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_FISHER:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1794,10 +1462,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_FISHER:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1816,10 +1480,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_FISHER:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1839,10 +1499,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FONIO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1860,10 +1516,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FONIO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1882,10 +1534,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:FONIO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1905,10 +1553,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FOXTAIL_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1926,10 +1570,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FOXTAIL_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1948,10 +1588,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:FOXTAIL_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1971,10 +1607,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:GRAPE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -1992,10 +1624,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:GRAPE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2014,10 +1642,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:GRAPE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2037,10 +1661,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:GUAVA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2057,10 +1677,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:GUAVA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2078,10 +1694,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:GUAVA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2100,10 +1712,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:HARD_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2121,10 +1729,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:HARD_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2143,10 +1747,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:HARD_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2222,10 +1822,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:KANIWA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2243,10 +1839,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:KANIWA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2265,10 +1857,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:KANIWA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2288,10 +1876,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2309,10 +1893,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2331,10 +1911,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2354,10 +1930,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:LYCHEE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2374,10 +1946,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:LYCHEE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2395,10 +1963,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:LYCHEE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2417,10 +1981,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:EAR:PLANT_MAT:MAIZE:EAR]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2438,10 +1998,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:EAR:PLANT_MAT:MAIZE:EAR]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2460,10 +2016,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:EAR:PLANT_MAT:MAIZE:EAR]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2483,10 +2035,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:MANGO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2503,10 +2051,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:MANGO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2524,10 +2068,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:MANGO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2546,10 +2086,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:MAPLE:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2566,10 +2102,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:MAPLE:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2587,10 +2119,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:MAPLE:SAP_BUCKET]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2609,10 +2137,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:ROOT_MUCK:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2630,10 +2154,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:ROOT_MUCK:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2652,10 +2172,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:ROOT_MUCK:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2675,10 +2191,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:MUSKMELON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2696,10 +2208,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:MUSKMELON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2718,10 +2226,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:MUSKMELON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2741,10 +2245,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:OATS:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2762,10 +2262,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:OATS:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2784,10 +2280,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:OATS:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2807,10 +2299,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PAPAYA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2827,10 +2315,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PAPAYA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2848,10 +2332,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PAPAYA:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2870,10 +2350,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PARSNIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2890,10 +2366,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PARSNIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2911,10 +2383,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:PARSNIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2933,10 +2401,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PASSION_FRUIT:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2954,10 +2418,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PASSION_FRUIT:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2976,10 +2436,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PASSION_FRUIT:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -2999,10 +2455,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PEACH:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3019,10 +2471,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PEACH:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3040,10 +2488,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PEACH:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3062,10 +2506,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PEAR:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3082,10 +2522,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PEAR:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3103,10 +2539,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PEAR:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3125,10 +2557,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PEARL_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3146,10 +2574,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PEARL_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3168,10 +2592,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:PEARL_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3191,10 +2611,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PENDANT_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3212,10 +2628,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PENDANT_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3234,10 +2646,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:PENDANT_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3257,10 +2665,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PERSIMMON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3277,10 +2681,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PERSIMMON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3298,10 +2698,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PERSIMMON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3320,10 +2716,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:PANICLE:PLANT_MAT:GRASS_TAIL_PIG:PANICLE]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3341,10 +2733,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:PANICLE:PLANT_MAT:GRASS_TAIL_PIG:PANICLE]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3363,10 +2751,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:PANICLE:PLANT_MAT:GRASS_TAIL_PIG:PANICLE]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3386,10 +2770,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PINEAPPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3407,10 +2787,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PINEAPPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3429,10 +2805,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PINEAPPLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3452,10 +2824,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PLUM:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3472,10 +2840,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PLUM:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3493,10 +2857,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PLUM:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3515,10 +2875,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3536,10 +2892,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3558,10 +2910,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3581,10 +2929,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:POMEGRANATE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3601,10 +2945,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:POMEGRANATE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3622,10 +2962,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:POMEGRANATE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3644,10 +2980,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:POTATO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3665,10 +2997,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:POTATO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3687,10 +3015,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:POTATO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3710,10 +3034,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_PRICKLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3731,10 +3051,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_PRICKLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3753,10 +3069,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_PRICKLE:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3776,10 +3088,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:QUINOA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3797,10 +3105,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:QUINOA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3819,10 +3123,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:QUINOA:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3842,10 +3142,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RADISH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3862,10 +3158,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RADISH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3883,10 +3175,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:RADISH:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3905,10 +3193,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:RAMBUTAN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3925,10 +3209,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:RAMBUTAN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3946,10 +3226,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:RAMBUTAN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3968,10 +3244,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:RASPBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -3989,10 +3261,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:RASPBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4011,10 +3279,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:RASPBERRY:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4029,78 +3293,14 @@ reaction_mass_brewing
 		[SKILL_IP:400]
 	[CATEGORY:BREW_FULL_BARRELS]
 
-[REACTION:BREW_DRINKS_FROM_WEED_RAT]
-	[NAME:Brew some sewer brew]
-	[BUILDING:STILL:NONE]
-	[REAGENT:growth:1:PLANT_GROWTH:LEAVES:PLANT_MAT:WEED_RAT:LEAF]
-		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
-	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
-		[FOOD_STORAGE_CONTAINER]
-		[EMPTY]
-		[PRESERVE_REAGENT]
-		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[PRODUCT:100:5:DRINK:NONE:PLANT_MAT:WEED_RAT:DRINK]
-		[PRODUCT_TO_CONTAINER:barrel]
-		[PRODUCT_DIMENSION:150]
-	[SKILL:BREWING]
-	[CATEGORY:BREW_SOME_DRINKS]
-
-[REACTION:BREW_FIVE_DRINKS_FROM_WEED_RAT]
-	[NAME:Brew five sewer brew]
-	[BUILDING:STILL:NONE]
-	[REAGENT:growth:1:PLANT_GROWTH:LEAVES:PLANT_MAT:WEED_RAT:LEAF]
-		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
-	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
-		[FOOD_STORAGE_CONTAINER]
-		[EMPTY]
-		[PRESERVE_REAGENT]
-		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[PRODUCT:100:5:DRINK:NONE:PLANT_MAT:WEED_RAT:DRINK]
-		[PRODUCT_TO_CONTAINER:barrel]
-		[PRODUCT_DIMENSION:150]
-	[MAX_MULTIPLIER:1]
-	[SKILL:BREWING]
-	[CATEGORY:BREW_FIVE_DRINKS]
-
-[REACTION:BREW_BARREL_FROM_WEED_RAT]
-	[NAME:Brew a barrel of sewer brew]
-	[BUILDING:STILL:NONE]
-	[REAGENT:growth:20:PLANT_GROWTH:LEAVES:PLANT_MAT:WEED_RAT:LEAF]
-		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
-	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
-		[FOOD_STORAGE_CONTAINER]
-		[EMPTY]
-		[PRESERVE_REAGENT]
-		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[PRODUCT:100:100:DRINK:NONE:PLANT_MAT:WEED_RAT:DRINK]
-		[PRODUCT_TO_CONTAINER:barrel]
-		[PRODUCT_DIMENSION:150]
-	[MAX_MULTIPLIER:1]
-	[SKILL:BREWING]
-		[SKILL_IP:400]
-	[CATEGORY:BREW_FULL_BARRELS]
+removed rat weed brewing
+    - zey
 
 [REACTION:BREW_DRINKS_FROM_RICE]
 	[NAME:Brew some rice beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RICE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4118,10 +3318,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RICE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4140,10 +3336,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:RICE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4163,10 +3355,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:REED_ROPE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4184,10 +3372,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:REED_ROPE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4206,10 +3390,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:REED_ROPE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4229,10 +3409,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RYE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4250,10 +3426,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RYE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4272,10 +3444,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:RYE:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4295,10 +3463,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:SAGUARO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4315,10 +3479,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:SAGUARO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4336,10 +3496,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:SAGUARO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4358,10 +3514,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:SAND_PEAR:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4378,10 +3530,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:SAND_PEAR:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4399,10 +3547,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:SAND_PEAR:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4421,10 +3565,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SINGLE-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4442,10 +3582,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SINGLE-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4464,10 +3600,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SINGLE-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4487,10 +3619,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SLIVER_BARB:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4508,10 +3636,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SLIVER_BARB:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4530,10 +3654,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SLIVER_BARB:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4553,10 +3673,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SOFT_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4574,10 +3690,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SOFT_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4596,10 +3708,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SOFT_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4619,10 +3727,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:PANICLE:PLANT_MAT:SORGHUM:PANICLE]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4640,10 +3744,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:PANICLE:PLANT_MAT:SORGHUM:PANICLE]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4662,10 +3762,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:PANICLE:PLANT_MAT:SORGHUM:PANICLE]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4685,10 +3781,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SPELT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4706,10 +3798,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SPELT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4728,10 +3816,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SPELT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4751,10 +3835,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_STRAW:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4772,10 +3852,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_STRAW:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4794,10 +3870,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_STRAW:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4817,10 +3889,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRY_SUN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4838,10 +3906,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRY_SUN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4860,10 +3924,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRY_SUN:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4883,10 +3943,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:POD_SWEET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4904,10 +3960,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:POD_SWEET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4926,10 +3978,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:POD_SWEET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4949,10 +3997,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SWEET_POTATO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4970,10 +4014,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SWEET_POTATO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -4992,10 +4032,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SWEET_POTATO:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5015,10 +4051,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:TEA_LEAVES:PLANT_MAT:TEA:TEA_LEAVES]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5035,10 +4067,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:TEA_LEAVES:PLANT_MAT:TEA:TEA_LEAVES]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5056,10 +4084,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:TEA_LEAVES:PLANT_MAT:TEA:TEA_LEAVES]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5078,10 +4102,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TEFF:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5099,10 +4119,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TEFF:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5121,10 +4137,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:TEFF:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5144,10 +4156,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:TOMATO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5165,10 +4173,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:TOMATO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5187,10 +4191,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:TOMATO:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5210,10 +4210,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TURNIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5230,10 +4226,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TURNIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5251,10 +4243,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:TURNIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5273,10 +4261,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TWO-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5294,10 +4278,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TWO-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5316,10 +4296,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:TWO-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5339,10 +4315,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:WATERMELON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5360,10 +4332,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:WATERMELON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5382,10 +4350,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:WATERMELON:FRUIT]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5405,10 +4369,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:VINE_WHIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5426,10 +4386,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:VINE_WHIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5448,10 +4404,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:VINE_WHIP:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5471,10 +4423,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:WHITE_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5492,10 +4440,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:WHITE_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]
@@ -5514,10 +4458,6 @@ reaction_mass_brewing
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:WHITE_MILLET:STRUCTURAL]
 		[UNROTTEN]
-	[REAGENT:water:1:LIQUID_MISC:NONE:WATER:NONE] brewing now requires water
-	[REAGENT:bucket:1:BUCKET:NONE:NONE:NONE]      brewing now requires water
-		[CONTAINS:water]
-		[PRESERVE_REAGENT]
 	[REAGENT:barrel:1:NONE:NONE:NONE:NONE]
 		[FOOD_STORAGE_CONTAINER]
 		[EMPTY]

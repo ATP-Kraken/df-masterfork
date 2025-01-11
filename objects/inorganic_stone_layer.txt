@@ -70,7 +70,7 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 [REACTION_CLASS:FLUX]
 [REACTION_CLASS:CALCIUM_CARBONATE]
 [SEDIMENTARY][SEDIMENTARY_OCEAN_DEEP]
-[MATERIAL_VALUE:3] increased value. - zey
+[MATERIAL_VALUE:2] increased value. - zey
 [IS_STONE]
 [MELTING_POINT:11485]
 [SOLID_DENSITY:2710]
@@ -269,7 +269,7 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 [REACTION_CLASS:FLUX]
 [REACTION_CLASS:CALCIUM_CARBONATE] depends on marble classification
 [METAMORPHIC]
-[MATERIAL_VALUE:4] increased value, marble is quite nice. - zey
+[MATERIAL_VALUE:3] increased value, marble is quite nice. - zey
 [IS_STONE]
 [SOLID_DENSITY:2780]
 [MELTING_POINT:11485]

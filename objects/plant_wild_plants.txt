@@ -2,7 +2,7 @@ plant_wild_plants
 
 [OBJECT:PLANT]
 
-[CUT_PLANT:BULB_KOBOLD]
+# Advanced Agriculture by 'Droseran' #
 
 [PLANT:BULB_KOBOLD] will o' the wisp as a plant
 	[NAME:kobold bulb][NAME_PLURAL:kobold bulbs][ADJ:kobold bulb]
@@ -30,8 +30,6 @@ plant_wild_plants
 		[EXTRACT_STORAGE:FLASK]
 		[PREFIX:NONE]
 	[EXTRACT_STILL_VIAL:LOCAL_PLANT_MAT:EXTRACT]
-
-[CUT_PLANT:HERB_VALLEY]
 
 [PLANT:HERB_VALLEY]
 	[NAME:valley herb][NAME_PLURAL:valley herbs][ADJ:valley herb]

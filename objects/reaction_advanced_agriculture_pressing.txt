@@ -22,6 +22,9 @@ reaction_advanced_agriculture_pressing
 	[PRODUCT:100:1:GLOB:NONE:GET_MATERIAL_FROM_REAGENT:honeycomb:NONE]
 		[PRODUCT_PRESSED]
 	[SKILL:PRESSING]
+	[DESCRIPTION:Press honey from a honeycomb, which is collected from hives.]{+}
+	[DESCRIPTION:    ]
+	[DESCRIPTION:A jug is needed to contain the product.]
 	[CATEGORY:PRESS_HONEY]
 		[CATEGORY_NAME:Press honey and manage containers]
 		[CATEGORY_DESCRIPTION:Press honey from honeycombs and manage containers of honey]

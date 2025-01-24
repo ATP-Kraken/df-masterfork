@@ -15,7 +15,7 @@ headwear
 
 
 [ITEM_HELM:ITEM_HELM_HELM]
-[NAME:helm:helms]
+[NAME:laminar helm:laminar helms]
 [ARMORLEVEL:2]
 [METAL_ARMOR_LEVELS]
 [SHAPED]
@@ -109,17 +109,17 @@ body armor - plate
 
 
 [ITEM_ARMOR:ITEM_ARMOR_BREASTPLATE]
-[NAME:cuirass:cuirasses]
-[MATERIAL_PLACEHOLDER:plate]
-[ARMORLEVEL:2]
-[UBSTEP:0]
+[NAME:lamellar breastplate:lamellar breastplates]
+[PREPLURAL:suits of]
+[ARMORLEVEL:3]
+[UBSTEP:1]{:0  Revision: compensate for the (new) shoulders.}
 [LBSTEP:0]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:125]
-[LAYER_SIZE:8] 8 kg
-[LAYER_PERMIT:20]
-[MATERIAL_SIZE:45] 15 bars
+[COVERAGE:100]
+[LAYER_SIZE:20]
+[LAYER_PERMIT:50]
+[MATERIAL_SIZE:9]
 [HARD]
 [METAL]
 
@@ -157,15 +157,15 @@ body armor - composite
 
 
 [ITEM_ARMOR:ITEM_ARMOR_MAIL_SHIRT]
-[NAME:mail hauberk:mail hauberks]
+[NAME:chain-mail:chain-mail]{mail shirt:mail shirts}
 [ARMORLEVEL:2]
-[UBSTEP:1]
-[LBSTEP:1]
+[UBSTEP:2]{:1       Revision: compensate for the (new) shoulders.}
+[LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [LAYER:OVER]
-[COVERAGE:99]
-[LAYER_SIZE:6] 8 kg
-[LAYER_PERMIT:30]
-[MATERIAL_SIZE:21] 7 bars
+[COVERAGE:100]
+[LAYER_SIZE:15]
+[LAYER_PERMIT:50]
+[MATERIAL_SIZE:6]
 [HARD]
 [METAL]
 [STRUCTURAL_ELASTICITY_CHAIN_ALL]
@@ -206,15 +206,15 @@ body armor - soft
 
 
 [ITEM_ARMOR:ITEM_ARMOR_LEATHER]
-[ADJECTIVE:boiled]
-[NAME:cuirass:cuirasses]
+[NAME:armor:armor]
+[PREPLURAL:suits of]
 [MATERIAL_PLACEHOLDER:leather]
 [ARMORLEVEL:1]
-[UBSTEP:0]
-[LBSTEP:1]
+[UBSTEP:2]{:1       Revision: compensate for the (new) shoulders.}
+[LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:125]
+[COVERAGE:100]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:6]
@@ -333,34 +333,34 @@ leg armor
 
 [ITEM_PANTS:ITEM_PANTS_GREAVES]
 [PREPLURAL:pairs of]
-[NAME:cuisses:cuisses]
-[ARMORLEVEL:1]
-[METAL_ARMOR_LEVELS]
-[LBSTEP:1]
+[NAME:laminar greaves:laminar greaves]
+[ARMORLEVEL:3]
+[LBSTEP:MAX]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:110] +10 down
-[LAYER_SIZE:7] 7 kg
-[LAYER_PERMIT:20]
-[MATERIAL_SIZE:15] 5 bars
+[COVERAGE:100]
+[LAYER_SIZE:15]
+[LAYER_PERMIT:30]
+[MATERIAL_SIZE:6]
 [METAL]
-[LEATHER]
-[SCALED]
-[BARRED]
-[SOFT]
+[HARD]
 
 [ITEM_PANTS:ITEM_PANTS_LEGGINGS]
 [PREPLURAL:pairs of]
-[NAME:mail leggings:mail leggings]
-[ARMORLEVEL:2]
-[LBSTEP:2]
-[LAYER:OVER]
-[COVERAGE:95] +10 down
-[LAYER_SIZE:6] 8 kg
-[LAYER_PERMIT:20]
-[MATERIAL_SIZE:6] 2 bars  4
+[NAME:chain-mail leggings:chain-mail ]
+[CHAIN_METAL_TEXT]
+[ARMORLEVEL:1]
+[METAL_ARMOR_LEVELS]
+[LBSTEP:MAX]
+[SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:100]
+[LAYER_SIZE:15]
+[LAYER_PERMIT:30]
+[MATERIAL_SIZE:5]
+[SCALED]
 [METAL]
-[STRUCTURAL_ELASTICITY_CHAIN_ALL]
+[STRUCTURAL_ELASTICITY_CHAIN_METAL]
 
 [ITEM_PANTS:IC_PANTS_LEGGINGS_PADDED]
 [PREPLURAL:pairs of]
@@ -421,16 +421,17 @@ foot armor
 
 
 [ITEM_SHOES:ITEM_SHOES_BOOTS]
-[NAME:plate boot:plate boots]
-[ARMORLEVEL:3]
+[NAME:laminar boot:laminar boots]
+[ARMORLEVEL:1]
 [UPSTEP:1]
-[LAYER:ARMOR]
-[COVERAGE:120]
-[LAYER_SIZE:30]
+[METAL_ARMOR_LEVELS]
+[LAYER:OVER]
+[COVERAGE:100]
+[LAYER_SIZE:25]
 [LAYER_PERMIT:15]
-[MATERIAL_SIZE:6]
+[MATERIAL_SIZE:2]
+[SHAPED]{+  Revision: boots aren't usually worn over other boots.}
 [METAL]
-[HARD]
 
 (ITEM_SHOES:IC_SHOES_CALIGAE] boot copy, but more roman { disabling for now, - zey.}
 (NAME:caliga:caligae]

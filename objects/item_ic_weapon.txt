@@ -54,7 +54,7 @@ axe - (swing +1:+0, hook -0:-1)
 ===========================================================
 
 [ITEM_WEAPON:ITEM_WEAPON_AXE_BATTLE]  =VANILLA=
-[NAME:battle axe:battle axes] swapped stats with sver's hawk axe (khopesh uses sver's battle axe stats)
+[NAME:battle-axe:battle-axes]{:battle axe:battle axes} swapped stats with sver's hawk axe (khopesh uses sver's battle axe stats)
 DESCRIPTION:A thin axe that can pierce through brittle armor and easily chop off limbs.
 [SIZE:130] 80% +20%  w7
 [SKILL:AXE]
@@ -158,7 +158,7 @@ Penetration size currently only matters for edged attacks.
 ===========================================================
 
 [ITEM_WEAPON:ITEM_WEAPON_AXE_GREAT]  =VANILLA=
-[NAME:great axe:great axes] uses stats from bearded axe
+[NAME:greataxe:greataxes]{:great axe:great axes}
 [SIZE:260]  80% +48%  w8
 [SKILL:AXE]
 [TWO_HANDED:404000] 2H
@@ -234,7 +234,7 @@ hammer (all main vels x1.75; swing +2:+1, thrust/pommel -1:-0; hook -0:-1)
 
 [ITEM_WEAPON:ITEM_WEAPON_HAMMER_WAR]  =VANILLA=
 	stabbing coef. = 1
-[NAME:war hammer:war hammers]
+[NAME:warhammer:warhammers]{:war hammer:war hammers}
 [SIZE:180] 60% +35%  w7
 [SKILL:HAMMER]
 [TWO_HANDED:57000] 1H
@@ -403,7 +403,7 @@ pike
 [ITEM_WEAPON:ITEM_WEAPON_SWORD_2H]  =VANILLA=
 	stabbing coef. = 1
 	+10% swinging vel for leverage
-[NAME:zweihander:zweihanders]  zweihander, espadon etc.
+[NAME:greatsword:greatswords]{:two-handed sword:two-handed swords}
 [SIZE:470] 70% +58% (48)
 [SKILL:PIKE]
 [TWO_HANDED:2373000] 2H
@@ -1001,7 +1001,7 @@ crossbow
 [SKILL:HAMMER]
 [RANGED:CROSSBOW:BOLT]
 [SHOOT_FORCE:1400] M70  V50  (hardened bronze hammerhead)
-[SHOOT_MAXVEL:500] M24  V50
+[SHOOT_MAXVEL:200]  This is just to make sure a near-weightless object doesn't go faster than the string could possibly go.
 [TWO_HANDED:0]
 [MINIMUM_SIZE:20000] average kobold size
 [MATERIAL_SIZE:6]
@@ -1187,7 +1187,8 @@ blowgun
 [SIZE:1725]
 [SKILL:SPEAR]
 [TWO_HANDED:15000]
-[MINIMUM_SIZE:5000]
+[MINIMUM_SIZE:5000] amphibian men, etc., need variants
+[CAN_STONE]{+  Revision: allow more obsidian weapons.}
 [MATERIAL_SIZE:3]
 [ATTACK:BLUNT:50:1:shove:shoves:NO_SUB:1000]
 	[ATTACK_PREPARE_AND_RECOVER:6:2]

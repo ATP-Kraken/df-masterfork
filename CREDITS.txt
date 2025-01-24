@@ -1,34 +1,36 @@
-
 Dwarf Fortress by Bay 12 Games
 Published by Kitfox Games
 
-Original MDF (Masterwork) mod by Meph and his contributors
+Original MDF (Masterwork) mod by Meph and his contributors and any credited and/or un-credited contributors/integrated mod authors.
 
 ****************************************************************
 
 -------------------- MASTERFORK CREDITS --------------------
-Fork by Zeyon & Chbost
+Fork by Zeyon & Contributors
 
 Contributors: 
 
 - DPh Kraken
--
--
--
+- Droseran
+- chipathingy
+- Chbost
 -
 
-****************************************************************
-Masterfork contains RAWs and other assets from the following mods (non-exhaustive list):
-    Note: Please contact me if you have any grievances/concerns about your mod being included in MFORK, or if I forgot to credit you! // Zeyon
+********************************************************************************************************************************************************************
+Masterfork contains RAWs and other assets from the following mods, either in part or fully integrated:
+    Note: Please contact me if you have any grievances/concerns about your mod being included in MFORK, or if I forgot to credit you! // Zey
+        - Mod authors reserve the right to request their mod to be removed from the project if they so desire; contact me if you do - Zey.
 
- - Gadget's Kobold Caverns by gadgetpatch # https://steamcommunity.com/sharedfiles/filedetails/?id=2925028826
- - The Way the Words Work by DPh Kraken # https://steamcommunity.com/sharedfiles/filedetails/?id=3309091369
- - Fantastic Fantasy Fortress by chipathingy # https://steamcommunity.com/sharedfiles/filedetails/?id=2905522743
- - Highfantasy Mod System by Kiiranaux # https://steamcommunity.com/sharedfiles/filedetails/?id=2900159797
- - Grimlocke's History & Realism Mods by Grimlocke # http://www.bay12forums.com/smf/index.php?topic=146737.0
- - The Language Overhaul by Emilovich # https://steamcommunity.com/sharedfiles/filedetails/?id=3041526930
- - New Genesis (Volume II) by Deon # https://steamcommunity.com/sharedfiles/filedetails/?id=2901564943
- - Bourbon's March of Wrath by Bourbon # https://steamcommunity.com/sharedfiles/filedetails/?id=2901789546
- - Creature Graphics Extended - REDUX by Digganob # https://steamcommunity.com/sharedfiles/filedetails/?id=3265552481
- - Modest Plants & Reactions by Button # https://steamcommunity.com/sharedfiles/filedetails/?id=3159675996
- - Advanced Agriculture by Droseran # https://steamcommunity.com/sharedfiles/filedetails/?id=3094095525
+ - The Way the Words Work by DPh Kraken                                                                        # https://steamcommunity.com/sharedfiles/filedetails/?id=3309091369
+ - Fantastic Fantasy Fortress by chipathingy                                                                   # https://steamcommunity.com/sharedfiles/filedetails/?id=2905522743
+ - Highfantasy Mod System by Kiiranaux                                                                         # https://steamcommunity.com/sharedfiles/filedetails/?id=2900159797
+ - Grimlocke's History & Realism Mods by Grimlocke                                                             # http://www.bay12forums.com/smf/index.php?topic=146737.0
+ - The Language Overhaul by Emilovich                                                                          # https://steamcommunity.com/sharedfiles/filedetails/?id=3041526930
+ - New Genesis (Volume II) by Deon                                                                             # https://steamcommunity.com/sharedfiles/filedetails/?id=2901564943
+ - Bourbon's March of Wrath by Bourbon                                                                         # https://steamcommunity.com/sharedfiles/filedetails/?id=2901789546
+ - Advanced Agriculture by Droseran                                                                            # https://steamcommunity.com/sharedfiles/filedetails/?id=3094095525
+ - Modest Mod by LargeSnail, Igfig, CryptoCactus, Button, and any contributions from the DF Community          # http://www.bay12forums.com/smf/index.php?topic=174231.0
+ - Dwarven Female Statues by LorrMaster                                                                        # https://steamcommunity.com/sharedfiles/filedetails/?id=3307692161
+ - DF Revised by Taffer, Toothspit, Dirst, Button, Meph, GoblinCookie, Amostubal, Deon, Igfig                  # http://www.bay12forums.com/smf/index.php?topic=161832.0
+ 
+********************************************************************************************************************************************************************

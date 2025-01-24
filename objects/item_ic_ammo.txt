@@ -68,7 +68,7 @@ bow arrows
 [ITEM_AMMO:IC_AMMO_ARROWS_MAGIC]
 	magical elven crap with no drawbacks
 	strongly unrecommended for metal-forging races
-[NAME:singing arrow:singing arrows]
+[NAME:enchanted arrow:enchanted arrows]
 [CLASS:ARROW]
 [SIZE:91]
 [ATTACK:EDGE:3:1000:stab:stabs:NO_SUB:170]

@@ -1,0 +1,23 @@
+tile_page_fff_lizardfolk
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:FFF_LIZARDFOLK_WEARABLES]
+	[FILE:images/fff_lizardfolk/fff_lizardfolk_wearables.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_LIZARDFOLK_WEARABLES_NEW]
+	[FILE:images/fff_lizardfolk/fff_lizardfolk_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_LIZARDFOLK_WIELDABLES]
+	[FILE:images/fff_lizardfolk/fff_lizardfolk_wieldables.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:384:960]
+
+[TILE_PAGE:FFF_LIZARDFOLK_WIELDABLES_NEW]
+	[FILE:images/fff_lizardfolk/fff_lizardfolk_wieldables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:384:864]

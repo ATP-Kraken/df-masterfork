@@ -51,6 +51,7 @@ Properly textured wooden statues, available from custom reaction
 	[TOOL_GRAPHICS_METAL:7:IC1:5:1]
 [TOOL_GRAPHICS:IC1:6:1:IC_WRITING_TABLET_WAX]
 [TOOL_GRAPHICS:IC1:7:1:IC_WRITING_TABLET]
+[TOOL_GRAPHICS:IC1:7:1:IC_WRITING_TABLET_METAL]
 [TOOL_GRAPHICS:TOOLS:0:22:IC_TAROT_DECK] cards are a quire for now
 
 *** Armor and shields

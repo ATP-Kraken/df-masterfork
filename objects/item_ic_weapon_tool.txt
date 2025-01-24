@@ -176,26 +176,6 @@ Weapon copies
 	[ATTACK_PREPARE_AND_RECOVER:1:9]
 [NO_DEFAULT_JOB]
 
-===========================================================
-
-[ITEM_TOOL:IC_TOOLWEAPON_SLEDGEHAMMER] copied maul
-[NAME:sledgehammer:sledgehammers]
-[VALUE:180]
-[HARD_MAT] wood etc.
-[TOOL_USE:MEAT_BONING]
-[TILE:'/']
-[SIZE:815]
-[SKILL:HAMMER]
-[TWO_HANDED:724000]
-[MINIMUM_SIZE:40000]
-[MATERIAL_SIZE:18]
-[ATTACK:BLUNT:230:1:bash:bashes:NO_SUB:12990]
-	[ATTACK_PREPARE_AND_RECOVER:7:10]
-	[ATTACK_FLAG_BAD_MULTIATTACK]
-[NO_DEFAULT_JOB]
-
-===========================================================
-
 [ITEM_TOOL:IC_TOOLWEAPON_BATON] copied mace
 [NAME:baton:batons]
 [VALUE:120]

@@ -22,17 +22,6 @@ reaction_ic_fort_recycling
 		[PRESERVE_REAGENT]
 	[SKILL:OPERATE_PUMP]
 
-[REACTION:IC_PROCESS_TO_SEED]
-	[NAME:harvest seeds]
-	[DESCRIPTION:Turns a seed-bearing plant into its seeds.]
-	[DESCRIPTION:No additional products will be returned, unlike brewing or other plant processing jobs.]
-	[BUILDING:FARMER:CUSTOM_H]
-	[REAGENT:plant:1:PLANT:NONE:NONE:NONE]
-		[ANY_PLANT_MATERIAL]
-		[HAS_MATERIAL_REACTION_PRODUCT:SEED_MAT][UNROTTEN]
-	[PRODUCT:100:1:SEEDS:NONE:GET_MATERIAL_FROM_REAGENT:plant:SEED_MAT]
-	[SKILL:PROCESSPLANTS]
-
 [REACTION:IC_RECLAIM_ASBESTOS]
 	[NAME:spin asbestos]
 	[BUILDING:SMELTER:NONE] ideally it'd be at the loom, but you're already here

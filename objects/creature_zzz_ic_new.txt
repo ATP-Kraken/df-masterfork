@@ -1,5 +1,7 @@
 creature_ic
 
+[OBJECT:CREATURE]
+
 [CREATURE:MUREX_SNAIL] Bolinus (Murex) brandaris
 	[DESCRIPTION:A tiny predatory mollusk found in shallow water. It is harvested for dye before spring.]
 	[NAME:murex snail:murex snails:murex snail]

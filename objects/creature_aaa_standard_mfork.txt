@@ -2,11 +2,6 @@ creature_aaa_standard_mfork
 
 [OBJECT:CREATURE]
 
-[CUT_CREATURE:DWARF]
-[CUT_CREATURE:ELF]
-[CUT_CREATURE:HUMAN]
-[CUT_CREATURE:GOBLIN]
-[CUT_CREATURE:KOBOLD]
 [CREATURE:GREMLIN]
 	[DESCRIPTION:A small humanoid creature with a mischievous, toothy grin.]
 	[NAME:gremlin:gremlins:gremlin]

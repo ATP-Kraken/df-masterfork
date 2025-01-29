@@ -1,0 +1,10 @@
+[ID:masterfork_goblincookie_dictionary]
+[NAME:Expanded Dictionary]
+[NUMERIC_VERSION:0011]
+[DISPLAYED_VERSION:v0.1.0-alpha.3]
+[EARLIEST_COMPATIBLE_NUMERIC_VERSION:0001]
+[EARLIEST_COMPATIBLE_DISPLAYED_VERSION:v0.1.0-alpha.1]
+[AUTHOR:Amostubel,GoblinCookie,Zey]
+[DESCRIPTION:A stripped down and simplified version of the Forgotten Realms Direforged dictionary, intended for use by other modders to make their own mods without having to do all the work and for anyone who wants to use the dictionary in addition to vanilla's language.]
+
+[STEAM_FILE_ID:#########]

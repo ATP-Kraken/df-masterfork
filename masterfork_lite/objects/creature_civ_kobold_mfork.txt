@@ -2,6 +2,7 @@ creature_civ_kobold_mfork
 
 [OBJECT:CREATURE]
 
+[CUT_CREATURE:KOBOLD]
 [CREATURE:KOBOLD]
 	[DESCRIPTION:A small, squat humanoid with large pointy ears and yellow glowing eyes.]
 	[NAME:kobold:kobolds:kobold]

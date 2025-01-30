@@ -241,7 +241,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:EYE]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:500]{:100}
 	[VASCULAR:13]{:3}
@@ -266,7 +266,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:BRAIN]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1500]{+  Revision: brain tissue heals eventually.}
 	[VASCULAR:35]{:3:23    Revision: brain injuries bleed profusely.}
@@ -280,7 +280,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:LUNG]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: lungs healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:33]{:8         Revision: lungs bleed more when cut.  Internal wounds should be punishing.}
@@ -294,7 +294,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HEART]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: hearts healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:80]{:50        Revision: heart injuries bleed profusely, who thought? - zey}
@@ -308,7 +308,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:LIVER]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: livers healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:33]{:8         Revision: liver bleeds more when cut.  Internal wounds should be punishing.}
@@ -322,7 +322,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:GUT]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: guts healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:23]{:3         Revision: gut bleeds more when cut.  Internal wounds should be punishing.}
@@ -336,7 +336,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:STOMACH]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: stomachs healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:23]{:3         Revision: stomachs bleed more when cut.  Internal wounds should be punishing.}
@@ -349,7 +349,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:GIZZARD]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: gizzards healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:23]{:3         Revision: gizzards bleed more when cut.  Internal wounds should be punishing.}
@@ -362,7 +362,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:PANCREAS]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: pancreases healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:23]{:3         Revision: pancreases bleed more when cut.  Internal wounds should be punishing.}
@@ -375,7 +375,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPLEEN]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: spleens healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:50]{:5:33      Revision: spleens bleed more when cut.  Internal wounds should be punishing.}
@@ -389,7 +389,7 @@ tissue_template_aaa_default_mfork
 	[FUNCTIONAL]
 	[STRUCTURAL]
 	[SCARS]
-	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:KIDNEY]
+	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE] {Accelerated materials: remove offal}
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:600]{:100  Revision: kidneys healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:33]{:8         Revision: kidneys bleed more when cut.  Internal wounds should be punishing.}

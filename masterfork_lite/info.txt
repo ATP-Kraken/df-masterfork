@@ -1,7 +1,5 @@
 [ID:masterfork_lite]
 [CONFLICTS_WITH_ID:vanilla_bodies]
-[CONFLICTS_WITH_ID:vanilla_creatures]
-[CONFLICTS_WITH_ID:vanilla_descriptors]
 [CONFLICTS_WITH_ID:vanilla_entities]
 [CONFLICTS_WITH_ID:vanilla_items]
 [CONFLICTS_WITH_ID:vanilla_materials]

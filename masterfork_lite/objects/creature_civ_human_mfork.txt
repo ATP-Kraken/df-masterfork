@@ -2,6 +2,7 @@ creature_civ_human_mfork
 
 [OBJECT:CREATURE]
 
+[CUT_CREATURE:HUMAN]
 [CREATURE:HUMAN]
 	[DESCRIPTION:A medium-sized creature prone to great ambition.]
 	[NAME:human:humans:human]

@@ -2,6 +2,7 @@ creature_civ_dwarf_mfork
 
 [OBJECT:CREATURE]
 
+[CUT_CREATURE:DWARF]
 [CREATURE:DWARF]
 	[DESCRIPTION:A short, sturdy creature fond of drink and industry.]
 	[NAME:dwarf:dwarves:dwarf]

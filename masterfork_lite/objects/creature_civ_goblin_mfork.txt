@@ -2,6 +2,7 @@ creature_civ_goblin_mfork
 
 [OBJECT:CREATURE]
 
+[CUT_CREATURE:GOBLIN]
 [CREATURE:GOBLIN]
 	[DESCRIPTION:A medium-sized humanoid driven to cruelty by its evil nature.]
 	[NAME:goblin:goblins:goblin]

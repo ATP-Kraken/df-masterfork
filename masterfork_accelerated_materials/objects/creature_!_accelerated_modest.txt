@@ -1,4 +1,4 @@
-creature_zzz_accelerated
+creature_!_accelerated_modest
 
 [OBJECT:CREATURE]
 
